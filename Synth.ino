@@ -157,10 +157,12 @@ public:
 	}
 
 	off_t next(size_t i) {
-	floating_t attackCoef = (
-				(tick_ < endAttack_ && endAttack_ < startRelease_ ) ? ((floating_t) tick_ / ((floating_t) endAttack_ + 1.0)) : 1.0);
+		floating_t attackCoef = (
+				(tick_ < endAttack_ && endAttack_ < startRelease_) ?
+						((floating_t) tick_ / ((floating_t) endAttack_ + 1.0)) : 1.0);
 
-		floating_t releaseCoef = ((tick_ >= startRelease_) ? (releaseDuration_ - (tick_ - startRelease_)) / releaseDuration_ : 1.0);
+		floating_t releaseCoef = (
+				(tick_ >= startRelease_) ? (releaseDuration_ - (tick_ - startRelease_)) / releaseDuration_ : 1.0);
 		floating_t sig0 = desc_.lsaw_
 				* (lst_.next(desc_.writes_ / (round(i + (desc_.writes_ * desc_.lsawPhase_)) % desc_.writes_)));
 		floating_t sig1 = desc_.rsaw_
@@ -206,7 +208,7 @@ floating_t release = 0;
 void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 	digitalWrite(13, HIGH);
 
-	floating_t f = pow(2.0, (inNumber - 69.0)/12.0) * 440;
+	floating_t f = pow(2.0, (inNumber - 69.0) / 12.0) * 440;
 //	Serial.print(inNumber);
 //	Serial.print(" ");
 //	Serial.println(f);
@@ -219,13 +221,13 @@ void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 		vol2 = analogRead(A2) / 1023.0;
 		vol3 = analogRead(A1) / 1023.0;
 		vol4 = analogRead(A0) / 1023.0;
-	} else if(currentMode == 1) {
+	} else if (currentMode == 1) {
 		phase0 = analogRead(A4) / 1023.0;
 		phase1 = analogRead(A3) / 1023.0;
 		phase2 = analogRead(A2) / 1023.0;
 		phase3 = analogRead(A1) / 1023.0;
 		phase4 = analogRead(A0) / 1023.0;
-	} else if(currentMode == 2) {
+	} else if (currentMode == 2) {
 		attack = analogRead(A4) / 1023.0;
 		release = analogRead(A3) / 1023.0;
 	} else
@@ -250,15 +252,12 @@ void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 	tones_map[f] = Tone(desc);
 }
 
-
-void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity)
-{
-	floating_t f = pow(2.0, (inNumber - 69.0)/12.0) * 440;
-	if(tones_map.find(f) != tones_map.end())
+void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
+	floating_t f = pow(2.0, (inNumber - 69.0) / 12.0) * 440;
+	if (tones_map.find(f) != tones_map.end())
 		tones_map[f].startRelease();
 	digitalWrite(13, LOW);
 }
-
 
 void setup() {
 
@@ -324,7 +323,7 @@ void loop() {
 
 	floating_t duration = micros() - start;
 	floating_t interval = 1000000 / UPDATE_FREQ;
-	if(duration > interval) {
+	if (duration > interval) {
 		Serial.println("Overrun");
 	} else {
 		delayMicroseconds(round(interval - duration));
