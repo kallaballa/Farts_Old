@@ -173,13 +173,10 @@ public:
 				* (sn_.next(desc_.writes_ / (round(i + (desc_.writes_ * desc_.sinePhase_)) % desc_.writes_)));
 		floating_t sig4 = desc_.square_
 				* (sq_.next(desc_.writes_ / (round(i + (desc_.writes_ * desc_.squarePhase_)) % desc_.writes_)));
-		floating_t sig5 = ((sig0 + sig1 + sig2 + sig3 + sig4));
-
-//		sig5 *= releaseCoef;
-//		sig5 *= attackCoef;
+		floating_t sig5 = (sig0 + sig1 + sig2 + sig3 + sig4) * releaseCoef * attackCoef;
 
 		++tick_;
-		if (tick_ >= 10000000)
+		if (tick_ >= (std::numeric_limits<size_t>().max() - 10))
 			tick_ = 0;
 
 		if (releaseCoef < 0.1)
