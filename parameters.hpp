@@ -1,10 +1,3 @@
-/*
- * parameters.hpp
- *
- *  Created on: Oct 10, 2019
- *      Author: elchaschab
- */
-
 #ifndef PARAMETERS_HPP_
 #define PARAMETERS_HPP_
 
@@ -41,8 +34,8 @@ struct UI {
 	LiquidCrystal& lcd_;
 
 	UI(LiquidCrystal& lcd) : lcd_(lcd) {
-
 	}
+
 	void performUpdate(const char* name, floating_t& field, const floating_t& value) {
 		field = value;
 		lcd_.setCursor(0, 0);

@@ -1,10 +1,3 @@
-/*
- * tone.hpp
- *
- *  Created on: Oct 10, 2019
- *      Author: elchaschab
- */
-
 #ifndef TONE_HPP_
 #define TONE_HPP_
 
@@ -15,8 +8,6 @@
 #include <cmath>
 
 struct ToneDescriptor {
-	floating_t freq_;
-	floating_t updateFreq_;
 	floating_t lsaw_;
 	floating_t rsaw_;
 	floating_t triangle_;
@@ -55,24 +46,22 @@ private:
 	floating_t decayDuration_ = 1.0;
 	floating_t sustainLevel_ = 1.0;
 public:
-	Tone() :
-			lst_(0, 0), rst_(0, 0), tr_(0, 0), sn_(0, 0), sq_(0, 0) {
+	Tone() {
 	}
 
 	Tone(ToneDescriptor& desc) :
-			desc_(desc), lst_(desc.updateFreq_, desc.freq_), rst_(desc.updateFreq_, desc.freq_), tr_(desc.updateFreq_,
-					desc.freq_), sn_(desc.updateFreq_, desc.freq_), sq_(desc.updateFreq_, desc.freq_), endAttack_(
+			desc_(desc), endAttack_(
 					MAX_ATTACK * desc_.attack_), releaseDuration_(MAX_RELEASE * desc.release_), decayDuration_(
 					MAX_DECAY * desc.decay_), sustainLevel_(MAX_SUSTAIN * desc.sustain_) {
 	}
 
 	Tone& operator=(const Tone& other) {
 		desc_ = other.desc_;
-		lst_ = LSawtooth(other.desc_.updateFreq_, other.desc_.freq_);
-		rst_ = RSawtooth(other.desc_.updateFreq_, other.desc_.freq_);
-		tr_ = Triangle(other.desc_.updateFreq_, other.desc_.freq_);
-		sn_ = Sine(other.desc_.updateFreq_, other.desc_.freq_);
-		sq_ = Square(other.desc_.updateFreq_, other.desc_.freq_);
+		lst_ = LSawtooth();
+		rst_ = RSawtooth();
+		tr_ = Triangle();
+		sn_ = Sine();
+		sq_ = Square();
 		endAttack_ = other.endAttack_;
 		releaseDuration_ = other.releaseDuration_;
 		decayDuration_ = other.decayDuration_;

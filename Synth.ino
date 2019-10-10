@@ -44,8 +44,6 @@ void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 	floating_t f = pow(2.0, (inNumber - 69.0) / 12.0) * 440.0;
 
 	ToneDescriptor desc;
-	desc.freq_ = f;
-	desc.updateFreq_ = CLOCK_FREQ;
 	desc.lsaw_ = ui.vol0_;
 	desc.rsaw_ = ui.vol1_;
 	desc.triangle_ = ui.vol2_;
@@ -66,6 +64,7 @@ void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 
 void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 	ui.updateValue(inNumber, inValue);
+	low_pass.setFrequency(CLOCK_FREQ * ui.lpf_);
 	high_pass.setFrequency(CLOCK_FREQ * ui.hpf_);
 }
 
@@ -147,11 +146,6 @@ void loop() {
 
 	if (global_tick + 10 > std::numeric_limits<size_t>().max())
 		global_tick = 0;
-
-//	if (global_tick % RING_BUFFER_SIZE == 0) {
-//		gaussSmoothen(100.0 * params.blur_, 200.0 * params.blur_);
-//		gaussSharpen(100.0 * params.sharpen_, 200.0 * params.sharpen_);
-//	}
 
 	floating_t duration = micros() - start;
 	floating_t interval = 1000000 / CLOCK_FREQ;
