@@ -74,6 +74,12 @@ struct State {
 
 static State global_state;
 
+floating_t* all_params_[39] = { &global_state.vol0_, &global_state.vol1_, &global_state.vol2_, &global_state.vol3_, &global_state.vol4_, &global_state.phase0_, &global_state.phase1_, &global_state.phase2_, &global_state.phase3_, &global_state.phase4_, &global_state.attack_,
+			&global_state.decay_, &global_state.sustain_, &global_state.release_, &global_state.lpf_, &global_state.hpf_, &global_state.phaserRate_, &global_state.phaserFeedback_, &global_state.phaserDepth_, &global_state.waveguideFeedback_,
+			&global_state.waveguideDelay_, &global_state.foldbackThreshold_, &global_state.echoDelay_, &global_state.echoFrequency_, &global_state.echoAttenuation_, &global_state.vibratoAmount_, &global_state.vibratoFreq_,
+			&global_state.flangerAmount_, &global_state.flangerDelay_, &global_state.flangerFrequency_, &global_state.flangerFFW_, &global_state.flangerFBK_, &global_state.reverbAmount_, &global_state.reverbDecay_,
+			&global_state.reverbDamping_, &global_state.bitcrushAmount_, &global_state.bitcrushReduction_, &global_state.bitcrushQuantization_, &global_state.chebyModFrequency };
+
 struct Filters {
 	LiquidCrystal& lcd_;
 	OnePole<> lowPass_;
@@ -101,6 +107,34 @@ struct Filters {
 		lcd_.print(name);
 		lcd_.setCursor(0, 1);
 		lcd_.print(field);
+	}
+
+	void updateAllFilters() {
+		highPass_.freq(global_state.hpf_ * CLOCK_FREQ);
+		lowPass_.freq(global_state.lpf_ * CLOCK_FREQ);
+		phaser_.setRate(global_state.phaserRate_);
+		phaser_.setFeedback(global_state.phaserFeedback_);
+		phaser_.setDepth(global_state.phaserDepth_);
+		waveguide_.setFeedback(global_state.waveguideFeedback_);
+		waveguide_.setDelay(global_state.waveguideDelay_);
+		foldback_.setThreshold(global_state.foldbackThreshold_);
+		echo_.setDelay(global_state.echoDelay_ * 9.0);
+		echo_.setFrequency(global_state.echoFrequency_ * CLOCK_FREQ);
+		echo_.setAttenuation(global_state.echoAttenuation_);
+		vibrato_.setAmount(1.0 / (800 * (1.0 - global_state.vibratoAmount_)));
+		vibrato_.setFrequency(global_state.vibratoFreq_ * 10.0);
+		flanger_.setAmount(1.0 * (global_state.flangerAmount_ / 50));
+		flanger_.setDelay(1.0 * (global_state.flangerDelay_ / 100));
+		flanger_.setFrequency(global_state.flangerFrequency_);
+		flanger_.setFeedforward(global_state.flangerFFW_ * 2 - 1);
+		flanger_.setFeedback(global_state.flangerFBK_ * 2 - 1);
+		reverb_.setAmount(1.0 * (global_state.reverbAmount_ / 50));
+		reverb_.setDecay(global_state.reverbDecay_ * 16);
+		reverb_.setDamping(global_state.reverbDamping_);
+		bitcrush_.setAmount(global_state.bitcrushAmount_);
+		bitcrush_.setReductionFreq(global_state.bitcrushReduction_ * 1000);
+		bitcrush_.setQuantizationFreq(global_state.bitcrushQuantization_ * 1000);
+		cheby_.setModulationFreq(global_state.chebyModFrequency);
 	}
 
 	void updateValue(const size_t& i, const floating_t& value) {
@@ -209,12 +243,15 @@ struct Filters {
 			switch (i) {
 			case 74:
 				performUpdate("Phase Rate", global_state.phaserRate_, value);
+				phaser_.setRate(global_state.phaserRate_);
 				break;
 			case 71:
 				performUpdate("Phase Feedback", global_state.phaserFeedback_, value);
+				phaser_.setFeedback(global_state.phaserFeedback_);
 				break;
 			case 76:
 				performUpdate("Phase Depth", global_state.phaserDepth_, value);
+				phaser_.setDepth(global_state.phaserDepth_);
 				break;
 			case 77:
 			case 93:
@@ -237,9 +274,11 @@ struct Filters {
 			switch (i) {
 			case 74:
 				performUpdate("Waveguide Feedback", global_state.waveguideFeedback_, value);
+				waveguide_.setFeedback(global_state.waveguideFeedback_);
 				break;
 			case 71:
 				performUpdate("Waveguide Delay", global_state.waveguideDelay_, value);
+				waveguide_.setDelay(global_state.waveguideDelay_);
 				break;
 			case 76:
 			case 77:
@@ -263,6 +302,7 @@ struct Filters {
 			switch (i) {
 			case 74:
 				performUpdate("Foldback Feedback", global_state.foldbackThreshold_, value);
+				foldback_.setThreshold(global_state.foldbackThreshold_);
 				break;
 			case 71:
 			case 76:
@@ -514,6 +554,13 @@ struct Filters {
 			++global_state.currentMode_;
 
 		displayMode();
+	}
+
+	void randomize() {
+		for(size_t i = 0; i < 39; ++i) {
+			performUpdate("random", *all_params_[i], (random(0, 255) / 255.0) * 0.9 + 0.1);
+		}
+		updateAllFilters();
 	}
 };
 

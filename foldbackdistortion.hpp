@@ -16,10 +16,16 @@ template <typename T> int sgn(T val) {
 }
 
 class FoldbackDistortion {
+	floating_t threshold;
 public:
-	floating_t next(floating_t in, floating_t threshold) {
+
+	void setThreshold(const floating_t& t) {
+		threshold = t;
+	}
+
+	floating_t next(const floating_t& in) {
 		if (in > threshold || in < -threshold) {
-			in = fabs(fabs(fmod(in - threshold, threshold * 4)) - threshold * 2) - threshold;
+			return fabs(fabs(fmod(in - threshold, threshold * 4)) - threshold * 2) - threshold;
 		}
 		return in;
 	}

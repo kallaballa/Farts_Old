@@ -8,11 +8,14 @@
 #ifndef WAVEGUIDE_HPP_
 #define WAVEGUIDE_HPP_
 
+#include "types.hpp"
 #include <vector>
 #include <cstddef>
 #include <cmath>
 
 class WaveGuide {
+	floating_t feedback;
+	floating_t delay;
 public:
 	const size_t bufferSize_;
 	WaveGuide(size_t bufferSize) : bufferSize_(bufferSize), buffer_(bufferSize) {
@@ -20,7 +23,14 @@ public:
 	}
 	virtual ~WaveGuide() {
 	}
-	;
+
+	void setFeedback(const floating_t& f) {
+		feedback = f;
+	}
+
+	void setDelay(const floating_t& d) {
+		delay = d;
+	}
 
 	void clear() {
 		counter = 0;
@@ -28,7 +38,7 @@ public:
 			buffer_[s] = 0;
 	}
 
-	inline float feed(float const in, float const feedback, double const delay) {
+	inline float next(const floating_t& in) {
 		// calculate delay offset
 		double back = (double) counter - delay;
 

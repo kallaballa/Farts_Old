@@ -209,6 +209,8 @@ void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
 }
 
 void setup() {
+	randomSeed(analogRead(A8));
+
 	if(!checkMagic())
 		initEEPROM();
 
@@ -218,8 +220,6 @@ void setup() {
 		audio_buffer.push(0);
 	}
 	lcd.begin(16, 2);
-	lcd.clear();
-	lcd.print(sizeof(State));
 
 	analogWriteFrequency(1, 750000);
 	pinMode(13, OUTPUT);
@@ -273,18 +273,15 @@ void loop() {
 
 	floating_t val = pulseWidth;
 	if(global_state.phaserDepth_ > 0) {
-			filters.phaser_.setRate(global_state.phaserRate_);
-			filters.phaser_.setFeedback(global_state.phaserFeedback_);
-			filters.phaser_.setDepth(global_state.phaserDepth_);
-			val = filters.phaser_.update(val);
+			val = filters.phaser_.next(val / 255.0) * 255.0;
 	}
 
 	if(global_state.waveguideDelay_ > 0) {
-		val = filters.waveguide_.feed(pulseWidth, global_state.waveguideFeedback_, global_state.waveguideDelay_);
+		val = filters.waveguide_.next(pulseWidth / 255.0) * 255.0;
 	}
 
 	if(global_state.foldbackThreshold_ > 0) {
-		val = (filters.foldback_.next((val / 255.0) * 2.0 - 1.0, global_state.foldbackThreshold_ / 10.0) + 1.0) * 127.0;
+		val = (filters.foldback_.next((val / 255.0) * 2.0 - 1.0)) * 127.0 + 127.0;
 	}
 
 	if(global_state.echoDelay_ > 0) {

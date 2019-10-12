@@ -37,7 +37,7 @@ public:
 		_depth = depth;
 	}
 
-	float update(float inSamp) {
+	float next(float inSamp) {
 		//calculate and update phaser sweep lfo...
 		float d = _dmin + (_dmax - _dmin) * ((sin(_lfoPhase) + 1.f) / 2.f);
 		_lfoPhase += _lfoInc;
