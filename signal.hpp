@@ -3,6 +3,7 @@
 
 #include "types.hpp"
 
+namespace farts {
 struct Signal {
 	Signal() {
 	}
@@ -66,5 +67,5 @@ public:
 			return 0;
 	}
 };
-
+}
 #endif /* SIGNAL_HPP_ */
