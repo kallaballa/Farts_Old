@@ -29,11 +29,6 @@ private:
 			return;
 		}
 
-		if (EEPROM.length() < sizeof(Magic) + sizeof(State) * (i + 1)) {
-			lcd_.clear();
-			lcd_.print("OOB on EEPROM");
-		}
-
 		EEPROM.get(sizeof(Magic) + sizeof(State) * i, s);
 	}
 
@@ -41,10 +36,6 @@ private:
 		if (i > MAX_INSTRUMENTS) {
 			Serial.println("Invalid instrument index");
 			return;
-		}
-		if (EEPROM.length() < sizeof(Magic) + sizeof(State) * (i + 1)) {
-			lcd_.clear();
-			lcd_.print("EEPROM full");
 		}
 
 		EEPROM.put(sizeof(Magic) + sizeof(State) * i, global_state);

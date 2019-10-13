@@ -7,6 +7,7 @@
 #include "CircularBuffer.h"
 #include "Bounce.h"
 #include "Gamma/Domain.h"
+#include "USBHost_t36.h"
 
 #include "defines.hpp"
 #include "workarounds.hpp"
@@ -15,7 +16,10 @@
 #include "tone.hpp"
 #include "instrumentstore.hpp"
 
-MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
+USBHost myusb;
+USBHub hub1(myusb);
+USBHub hub2(myusb);
+MIDIDevice MIDI(myusb);
 
 size_t global_tick = 0;
 CircularBuffer<sample_t, RING_BUFFER_SIZE> audio_buffer;
@@ -153,16 +157,16 @@ void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 }
 
 void handleProgramChange(byte inChannel, byte inNumber) {
-	if (inNumber < MAX_INSTRUMENTS)
-		store.setInstrumentIdx(inNumber);
-	else
-		store.setInstrumentIdx(0);
-
-	lcd.clear();
-	lcd.setCursor(0, 0);
-	lcd.print("Selected instrument");
-	lcd.setCursor(0, 1);
-	lcd.print(String("#") + store.getInstrumentIdx());
+//	if (inNumber < MAX_INSTRUMENTS)
+//		store.setInstrumentIdx(inNumber);
+//	else
+//		store.setInstrumentIdx(0);
+//
+//	lcd.clear();
+//	lcd.setCursor(0, 0);
+//	lcd.print("Selected instrument");
+//	lcd.setCursor(0, 1);
+//	lcd.print(String("#") + store.getInstrumentIdx());
 }
 
 void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
@@ -196,12 +200,12 @@ void setup() {
 	MIDI.setHandleNoteOn(handleNoteOn);
 	MIDI.setHandleProgramChange(handleProgramChange);
 
-	MIDI.begin(MIDI_CHANNEL_OMNI);
+	MIDI.begin();
 }
 
 void loop() {
 	unsigned long start = micros();
-
+	myusb.Task();
 	MIDI.read();
 
 	floating_t total = 0;
