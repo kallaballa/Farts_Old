@@ -14,12 +14,12 @@ simulate high-frequency damping due to air absorption.
 #ifndef ECHO_HPP_
 #define ECHO_HPP_
 
-#include "types.hpp"
 #include "Gamma/Delay.h"
 #include "Gamma/Filter.h"
 #include "Gamma/Oscillator.h"
 #include <cstdlib>
 #include <unistd.h>
+#include "defines.hpp"
 
 using namespace gam;
 

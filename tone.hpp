@@ -1,11 +1,11 @@
 #ifndef TONE_HPP_
 #define TONE_HPP_
 
-#include "types.hpp"
 #include "signal.hpp"
 #include <cstddef>
 #include <limits>
 #include <cmath>
+#include "defines.hpp"
 
 struct ToneDescriptor {
 	floating_t lsaw_;

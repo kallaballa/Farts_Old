@@ -5,45 +5,15 @@
 #include "MIDI.h"
 #include "LiquidCrystal.h"
 #include "CircularBuffer.h"
-#include "EEPROM.h"
 #include "Bounce.h"
 #include "Gamma/Domain.h"
 
-#include "types.hpp"
+#include "defines.hpp"
+#include "workarounds.hpp"
 #include "state.hpp"
 #include "signal.hpp"
 #include "tone.hpp"
-
-struct Magic {
-	char one_;
-	char two_;
-	char three_;
-	char four_;
-	char five_;
-
-	bool isValid() {
-		return one_ == 'F' && two_ == 'a' && three_ == 'R' && four_ == 't' && five_ == 'S';
-	}
-};
-
-//workaround for linker error
-unsigned __exidx_start;
-unsigned __exidx_end;
-
-//another linker workaround -.-
-extern "C" {
-int _kill(pid_t pid, int signum) {
-	return 0;
-}
-
-pid_t _getpid(void) {
-	return 1;
-}
-
-int _gettimeofday(struct timeval *tv, struct timezone *tz) {
-	return 0;
-}
-}
+#include "instrumentstore.hpp"
 
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
 
@@ -56,82 +26,70 @@ Bounce next_button = Bounce(12, 10);
 
 LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
 Filters filters(lcd);
+InstrumentStore store(lcd);
 
-size_t instrumentIndex = 0;
-
-bool checkMagic() {
-	Magic m;
-	EEPROM.get(0, m);
-	if(m.isValid()) {
-		Serial.println("Found valid magic");
-	} else {
-		Serial.println("Found invalid magic");
+floating_t apply_filters(const floating_t& s) {
+	floating_t result = s;
+	if (global_state.phaserDepth_ > 0) {
+		result = filters.phaser_.next(result / 255.0) * 255.0;
 	}
-	return m.isValid();
+
+	if (global_state.waveguideDelay_ > 0) {
+		result = filters.waveguide_.next(result / 255.0) * 255.0;
+	}
+
+	//FIXME doesn't seem to do anything
+//	if(global_state.foldbackThreshold_ > 0) {
+//		result = filters.foldback_.next(result / 255.0) * 255.0;
+//	}
+
+	if (global_state.echoDelay_ > 0) {
+		result = filters.echo_.next(result / 255.0) * 255.0;
+	}
+
+	if (global_state.vibratoAmount_ > 0) {
+		result = filters.vibrato_.next((result / 255.0) * 2.0 - 1.0) * 127.0 + 127.0;
+	}
+
+	if (global_state.flangerAmount_ > 0) {
+		result = filters.flanger_.next(result / 255.0) * 255.0;
+	}
+
+	if (global_state.reverbAmount_ > 0) {
+		result = filters.reverb_.next(result / 255.0) * 255.0;
+	}
+
+	if (global_state.bitcrushReduction_ > 0) {
+		result = filters.bitcrush_.next((result / 255.0) * 2.0 - 1.0) * 127.0 + 127.0;
+	}
+
+	if (global_state.chebyModFrequency > 0) {
+		result = filters.cheby_.next((result / 255.0) * 2.0 - 1.0) * 127.0 + 127.0;
+	}
+
+	return result;
 }
 
-void getInstrument(const size_t& i, State& s)  {
-	if(i > MAX_INSTRUMENTS) {
-		Serial.println("Invalid instrument index");
-		return;
+bool is_filter_chain_bad() {
+	for (size_t i = 0; i < 40960; ++i) {
+		apply_filters(0);
+	}
+	bool silent = true;
+	//feed the filter chain a signal and check if output is zero
+	for (size_t i = 0; i < 40960; ++i) {
+		if (apply_filters(i % 255 / 255.0) > 0.2) {
+			silent = false;
+			break;
+		}
+	}
+	for (size_t i = 0; i < 40960; ++i) {
+		apply_filters(0);
 	}
 
-	if(EEPROM.length() < sizeof(Magic) + sizeof(State) * (i + 1)) {
-		lcd.clear();
-		lcd.print("OOB on EEPROM");
-	}
-
-	EEPROM.get(sizeof(Magic) + sizeof(State) * i, s);
-}
-
-void saveInstrument(const size_t& i) {
-	if(i > MAX_INSTRUMENTS) {
-		Serial.println("Invalid instrument index");
-		return;
-	}
-	if(EEPROM.length() < sizeof(Magic) + sizeof(State) * (i + 1)) {
-		lcd.clear();
-		lcd.print("EEPROM full");
-	}
-
-	EEPROM.put(sizeof(Magic) + sizeof(State) * i, global_state);
-	lcd.clear();
-	lcd.setCursor(0,0);
-	lcd.print("Saved instrument");
-	lcd.setCursor(0,1);
-	lcd.print(String("#") + instrumentIndex);
-}
-
-void loadInstrument(const size_t& i) {
-	getInstrument(i, global_state);
-	lcd.clear();
-	lcd.setCursor(0,0);
-	lcd.print("Restored instrument");
-	lcd.setCursor(0,1);
-	lcd.print(String("#") + instrumentIndex);
-	global_state.currentMode_ = 0;
-}
-
-void initEEPROM() {
-	Serial.println("Initializing EEPROM");
-	Magic m = {'F', 'a', 'R', 't', 'S'};
-	EEPROM.put(0, m);
-	for(size_t i = 0; i < MAX_INSTRUMENTS; ++i) {
-		saveInstrument(i);
-	}
+	return silent;
 }
 
 void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
-	if(inNumber == 36) {
-		if(instrumentIndex >= 0)
-			loadInstrument(instrumentIndex);
-		return;
-	} else if(inNumber == 37) {
-		if(instrumentIndex >= 0)
-			saveInstrument(instrumentIndex);
-		return;
-	}
-
 	digitalWrite(13, HIGH);
 	floating_t f = pow(2.0, (inNumber - 69.0) / 12.0) * 440.0;
 
@@ -157,48 +115,54 @@ void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 
 byte lastCC = 0;
 void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
-	if(inNumber == 112) {
-		if (inValue == 65) {
-			if (instrumentIndex + 1 == MAX_INSTRUMENTS)
-				instrumentIndex = 0;
-			else
-				++instrumentIndex;
-		} else if(inValue == 63) {
-			if (instrumentIndex == 0)
-				instrumentIndex = MAX_INSTRUMENTS - 1;
-			else
-				--instrumentIndex;
-		} else
-			return;
+	if (inNumber == 20) {
+		store.loadInstrument();
+		return;
+	} else if (inNumber == 21) {
+		store.saveInstrument();
+		return;
+	} else if (inNumber == 22) {
+		//reset instrument
+		global_state = State();
+		return;
+	} else if (inNumber == 23) {
+		tones_map.clear();
+		return;
+	} else if (inNumber == 112) {
+		store.setInstrumentIdx(inValue % MAX_INSTRUMENTS);
 
 		lcd.clear();
-		lcd.setCursor(0,0);
+		lcd.setCursor(0, 0);
 		lcd.print("Selected instrument");
-		lcd.setCursor(0,1);
-		lcd.print(String("#") + instrumentIndex);
+		lcd.setCursor(0, 1);
+		lcd.print(String("#") + store.getInstrumentIdx());
 		return;
-	} else if(inNumber == 114) {
-		//do something with second knob
+	} else if (inNumber == 114) {
+//		do {
+//			filters.randomize();
+//		} while(is_filter_chain_bad());
+		return;
 	}
-	if(inNumber == 113 && inValue == 127)
+
+	if (inNumber == 113 && inValue == 127)
 		filters.incMode();
-	else if(inNumber == 115 && inValue == 127)
+	else if (inNumber == 115 && inValue == 127)
 		filters.decMode();
 	else
-		filters.updateValue(inNumber, ((floating_t)inValue) / 127);
+		filters.updateValue(inNumber, ((floating_t) inValue) / 127);
 }
 
 void handleProgramChange(byte inChannel, byte inNumber) {
-	if(inNumber < MAX_INSTRUMENTS)
-		instrumentIndex = inNumber;
+	if (inNumber < MAX_INSTRUMENTS)
+		store.setInstrumentIdx(inNumber);
 	else
-		instrumentIndex = 0;
+		store.setInstrumentIdx(0);
 
 	lcd.clear();
-	lcd.setCursor(0,0);
+	lcd.setCursor(0, 0);
 	lcd.print("Selected instrument");
-	lcd.setCursor(0,1);
-	lcd.print(String("#") + instrumentIndex);
+	lcd.setCursor(0, 1);
+	lcd.print(String("#") + store.getInstrumentIdx());
 }
 
 void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
@@ -209,10 +173,10 @@ void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
 }
 
 void setup() {
-	randomSeed(analogRead(A8));
+	randomSeed(analogRead(A1));
 
-	if(!checkMagic())
-		initEEPROM();
+	if (!store.checkMagic())
+		store.initEEPROM();
 
 	gam::sampleRate(CLOCK_FREQ);
 
@@ -240,7 +204,6 @@ void loop() {
 
 	MIDI.read();
 
-	size_t numTones = tones_map.size();
 	floating_t total = 0;
 	size_t t = ++global_tick;
 
@@ -262,54 +225,17 @@ void loop() {
 
 	size_t pulseWidth;
 
-	if (numTones == 0)
-		pulseWidth = 0;
-	else
-		pulseWidth = round(total);
+	pulseWidth = round(total);
 
 	if (pulseWidth > 255) {
 		pulseWidth = 255;
 	}
 
-	floating_t val = pulseWidth;
-	if(global_state.phaserDepth_ > 0) {
-			val = filters.phaser_.next(val / 255.0) * 255.0;
-	}
-
-	if(global_state.waveguideDelay_ > 0) {
-		val = filters.waveguide_.next(pulseWidth / 255.0) * 255.0;
-	}
-
-	if(global_state.foldbackThreshold_ > 0) {
-		val = (filters.foldback_.next((val / 255.0) * 2.0 - 1.0)) * 127.0 + 127.0;
-	}
-
-	if(global_state.echoDelay_ > 0) {
-		val = filters.echo_.next(val / 255.0) * 255.0;
-	}
-
-	if(global_state.vibratoAmount_ > 0) {
-		val = filters.vibrato_.next(val / 255.0) * 255.0;
-	}
-
-	if(global_state.flangerAmount_ > 0) {
-		val = filters.flanger_.next(val / 255.0) * 255.0;
-	}
-
-	if(global_state.reverbAmount_ > 0) {
-		val = filters.reverb_.next(val / 255.0) * 255.0;
-	}
-
-	if(global_state.bitcrushReduction_ > 0) {
-		val = filters.bitcrush_.next(val / 255.0) * 255.0;
-	}
-
-	if(global_state.chebyModFrequency > 0) {
-		val = filters.cheby_.next(val / 255.0) * 255.0;
-	}
-
+	floating_t val = apply_filters(pulseWidth);
 	sample_t next = audio_buffer.pop();
+
 	analogWrite(1, next);
+
 	audio_buffer.push(filters.highPass_(filters.lowPass_(val)));
 
 	if (global_tick + 10 > std::numeric_limits<size_t>().max())
@@ -318,7 +244,7 @@ void loop() {
 	floating_t duration = micros() - start;
 	floating_t interval = 1000000 / CLOCK_FREQ;
 	if (duration > interval) {
-		Serial.print("Overrun: ");
+		Serial.print("Underrun: ");
 		Serial.println(duration - interval);
 	} else {
 		delayMicroseconds(round(interval - duration));

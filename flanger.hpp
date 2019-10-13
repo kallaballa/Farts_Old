@@ -11,9 +11,10 @@
  This demonstrates how to create a flanging effect by slowly modulating the delay
  time of a delay line.
  */
-#include "types.hpp"
 #include "Gamma/Delay.h"
 #include "Gamma/Oscillator.h"
+
+#include "defines.hpp"
 using namespace gam;
 
 class FlangerEffect {

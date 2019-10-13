@@ -12,9 +12,9 @@
  waves using Chebyshev polynomials of the first kind.
  */
 
-#include "types.hpp"
 #include "Gamma/Effects.h"
 #include "Gamma/Oscillator.h"
+#include "defines.hpp"
 
 using namespace gam;
 

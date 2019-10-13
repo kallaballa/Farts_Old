@@ -20,9 +20,10 @@ a sound. The particular reverberation model used here is the Schroeder model
 which consists of a parallel-comb, series-allpass configuration of delay lines.
 */
 
-#include "types.hpp"
 #include "Gamma/Oscillator.h"
 #include "Gamma/Spatial.h"
+
+#include "defines.hpp"
 using namespace gam;
 
 class ReverbEffect {

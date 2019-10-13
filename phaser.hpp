@@ -1,15 +1,9 @@
-/*
- * Phaser.hpp
- *
- *  Created on: Oct 10, 2019
- *      Author: elchaschab
- */
-
 #ifndef PHASER_HPP_
 #define PHASER_HPP_
 
 #include <cmath>
-#include "types.hpp"
+
+#include "defines.hpp"
 
 class Phaser {
 public:

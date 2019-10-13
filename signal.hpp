@@ -1,7 +1,7 @@
 #ifndef SIGNAL_HPP_
 #define SIGNAL_HPP_
 
-#include "types.hpp"
+#include "defines.hpp"
 
 namespace farts {
 struct Signal {

@@ -13,7 +13,8 @@ any sound source.
 */
 #include "Gamma/Delay.h"
 #include "Gamma/Oscillator.h"
-#include "types.hpp"
+
+#include "defines.hpp"
 
 using namespace gam;
 

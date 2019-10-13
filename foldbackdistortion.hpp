@@ -8,8 +8,8 @@
 #ifndef FOLDBACKDISTORTION_HPP_
 #define FOLDBACKDISTORTION_HPP_
 
-#include "types.hpp"
 #include <cmath>
+#include "defines.hpp"
 
 template <typename T> int sgn(T val) {
     return (T(0) < val) - (val < T(0));

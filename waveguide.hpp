@@ -8,10 +8,10 @@
 #ifndef WAVEGUIDE_HPP_
 #define WAVEGUIDE_HPP_
 
-#include "types.hpp"
 #include <vector>
 #include <cstddef>
 #include <cmath>
+#include "defines.hpp"
 
 class WaveGuide {
 	floating_t feedback;

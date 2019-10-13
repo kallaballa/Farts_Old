@@ -20,8 +20,9 @@
 
  */
 #include "Arduino.h"
-#include "types.hpp"
 #include "Gamma/Envelope.h"
+
+#include "defines.hpp"
 using namespace gam;
 
 class EnvelopeEffect {
