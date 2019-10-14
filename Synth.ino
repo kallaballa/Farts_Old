@@ -32,7 +32,7 @@ Bounce next_button = Bounce(12, 10);
 LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
 Filters filters(lcd);
 InstrumentStore store(lcd);
-DAC dac(24,25);
+DAC dac(29,25);
 
 floating_t apply_filters(const floating_t& s) {
 	floating_t result = s;
@@ -54,7 +54,7 @@ floating_t apply_filters(const floating_t& s) {
 	}
 
 	if (global_state.vibratoAmount_ > 0) {
-		result = filters.vibrato_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * 127.0 + 127.0;
+		result = filters.vibrato_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * (SAMPLE_MAX / 2) + (SAMPLE_MAX / 2);
 	}
 
 	if (global_state.flangerAmount_ > 0) {
@@ -66,11 +66,11 @@ floating_t apply_filters(const floating_t& s) {
 	}
 
 	if (global_state.bitcrushReduction_ > 0) {
-		result = filters.bitcrush_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * 127.0 + 127.0;
+		result = filters.bitcrush_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * (SAMPLE_MAX / 2) + (SAMPLE_MAX / 2);
 	}
 
 	if (global_state.chebyModFrequency > 0) {
-		result = filters.cheby_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * 127.0 + 127.0;
+		result = filters.cheby_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * (SAMPLE_MAX / 2) + (SAMPLE_MAX / 2);
 	}
 
 	return result;
@@ -291,7 +291,6 @@ void loop() {
 	sample_t next = audio_buffer.pop();
 
 	dac.write(next);
-
 	audio_buffer.push(filters.highPass_(filters.lowPass_(val)));
 
 	if (global_tick + 10 > std::numeric_limits<size_t>().max())
