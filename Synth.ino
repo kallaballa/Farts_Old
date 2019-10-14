@@ -74,6 +74,46 @@ floating_t apply_filters(const floating_t& s) {
 	return result;
 }
 
+class History {
+private:
+	std::vector<State> history_;
+	const size_t maxSize_;
+	size_t index_ = 0;
+	size_t size_ = 0;
+public:
+	History(size_t maxSize) : history_(maxSize), maxSize_(maxSize) {
+	}
+
+	size_t length() {
+		return index_;
+	}
+
+	State forward() {
+		if(index_ + 1 == history_.size()) {
+			Serial.println("OOB on history");
+			return history_[index_];
+
+		}
+		return history_[++index_];
+	}
+	State back() {
+		if(index_ == 0) {
+			Serial.println("OOB on history");
+			return history_[index_];
+		}
+		return history_[--index_];
+	}
+	void commit(const State& s) {
+		if(index_ + 1 == history_.size()) {
+			Serial.println("OOB on history");
+			return;
+		}
+		history_[index_++] = s;
+		size_ = index_ + 1;
+	}
+};
+
+History history(100);
 bool is_filter_chain_bad() {
 	for (size_t i = 0; i < 40960; ++i) {
 		apply_filters(0);
@@ -126,11 +166,18 @@ void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 		store.saveInstrument();
 		return;
 	} else if (inNumber == 22) {
+		history.commit(global_state);
 		//reset instrument
 		global_state = State();
 		return;
 	} else if (inNumber == 23) {
 		tones_map.clear();
+		return;
+	} else if (inNumber == 24) {
+		global_state = history.back();
+		return;
+	} else if (inNumber == 25) {
+		global_state = history.forward();
 		return;
 	} else if (inNumber == 112) {
 		store.setInstrumentIdx(inValue % MAX_INSTRUMENTS);
@@ -148,10 +195,13 @@ void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 		return;
 	}
 
-	if (inNumber == 113 && inValue == 127)
+	if (inNumber == 113 && inValue == 127) {
+		history.commit(global_state);
 		filters.incMode();
-	else if (inNumber == 115 && inValue == 127)
+	} else if (inNumber == 115 && inValue == 127) {
+		history.commit(global_state);
 		filters.decMode();
+	}
 	else
 		filters.updateValue(inNumber, ((floating_t) inValue) / 127);
 }
@@ -201,6 +251,7 @@ void setup() {
 	MIDI.setHandleProgramChange(handleProgramChange);
 
 	MIDI.begin();
+	Serial.println(sizeof(int));
 }
 
 void loop() {
@@ -229,7 +280,7 @@ void loop() {
 
 	size_t pulseWidth;
 
-	pulseWidth = round(total);
+	pulseWidth = round(total / numContributors);
 
 	if (pulseWidth > 255) {
 		pulseWidth = 255;

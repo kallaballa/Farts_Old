@@ -82,7 +82,7 @@ public:
 		floating_t sig4 = 0.33 * desc_.square_
 				* (sq_.next(
 						((size_t) round(i + (desc_.samples_ * desc_.squarePhase_)) % desc_.samples_) / (floating_t) desc_.samples_));
-		floating_t sig5 = ((sig0 + sig1 + sig2 + sig3 + sig4));
+		floating_t sig5 = ((sig0 + sig1 + sig2 + sig3 + sig4)) / 5.0;
 
 		++localTick_;
 		if (localTick_ >= (std::numeric_limits<size_t>().max() - 10))

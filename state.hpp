@@ -110,8 +110,8 @@ struct Filters {
 	}
 
 	void updateAllFilters() {
-		highPass_.freq(global_state.hpf_ * CLOCK_FREQ);
-		lowPass_.freq(global_state.lpf_ * CLOCK_FREQ);
+		highPass_.freq(global_state.hpf_ * (CLOCK_FREQ / 10.0));
+		lowPass_.freq(global_state.lpf_ * (CLOCK_FREQ / 10.0));
 		phaser_.setRate(global_state.phaserRate_);
 		phaser_.setFeedback(global_state.phaserFeedback_);
 		phaser_.setDepth(global_state.phaserDepth_);

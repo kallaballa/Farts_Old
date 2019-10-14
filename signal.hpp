@@ -52,7 +52,7 @@ public:
 	}
 
 	virtual size_t next(floating_t i) const {
-		return 255.0 * ((sin((M_PI * 2) * i) + 1.0) / 2.0);
+		return 255.0 * ((sin((M_PI * 2.0) * i) + 1.0) / 2.0);
 	}
 };
 struct Square: public Signal {
