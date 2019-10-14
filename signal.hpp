@@ -19,7 +19,7 @@ public:
 	}
 
 	virtual size_t next(floating_t i) const {
-		return round(255.0 - (255.0 * i));
+		return round(SAMPLE_MAX - (SAMPLE_MAX * i));
 	}
 };
 
@@ -29,7 +29,7 @@ public:
 	}
 
 	virtual size_t next(floating_t i) const {
-		return round(255.0 * i);
+		return round(SAMPLE_MAX * i);
 	}
 };
 
@@ -40,9 +40,9 @@ public:
 
 	virtual size_t next(floating_t i) const {
 		if (i < 0.5)
-			return round((512.0 * i));
+			return round((SAMPLE_MAX * (i * 2)));
 		else
-			return round(512.0 - (512.0 * i));
+			return round(SAMPLE_MAX - (SAMPLE_MAX * (i * 2)));
 	}
 };
 
@@ -52,7 +52,7 @@ public:
 	}
 
 	virtual size_t next(floating_t i) const {
-		return 255.0 * ((sin((M_PI * 2.0) * i) + 1.0) / 2.0);
+		return SAMPLE_MAX * ((sin((M_PI * 2.0) * i) + 1.0) / 2.0);
 	}
 };
 struct Square: public Signal {
@@ -62,7 +62,7 @@ public:
 
 	virtual size_t next(floating_t i) const {
 		if (i < 0.5)
-			return 255;
+			return SAMPLE_MAX;
 		else
 			return 0;
 	}

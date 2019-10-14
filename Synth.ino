@@ -11,6 +11,7 @@
 
 #include "defines.hpp"
 #include "workarounds.hpp"
+#include "dac.hpp"
 #include "state.hpp"
 #include "signal.hpp"
 #include "tone.hpp"
@@ -31,44 +32,45 @@ Bounce next_button = Bounce(12, 10);
 LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
 Filters filters(lcd);
 InstrumentStore store(lcd);
+DAC dac(24,25);
 
 floating_t apply_filters(const floating_t& s) {
 	floating_t result = s;
 	if (global_state.phaserDepth_ > 0) {
-		result = filters.phaser_.next(result / 255.0) * 255.0;
+		result = filters.phaser_.next(result / SAMPLE_MAX) * SAMPLE_MAX;
 	}
 
 	if (global_state.waveguideDelay_ > 0) {
-		result = filters.waveguide_.next(result / 255.0) * 255.0;
+		result = filters.waveguide_.next(result / SAMPLE_MAX) * SAMPLE_MAX;
 	}
 
 	//FIXME doesn't seem to do anything
 //	if(global_state.foldbackThreshold_ > 0) {
-//		result = filters.foldback_.next(result / 255.0) * 255.0;
+//		result = filters.foldback_.next(result / SAMPLE_MAX) * SAMPLE_MAX;
 //	}
 
 	if (global_state.echoDelay_ > 0) {
-		result = filters.echo_.next(result / 255.0) * 255.0;
+		result = filters.echo_.next(result / SAMPLE_MAX) * SAMPLE_MAX;
 	}
 
 	if (global_state.vibratoAmount_ > 0) {
-		result = filters.vibrato_.next((result / 255.0) * 2.0 - 1.0) * 127.0 + 127.0;
+		result = filters.vibrato_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * 127.0 + 127.0;
 	}
 
 	if (global_state.flangerAmount_ > 0) {
-		result = filters.flanger_.next(result / 255.0) * 255.0;
+		result = filters.flanger_.next(result / SAMPLE_MAX) * SAMPLE_MAX;
 	}
 
 	if (global_state.reverbAmount_ > 0) {
-		result = filters.reverb_.next(result / 255.0) * 255.0;
+		result = filters.reverb_.next(result / SAMPLE_MAX) * SAMPLE_MAX;
 	}
 
 	if (global_state.bitcrushReduction_ > 0) {
-		result = filters.bitcrush_.next((result / 255.0) * 2.0 - 1.0) * 127.0 + 127.0;
+		result = filters.bitcrush_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * 127.0 + 127.0;
 	}
 
 	if (global_state.chebyModFrequency > 0) {
-		result = filters.cheby_.next((result / 255.0) * 2.0 - 1.0) * 127.0 + 127.0;
+		result = filters.cheby_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * 127.0 + 127.0;
 	}
 
 	return result;
@@ -121,7 +123,7 @@ bool is_filter_chain_bad() {
 	bool silent = true;
 	//feed the filter chain a signal and check if output is zero
 	for (size_t i = 0; i < 40960; ++i) {
-		if (apply_filters(i % 255 / 255.0) > 0.2) {
+		if (apply_filters(i % 255 / 255) > 0.2) {
 			silent = false;
 			break;
 		}
@@ -251,7 +253,6 @@ void setup() {
 	MIDI.setHandleProgramChange(handleProgramChange);
 
 	MIDI.begin();
-	Serial.println(sizeof(int));
 }
 
 void loop() {
@@ -280,16 +281,16 @@ void loop() {
 
 	size_t pulseWidth;
 
-	pulseWidth = round(total / numContributors);
+	pulseWidth = round(total);
 
-	if (pulseWidth > 255) {
-		pulseWidth = 255;
+	if (pulseWidth > SAMPLE_MAX) {
+		pulseWidth = SAMPLE_MAX;
 	}
 
 	floating_t val = apply_filters(pulseWidth);
 	sample_t next = audio_buffer.pop();
 
-	analogWrite(1, next);
+	dac.write(next);
 
 	audio_buffer.push(filters.highPass_(filters.lowPass_(val)));
 

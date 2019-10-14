@@ -533,10 +533,10 @@ struct Filters {
 	}
 
 	void randomize() {
-		for(size_t i = 0; i < 39; ++i) {
-			performUpdate("random", global_state.*all_params_[i], (random(0, 255) / 255.0) * 0.8 + 0.1);
-		}
-		updateAllFilters();
+//		for(size_t i = 0; i < 39; ++i) {
+//			performUpdate("random", global_state.*all_params_[i], (random(0, 255) / 255.0) * 0.8 + 0.1);
+//		}
+//		updateAllFilters();
 	}
 };
 
