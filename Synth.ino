@@ -8,6 +8,9 @@
 #include "Bounce.h"
 #include "Gamma/Domain.h"
 #include "USBHost_t36.h"
+#include "arduinoFFT.h"
+#include "arm_math.h"
+#include "arm_const_structs.h"
 
 #include "defines.hpp"
 #include "workarounds.hpp"
@@ -17,14 +20,16 @@
 #include "tone.hpp"
 #include "instrumentstore.hpp"
 
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
+
 USBHost myusb;
 USBHub hub1(myusb);
 USBHub hub2(myusb);
-MIDIDevice MIDI(myusb);
+MIDIDevice usbMidi(myusb);
 
 size_t global_tick = 0;
-CircularBuffer<sample_t, RING_BUFFER_SIZE> audio_buffer;
 std::map<floating_t, Tone> tones_map;
+CircularBuffer<sample_t, RING_BUFFER_SIZE> audio_buffer;
 
 Bounce prev_button = Bounce(11, 10);
 Bounce next_button = Bounce(12, 10);
@@ -32,7 +37,7 @@ Bounce next_button = Bounce(12, 10);
 LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
 Filters filters(lcd);
 InstrumentStore store(lcd);
-DAC dac(29,25);
+DAC dac(29, 25);
 
 floating_t apply_filters(const floating_t& s) {
 	floating_t result = s;
@@ -54,7 +59,7 @@ floating_t apply_filters(const floating_t& s) {
 	}
 
 	if (global_state.vibratoAmount_ > 0) {
-		result = filters.vibrato_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * (SAMPLE_MAX / 2) + (SAMPLE_MAX / 2);
+		result = filters.vibrato_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * SAMPLE_MAX_2 + SAMPLE_MAX_2;
 	}
 
 	if (global_state.flangerAmount_ > 0) {
@@ -66,13 +71,16 @@ floating_t apply_filters(const floating_t& s) {
 	}
 
 	if (global_state.bitcrushReduction_ > 0) {
-		result = filters.bitcrush_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * (SAMPLE_MAX / 2) + (SAMPLE_MAX / 2);
+		result = filters.bitcrush_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * SAMPLE_MAX_2 + SAMPLE_MAX_2;
 	}
 
-	if (global_state.chebyModFrequency > 0) {
-		result = filters.cheby_.next((result / SAMPLE_MAX) * 2.0 - 1.0) * (SAMPLE_MAX / 2) + (SAMPLE_MAX / 2);
+	if (global_state.lpf_ < 1) {
+		result = filters.lowPass_((result / SAMPLE_MAX) * 2.0 - 1.0) * SAMPLE_MAX_2 + SAMPLE_MAX_2;
 	}
 
+	if (global_state.hpf_ > 0) {
+		result = filters.highPass_((result / SAMPLE_MAX) * 2.0 - 1.0) * SAMPLE_MAX_2 + SAMPLE_MAX_2;
+	}
 	return result;
 }
 
@@ -83,7 +91,8 @@ private:
 	size_t index_ = 0;
 	size_t size_ = 0;
 public:
-	History(size_t maxSize) : history_(maxSize), maxSize_(maxSize) {
+	History(size_t maxSize) :
+			history_(maxSize), maxSize_(maxSize) {
 	}
 
 	size_t length() {
@@ -91,7 +100,7 @@ public:
 	}
 
 	State forward() {
-		if(index_ + 1 == history_.size()) {
+		if (index_ + 1 == history_.size()) {
 			Serial.println("OOB on history");
 			return history_[index_];
 
@@ -99,14 +108,14 @@ public:
 		return history_[++index_];
 	}
 	State back() {
-		if(index_ == 0) {
+		if (index_ == 0) {
 			Serial.println("OOB on history");
 			return history_[index_];
 		}
 		return history_[--index_];
 	}
 	void commit(const State& s) {
-		if(index_ + 1 == history_.size()) {
+		if (index_ + 1 == history_.size()) {
 			Serial.println("OOB on history");
 			return;
 		}
@@ -145,11 +154,11 @@ void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 	desc.triangle_ = global_state.vol2_;
 	desc.sine_ = global_state.vol3_;
 	desc.square_ = global_state.vol4_;
-	desc.lsawPhase_ = global_state.phase0_;
-	desc.rsawPhase_ = global_state.phase1_;
-	desc.trianglePhase_ = global_state.phase2_;
-	desc.sinePhase_ = global_state.phase3_;
-	desc.squarePhase_ = global_state.phase4_;
+	desc.lsawTuning_ = global_state.tuning0_;
+	desc.rsawTuning_ = global_state.tuning1_;
+	desc.triangleTuning_ = global_state.tuning2_;
+	desc.sineTuning_ = global_state.tuning3_;
+	desc.squareTuning_ = global_state.tuning4_;
 	desc.attack_ = global_state.attack_;
 	desc.decay_ = global_state.decay_;
 	desc.sustain_ = global_state.sustain_;
@@ -191,9 +200,9 @@ void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 		lcd.print(String("#") + store.getInstrumentIdx());
 		return;
 	} else if (inNumber == 114) {
-//		do {
-//			filters.randomize();
-//		} while(is_filter_chain_bad());
+		do {
+			filters.randomize();
+		} while (is_filter_chain_bad());
 		return;
 	}
 
@@ -203,8 +212,7 @@ void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 	} else if (inNumber == 115 && inValue == 127) {
 		history.commit(global_state);
 		filters.decMode();
-	}
-	else
+	} else
 		filters.updateValue(inNumber, ((floating_t) inValue) / 127);
 }
 
@@ -228,17 +236,14 @@ void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
 	digitalWrite(13, LOW);
 }
 
-void setup() {
-	randomSeed(analogRead(A1));
+arm_rfft_fast_instance_f32 S;
 
+void setup() {
 	if (!store.checkMagic())
 		store.initEEPROM();
 
 	gam::sampleRate(CLOCK_FREQ);
 
-	for (size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
-		audio_buffer.push(0);
-	}
 	lcd.begin(16, 2);
 
 	analogWriteFrequency(1, 750000);
@@ -247,17 +252,46 @@ void setup() {
 	pinMode(12, INPUT_PULLUP);
 
 	digitalWrite(13, HIGH);
+	usbMidi.setHandleControlChange(handleControlChange);
+	usbMidi.setHandleNoteOff(handleNoteOff);
+	usbMidi.setHandleNoteOn(handleNoteOn);
+	usbMidi.setHandleProgramChange(handleProgramChange);
+
+	usbMidi.begin();
 	MIDI.setHandleControlChange(handleControlChange);
 	MIDI.setHandleNoteOff(handleNoteOff);
 	MIDI.setHandleNoteOn(handleNoteOn);
 	MIDI.setHandleProgramChange(handleProgramChange);
 
-	MIDI.begin();
+	MIDI.begin(MIDI_CHANNEL_OMNI);
+	arm_rfft_fast_init_f32(&S, RING_BUFFER_SIZE);
+	for(size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
+		audio_buffer.push(0);
+	}
+}
+
+
+float32_t fftBuffer[RING_BUFFER_SIZE];
+
+void calcFFT() {
+	for (size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
+		fftBuffer[i] = audio_buffer[i];
+	}
+
+	arm_rfft_fast_f32(&S, fftBuffer, fftBuffer, 0);
+
+	arm_rfft_fast_f32(&S, fftBuffer, fftBuffer, 1);
+
+
+	for (size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
+		audio_buffer[i] = fftBuffer[i];
+	}
 }
 
 void loop() {
 	unsigned long start = micros();
 	myusb.Task();
+	usbMidi.read();
 	MIDI.read();
 
 	floating_t total = 0;
@@ -287,11 +321,10 @@ void loop() {
 		pulseWidth = SAMPLE_MAX;
 	}
 
-	floating_t val = apply_filters(pulseWidth);
-	sample_t next = audio_buffer.pop();
-
-	dac.write(next);
-	audio_buffer.push(filters.highPass_(filters.lowPass_(val)));
+//	audio_buffer.push(pulseWidth);
+	calcFFT();
+	dac.write(audio_buffer.pop());
+	audio_buffer.push(apply_filters(pulseWidth));
 
 	if (global_tick + 10 > std::numeric_limits<size_t>().max())
 		global_tick = 0;

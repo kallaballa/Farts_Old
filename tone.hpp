@@ -13,11 +13,11 @@ struct ToneDescriptor {
 	floating_t triangle_;
 	floating_t sine_;
 	floating_t square_;
-	floating_t lsawPhase_;
-	floating_t rsawPhase_;
-	floating_t trianglePhase_;
-	floating_t sinePhase_;
-	floating_t squarePhase_;
+	floating_t lsawTuning_;
+	floating_t rsawTuning_;
+	floating_t triangleTuning_;
+	floating_t sineTuning_;
+	floating_t squareTuning_;
 	floating_t attack_;
 	floating_t decay_;
 	floating_t sustain_;
@@ -67,21 +67,23 @@ public:
 	}
 
 	off_t next(size_t i) {
-		floating_t sig0 = 0.33 * desc_.lsaw_
-				* (lst_.next(
-						((size_t) round(i + (desc_.samples_ * desc_.lsawPhase_)) % desc_.samples_) / (floating_t) desc_.samples_));
-		floating_t sig1 = 0.33 * desc_.rsaw_
-				* (rst_.next(
-						((size_t) round(i + (desc_.samples_ * desc_.rsawPhase_)) % desc_.samples_) / (floating_t) desc_.samples_));
-		floating_t sig2 = 0.33 * desc_.triangle_
-				* (tr_.next(
-						((size_t) round(i + (desc_.samples_ * desc_.trianglePhase_)) % desc_.samples_) / (floating_t) desc_.samples_));
-		floating_t sig3 = 0.33 * desc_.sine_
-				* (sn_.next(
-						((size_t) round(i + (desc_.samples_ * desc_.sinePhase_)) % desc_.samples_) / (floating_t) desc_.samples_));
-		floating_t sig4 = 0.33 * desc_.square_
-				* (sq_.next(
-						((size_t) round(i + (desc_.samples_ * desc_.squarePhase_)) % desc_.samples_) / (floating_t) desc_.samples_));
+		floating_t sig0 = 0;
+		floating_t sig1 = 0;
+		floating_t sig2 = 0;
+		floating_t sig3 = 0;
+		floating_t sig4 = 0;
+
+		if (desc_.lsaw_ > 0)
+			sig0 = desc_.lsaw_ * (lst_.next((i % desc_.samples_) / (((floating_t) desc_.samples_) * desc_.lsawTuning_)));
+		if (desc_.rsaw_ > 0)
+			sig1 = desc_.rsaw_ * (rst_.next((i % desc_.samples_) / ((floating_t) desc_.samples_ * desc_.rsawTuning_)));
+		if (desc_.triangle_ > 0)
+			sig2 = desc_.triangle_ * (tr_.next((i % desc_.samples_) / ((floating_t) desc_.samples_ * desc_.triangleTuning_)));
+		if (desc_.sine_ > 0)
+			sig3 = desc_.sine_ * (sn_.next((i % desc_.samples_) / ((floating_t) desc_.samples_ * desc_.sineTuning_)));
+		if (desc_.square_ > 0)
+			sig4 = desc_.square_ * (sq_.next((i % desc_.samples_) / ((floating_t) desc_.samples_ * desc_.squareTuning_)));
+
 		floating_t sig5 = sig0 + sig1 + sig2 + sig3 + sig4;
 
 		++localTick_;

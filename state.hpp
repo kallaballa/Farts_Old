@@ -14,6 +14,7 @@
 #include "LiquidCrystal.h"
 #include <cstddef>
 #include "defines.hpp"
+#include "random.hpp"
 
 
 struct State {
@@ -25,11 +26,11 @@ struct State {
 	floating_t vol3_ = 0.5;
 	floating_t vol4_ = 0;
 
-	floating_t phase0_ = 0;
-	floating_t phase1_ = 0;
-	floating_t phase2_ = 0;
-	floating_t phase3_ = 0;
-	floating_t phase4_ = 0;
+	floating_t tuning0_ = 1;
+	floating_t tuning1_ = 1;
+	floating_t tuning2_ = 1;
+	floating_t tuning3_ = 1;
+	floating_t tuning4_ = 1;
 
 	floating_t attack_ = 0.01;
 	floating_t decay_ = 0.01;
@@ -74,7 +75,7 @@ struct State {
 
 static State global_state;
 
-floating_t State::* all_params_[39] = { &State::vol0_, &State::vol1_, &State::vol2_, &State::vol3_, &State::vol4_, &State::phase0_, &State::phase1_, &State::phase2_, &State::phase3_, &State::phase4_, &State::attack_,
+floating_t State::* all_params_[39] = { &State::vol0_, &State::vol1_, &State::vol2_, &State::vol3_, &State::vol4_, &State::tuning0_, &State::tuning1_, &State::tuning2_, &State::tuning3_, &State::tuning4_, &State::attack_,
 			&State::decay_, &State::sustain_, &State::release_, &State::lpf_, &State::hpf_, &State::phaserRate_, &State::phaserFeedback_, &State::phaserDepth_, &State::waveguideFeedback_,
 			&State::waveguideDelay_, &State::foldbackThreshold_, &State::echoDelay_, &State::echoFrequency_, &State::echoAttenuation_, &State::vibratoAmount_, &State::vibratoFreq_,
 			&State::flangerAmount_, &State::flangerDelay_, &State::flangerFrequency_, &State::flangerFFW_, &State::flangerFBK_, &State::reverbAmount_, &State::reverbDecay_,
@@ -95,7 +96,7 @@ struct Filters {
 	ChebyEffect cheby_;
 
 	Filters(LiquidCrystal& lcd) :
-		lcd_(lcd), waveguide_(RING_BUFFER_SIZE), echo_(CLOCK_FREQ), vibrato_(0,0) {
+		lcd_(lcd), waveguide_(1024), echo_(CLOCK_FREQ), vibrato_(0,0) {
 		lowPass_.type(gam::LOW_PASS);
 		highPass_.type(gam::HIGH_PASS);
 	}
@@ -157,19 +158,19 @@ struct Filters {
 				performUpdate("Square", global_state.vol4_, value);
 				break;
 			case 57:
-				performUpdate("LSaw phase", global_state.phase0_, value);
+				performUpdate("LSaw tuning", global_state.tuning0_, value);
 				break;
 			case 58:
-				performUpdate("RSaw phase", global_state.phase1_, value);
+				performUpdate("RSaw tuning", global_state.tuning1_, value);
 				break;
 			case 59:
-				performUpdate("Triangle phase", global_state.phase1_, value);
+				performUpdate("Triangle tuning", global_state.tuning1_, value);
 				break;
 			case 60:
-				performUpdate("Sine phase", global_state.phase2_, value);
+				performUpdate("Sine tuning", global_state.tuning2_, value);
 				break;
 			case 61:
-				performUpdate("Square phase", global_state.phase3_, value);
+				performUpdate("Square tuning", global_state.tuning3_, value);
 				break;
 			case 62:
 			case 63:
@@ -490,7 +491,7 @@ struct Filters {
 		lcd_.setCursor(0, 0);
 
 		if (global_state.currentMode_ == 0) {
-			lcd_.print("Volume/Phase");
+			lcd_.print("Volume/Tuning");
 		} else if (global_state.currentMode_ == 1) {
 			lcd_.print("Envelope");
 		} else if (global_state.currentMode_ == 2) {
@@ -533,10 +534,10 @@ struct Filters {
 	}
 
 	void randomize() {
-//		for(size_t i = 0; i < 39; ++i) {
-//			performUpdate("random", global_state.*all_params_[i], (random(0, 255) / 255.0) * 0.8 + 0.1);
-//		}
-//		updateAllFilters();
+		for(size_t i = 5; i < 39; ++i) {
+			performUpdate("random", global_state.*all_params_[i], randomWeight());
+		}
+		updateAllFilters();
 	}
 };
 

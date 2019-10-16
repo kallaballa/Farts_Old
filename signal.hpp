@@ -2,6 +2,7 @@
 #define SIGNAL_HPP_
 
 #include "defines.hpp"
+#include "random.hpp"
 
 namespace farts {
 struct Signal {
@@ -11,14 +12,14 @@ struct Signal {
 	virtual ~Signal() {
 	}
 
-	virtual size_t next(floating_t i) const = 0;
+	virtual size_t next(const floating_t& i) = 0;
 };
 struct LSawtooth: public Signal {
 public:
 	LSawtooth() :	Signal() {
 	}
 
-	virtual size_t next(floating_t i) const {
+	virtual size_t next(const floating_t& i) {
 		return round(SAMPLE_MAX - (SAMPLE_MAX * i));
 	}
 };
@@ -28,7 +29,7 @@ public:
 	RSawtooth() :	Signal() {
 	}
 
-	virtual size_t next(floating_t i) const {
+	virtual size_t next(const floating_t& i) {
 		return round(SAMPLE_MAX * i);
 	}
 };
@@ -38,7 +39,7 @@ public:
 	Triangle() : Signal() {
 	}
 
-	virtual size_t next(floating_t i) const {
+	virtual size_t next(const floating_t& i) {
 		if (i < 0.5)
 			return round((SAMPLE_MAX * (i * 2)));
 		else
@@ -51,8 +52,8 @@ public:
 	Sine() : Signal() {
 	}
 
-	virtual size_t next(floating_t i) const {
-		return SAMPLE_MAX * ((sin((M_PI * 2.0) * i) + 1.0) / 2.0);
+	virtual size_t next(const floating_t& i) {
+		return SAMPLE_MAX * ((sin(M_PI * 2.0 * i) + 1.0) / 2.0);
 	}
 };
 struct Square: public Signal {
@@ -60,11 +61,23 @@ public:
 	Square() :	Signal() {
 	}
 
-	virtual size_t next(floating_t i) const {
+	virtual size_t next(const floating_t& i) {
 		if (i < 0.5)
 			return SAMPLE_MAX;
 		else
 			return 0;
+	}
+};
+
+std::random_device randomDev;
+
+struct WhiteNoise: public Signal {
+public:
+	WhiteNoise() :	Signal() {
+	}
+
+	virtual size_t next(const floating_t& i) {
+		return randomSample();
 	}
 };
 }
