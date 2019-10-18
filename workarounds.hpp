@@ -13,6 +13,19 @@ int _kill(pid_t pid, int signum) {
 	return 0;
 }
 
+int _unlink(
+   const char *filename
+) {
+	return 0;
+};
+int _open(
+   const char *filename,
+   int oflag,
+   int pmode
+) {
+	return 0;
+}
+
 pid_t _getpid(void) {
 	return 1;
 }

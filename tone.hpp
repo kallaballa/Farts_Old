@@ -66,7 +66,11 @@ public:
 		envelope_.release();
 	}
 
-	off_t next(size_t i) {
+	bool isDone() {
+		return envelope_.isDone();
+	}
+
+	floating_t next(size_t i) {
 		floating_t sig0 = 0;
 		floating_t sig1 = 0;
 		floating_t sig2 = 0;
@@ -90,7 +94,7 @@ public:
 		if (localTick_ >= (std::numeric_limits<size_t>().max() - 10))
 			localTick_ = 0;
 
-		return round(envelope_.next(sig5));
+		return envelope_.next(sig5);
 	}
 };
 

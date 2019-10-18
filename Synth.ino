@@ -8,9 +8,6 @@
 #include "Bounce.h"
 #include "Gamma/Domain.h"
 #include "USBHost_t36.h"
-#include "arduinoFFT.h"
-#include "arm_math.h"
-#include "arm_const_structs.h"
 
 #include "defines.hpp"
 #include "workarounds.hpp"
@@ -19,6 +16,7 @@
 #include "signal.hpp"
 #include "tone.hpp"
 #include "instrumentstore.hpp"
+
 
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
 
@@ -235,10 +233,8 @@ void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
 		tones_map[f].release();
 	digitalWrite(13, LOW);
 }
-
-arm_rfft_fast_instance_f32 S;
-
 void setup() {
+
 	if (!store.checkMagic())
 		store.initEEPROM();
 
@@ -264,32 +260,14 @@ void setup() {
 	MIDI.setHandleProgramChange(handleProgramChange);
 
 	MIDI.begin(MIDI_CHANNEL_OMNI);
-	arm_rfft_fast_init_f32(&S, RING_BUFFER_SIZE);
 	for(size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
 		audio_buffer.push(0);
 	}
 }
 
-
-float32_t fftBuffer[RING_BUFFER_SIZE];
-
-void calcFFT() {
-	for (size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
-		fftBuffer[i] = audio_buffer[i];
-	}
-
-	arm_rfft_fast_f32(&S, fftBuffer, fftBuffer, 0);
-
-	arm_rfft_fast_f32(&S, fftBuffer, fftBuffer, 1);
-
-
-	for (size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
-		audio_buffer[i] = fftBuffer[i];
-	}
-}
-
 void loop() {
 	unsigned long start = micros();
+	filters.eq8_.process(audio_buffer);
 	myusb.Task();
 	usbMidi.read();
 	MIDI.read();
@@ -300,31 +278,28 @@ void loop() {
 	std::vector<floating_t> deleteMe;
 	size_t numContributors = 0;
 	for (auto& p : tones_map) {
-		off_t next = p.second.next(t);
-		if (next == -1) {
+		if (p.second.isDone()) {
 			deleteMe.push_back(p.first);
 			continue;
 		}
 		++numContributors;
-		total += next;
+		total += p.second.next(t);
 	}
 
 	for (auto& f : deleteMe) {
 		tones_map.erase(f);
 	}
 
-	size_t pulseWidth;
-
-	pulseWidth = round(total);
-
-	if (pulseWidth > SAMPLE_MAX) {
+	sample_t pulseWidth;
+	if(total > 1.0) {
 		pulseWidth = SAMPLE_MAX;
+	} else {
+		pulseWidth = round(total * SAMPLE_MAX);
 	}
 
-//	audio_buffer.push(pulseWidth);
-	calcFFT();
 	dac.write(audio_buffer.pop());
-	audio_buffer.push(apply_filters(pulseWidth));
+  audio_buffer.push(apply_filters(pulseWidth));
+  //	audio_buffer.push(pulseWidth);
 
 	if (global_tick + 10 > std::numeric_limits<size_t>().max())
 		global_tick = 0;

@@ -50,6 +50,10 @@ public:
 		env.release();
 	}
 
+	bool isDone() {
+		return env.done();
+	}
+
 	floating_t next(const floating_t& s) {
 		floating_t e = env();
 

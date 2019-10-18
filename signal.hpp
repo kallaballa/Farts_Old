@@ -12,15 +12,15 @@ struct Signal {
 	virtual ~Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) = 0;
+	virtual floating_t next(const floating_t& i) = 0;
 };
 struct LSawtooth: public Signal {
 public:
 	LSawtooth() :	Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) {
-		return round(SAMPLE_MAX - (SAMPLE_MAX * i));
+	virtual floating_t next(const floating_t& i) {
+		return (1 - i);
 	}
 };
 
@@ -29,8 +29,8 @@ public:
 	RSawtooth() :	Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) {
-		return round(SAMPLE_MAX * i);
+	virtual floating_t next(const floating_t& i) {
+		return (i);
 	}
 };
 
@@ -39,11 +39,11 @@ public:
 	Triangle() : Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) {
+	virtual floating_t next(const floating_t& i) {
 		if (i < 0.5)
-			return round((SAMPLE_MAX * (i * 2)));
+			return (i * 2);
 		else
-			return round(SAMPLE_MAX - (SAMPLE_MAX * (i * 2)));
+			return (2 - (i * 2));
 	}
 };
 
@@ -52,8 +52,8 @@ public:
 	Sine() : Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) {
-		return SAMPLE_MAX * ((sin(M_PI * 2.0 * i) + 1.0) / 2.0);
+	virtual floating_t next(const floating_t& i) {
+		return (sin(M_PI * 2.0 * i) + 1.0) / 2.0;
 	}
 };
 struct Square: public Signal {
@@ -61,9 +61,9 @@ public:
 	Square() :	Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) {
+	virtual floating_t next(const floating_t& i) {
 		if (i < 0.5)
-			return SAMPLE_MAX;
+			return 1;
 		else
 			return 0;
 	}
@@ -76,8 +76,8 @@ public:
 	WhiteNoise() :	Signal() {
 	}
 
-	virtual size_t next(const floating_t& i) {
-		return randomSample();
+	virtual floating_t next(const floating_t& i) {
+		return randomWeight();
 	}
 };
 }

@@ -15,7 +15,7 @@
 #include <cstddef>
 #include "defines.hpp"
 #include "random.hpp"
-
+#include "equalizer8.hpp"
 
 struct State {
 	size_t currentMode_ = 0;
@@ -71,15 +71,41 @@ struct State {
 	floating_t bitcrushQuantization_ = 0;
 
 	floating_t chebyModFrequency = 0;
+
+	floating_t equalizer0 = 1.0;
+	floating_t equalizer1 = 1.0;
+	floating_t equalizer2 = 1.0;
+	floating_t equalizer3 = 1.0;
+	floating_t equalizer4 = 1.0;
+	floating_t equalizer5 = 1.0;
+	floating_t equalizer6 = 1.0;
+	floating_t equalizer7 = 1.0;
+	floating_t equalizer8 = 1.0;
+	floating_t equalizer9 = 1.0;
+	floating_t equalizer10 = 1.0;
+	floating_t equalizer11 = 1.0;
+	floating_t equalizer12 = 1.0;
+	floating_t equalizer13 = 1.0;
+	floating_t equalizer14 = 1.0;
+	floating_t equalizer15 = 1.0;
 };
 
 static State global_state;
 
-floating_t State::* all_params_[39] = { &State::vol0_, &State::vol1_, &State::vol2_, &State::vol3_, &State::vol4_, &State::tuning0_, &State::tuning1_, &State::tuning2_, &State::tuning3_, &State::tuning4_, &State::attack_,
-			&State::decay_, &State::sustain_, &State::release_, &State::lpf_, &State::hpf_, &State::phaserRate_, &State::phaserFeedback_, &State::phaserDepth_, &State::waveguideFeedback_,
-			&State::waveguideDelay_, &State::foldbackThreshold_, &State::echoDelay_, &State::echoFrequency_, &State::echoAttenuation_, &State::vibratoAmount_, &State::vibratoFreq_,
-			&State::flangerAmount_, &State::flangerDelay_, &State::flangerFrequency_, &State::flangerFFW_, &State::flangerFBK_, &State::reverbAmount_, &State::reverbDecay_,
-			&State::reverbDamping_, &State::bitcrushAmount_, &State::bitcrushReduction_, &State::bitcrushQuantization_, &State::chebyModFrequency };
+floating_t State::* equalizer_params_[16] = { &State::equalizer0, &State::equalizer1, &State::equalizer2,
+		&State::equalizer3, &State::equalizer4, &State::equalizer5, &State::equalizer6, &State::equalizer7,
+		&State::equalizer8, &State::equalizer9, &State::equalizer10, &State::equalizer11, &State::equalizer12,
+		&State::equalizer13, &State::equalizer14, &State::equalizer15 };
+floating_t State::* all_params_[47] = { &State::vol0_, &State::vol1_, &State::vol2_, &State::vol3_, &State::vol4_,
+		&State::tuning0_, &State::tuning1_, &State::tuning2_, &State::tuning3_, &State::tuning4_, &State::attack_,
+		&State::decay_, &State::sustain_, &State::release_, &State::lpf_, &State::hpf_, &State::phaserRate_,
+		&State::phaserFeedback_, &State::phaserDepth_, &State::waveguideFeedback_, &State::waveguideDelay_,
+		&State::foldbackThreshold_, &State::echoDelay_, &State::echoFrequency_, &State::echoAttenuation_,
+		&State::vibratoAmount_, &State::vibratoFreq_, &State::flangerAmount_, &State::flangerDelay_,
+		&State::flangerFrequency_, &State::flangerFFW_, &State::flangerFBK_, &State::reverbAmount_, &State::reverbDecay_,
+		&State::reverbDamping_, &State::bitcrushAmount_, &State::bitcrushReduction_, &State::bitcrushQuantization_,
+		&State::chebyModFrequency, &State::equalizer0, &State::equalizer1, &State::equalizer2, &State::equalizer3,
+		&State::equalizer4, &State::equalizer5, &State::equalizer6, &State::equalizer7 };
 
 struct Filters {
 	LiquidCrystal& lcd_;
@@ -94,9 +120,10 @@ struct Filters {
 	ReverbEffect reverb_;
 	BitcrushEffect bitcrush_;
 	ChebyEffect cheby_;
+	Equalizer16<CircularBuffer<sample_t, RING_BUFFER_SIZE>, RING_BUFFER_SIZE> eq8_;
 
 	Filters(LiquidCrystal& lcd) :
-		lcd_(lcd), waveguide_(1024), echo_(CLOCK_FREQ), vibrato_(0,0) {
+			lcd_(lcd), waveguide_(1024), echo_(CLOCK_FREQ), vibrato_(0, 0) {
 		lowPass_.type(gam::LOW_PASS);
 		highPass_.type(gam::HIGH_PASS);
 	}
@@ -136,6 +163,9 @@ struct Filters {
 		bitcrush_.setReductionFreq(global_state.bitcrushReduction_ * 1000);
 		bitcrush_.setQuantizationFreq(global_state.bitcrushQuantization_ * 1000);
 		cheby_.setModulationFreq(CLOCK_FREQ * global_state.chebyModFrequency + 0.1);
+
+		for (size_t i = 0; i < 16; ++i)
+			eq8_.updateWeight(i, global_state.*equalizer_params_[i]);
 	}
 
 	void updateValue(const size_t& i, const floating_t& value) {
@@ -367,122 +397,210 @@ struct Filters {
 				break;
 			}
 			break;
-			case 8:
-				switch (i) {
-				case 52:
-					performUpdate("Amount", global_state.flangerAmount_, value);
-					flanger_.setAmount(1.0 * (global_state.flangerAmount_ / 50));
-					break;
-				case 53:
-					performUpdate("Delay", global_state.flangerDelay_, value);
-					flanger_.setDelay(1.0 * (global_state.flangerDelay_ / 100));
-					break;
-				case 54:
-					performUpdate("Frequency", global_state.flangerFrequency_, value);
-					flanger_.setFrequency(global_state.flangerFrequency_);
-					break;
-				case 55:
-					performUpdate("Feedforward", global_state.flangerFFW_, value);
-					flanger_.setFeedforward(global_state.flangerFFW_ * 2 - 1);
-					break;
-				case 56:
-					performUpdate("Feedback", global_state.flangerFBK_, value);
-					flanger_.setFeedback(global_state.flangerFBK_ * 2 - 1);
-					break;
-				case 57:
-				case 58:
-				case 59:
-				case 60:
-				case 61:
-				case 62:
-				case 63:
-				case 85:
-				case 86:
-				default:
-					break;
-				}
+		case 8:
+			switch (i) {
+			case 52:
+				performUpdate("Amount", global_state.flangerAmount_, value);
+				flanger_.setAmount(1.0 * (global_state.flangerAmount_ / 50));
 				break;
-				case 9:
-					switch (i) {
-					case 52:
-						performUpdate("Amount", global_state.reverbAmount_, value);
-						reverb_.setAmount(1.0 * (global_state.reverbAmount_ / 50));
-						break;
-					case 53:
-						performUpdate("Decay", global_state.reverbDecay_, value);
-						reverb_.setDecay(global_state.reverbDecay_ * 16);
-						break;
-					case 54:
-						performUpdate("Damping", global_state.reverbDamping_, value);
-						reverb_.setDamping(global_state.reverbDamping_);
-						break;
-					case 55:
-					case 56:
-					case 57:
-					case 58:
-					case 59:
-					case 60:
-					case 61:
-					case 62:
-					case 63:
-					case 85:
-					case 86:
-					default:
-						break;
-					}
-					break;
-					case 10:
-						switch (i) {
-						case 52:
-							performUpdate("Amount", global_state.bitcrushAmount_, value);
-							bitcrush_.setAmount(global_state.bitcrushAmount_);
-							break;
-						case 53:
-							performUpdate("SR Reduction Fq", global_state.bitcrushReduction_, value);
-							bitcrush_.setReductionFreq(global_state.bitcrushReduction_ * 1000);
-							break;
-						case 54:
-							performUpdate("Quantization Fq", global_state.bitcrushQuantization_, value);
-							bitcrush_.setQuantizationFreq(global_state.bitcrushQuantization_ * 1000);
-							break;
-						case 55:
-						case 56:
-						case 57:
-						case 58:
-						case 59:
-						case 60:
-						case 61:
-						case 62:
-						case 63:
-						case 85:
-						case 86:
-						default:
-							break;
-						}
-						break;
-						case 11:
-							switch (i) {
-							case 52:
-								performUpdate("Modulator Fq", global_state.chebyModFrequency, value);
-								cheby_.setModulationFreq(CLOCK_FREQ * global_state.chebyModFrequency + 0.1);
-								break;
-							case 53:
-							case 54:
-							case 55:
-							case 56:
-							case 57:
-							case 58:
-							case 59:
-							case 60:
-							case 61:
-							case 62:
-							case 63:
-							case 85:
-							case 86:
-							default:
-								break;
-							}
-							break;
+			case 53:
+				performUpdate("Delay", global_state.flangerDelay_, value);
+				flanger_.setDelay(1.0 * (global_state.flangerDelay_ / 100));
+				break;
+			case 54:
+				performUpdate("Frequency", global_state.flangerFrequency_, value);
+				flanger_.setFrequency(global_state.flangerFrequency_);
+				break;
+			case 55:
+				performUpdate("Feedforward", global_state.flangerFFW_, value);
+				flanger_.setFeedforward(global_state.flangerFFW_ * 2 - 1);
+				break;
+			case 56:
+				performUpdate("Feedback", global_state.flangerFBK_, value);
+				flanger_.setFeedback(global_state.flangerFBK_ * 2 - 1);
+				break;
+			case 57:
+			case 58:
+			case 59:
+			case 60:
+			case 61:
+			case 62:
+			case 63:
+			case 85:
+			case 86:
+			default:
+				break;
+			}
+			break;
+		case 9:
+			switch (i) {
+			case 52:
+				performUpdate("Amount", global_state.reverbAmount_, value);
+				reverb_.setAmount(1.0 * (global_state.reverbAmount_ / 50));
+				break;
+			case 53:
+				performUpdate("Decay", global_state.reverbDecay_, value);
+				reverb_.setDecay(global_state.reverbDecay_ * 16);
+				break;
+			case 54:
+				performUpdate("Damping", global_state.reverbDamping_, value);
+				reverb_.setDamping(global_state.reverbDamping_);
+				break;
+			case 55:
+			case 56:
+			case 57:
+			case 58:
+			case 59:
+			case 60:
+			case 61:
+			case 62:
+			case 63:
+			case 85:
+			case 86:
+			default:
+				break;
+			}
+			break;
+		case 10:
+			switch (i) {
+			case 52:
+				performUpdate("Amount", global_state.bitcrushAmount_, value);
+				bitcrush_.setAmount(global_state.bitcrushAmount_);
+				break;
+			case 53:
+				performUpdate("SR Reduction Fq", global_state.bitcrushReduction_, value);
+				bitcrush_.setReductionFreq(global_state.bitcrushReduction_ * 1000);
+				break;
+			case 54:
+				performUpdate("Quantization Fq", global_state.bitcrushQuantization_, value);
+				bitcrush_.setQuantizationFreq(global_state.bitcrushQuantization_ * 1000);
+				break;
+			case 55:
+			case 56:
+			case 57:
+			case 58:
+			case 59:
+			case 60:
+			case 61:
+			case 62:
+			case 63:
+			case 85:
+			case 86:
+			default:
+				break;
+			}
+			break;
+		case 11:
+			switch (i) {
+			case 52:
+				performUpdate("Modulator Fq", global_state.chebyModFrequency, value);
+				cheby_.setModulationFreq(CLOCK_FREQ * global_state.chebyModFrequency + 0.1);
+				break;
+			case 53:
+			case 54:
+			case 55:
+			case 56:
+			case 57:
+			case 58:
+			case 59:
+			case 60:
+			case 61:
+			case 62:
+			case 63:
+			case 85:
+			case 86:
+			default:
+				break;
+			}
+			break;
+		case 12:
+			switch (i) {
+			case 52:
+				performUpdate("Band 0", global_state.equalizer0, value);
+				eq8_.updateWeight(0, global_state.equalizer0);
+				break;
+			case 53:
+				performUpdate("Band 1", global_state.equalizer1, value);
+				eq8_.updateWeight(1, global_state.equalizer1);
+				break;
+			case 54:
+				performUpdate("Band 2", global_state.equalizer2, value);
+				eq8_.updateWeight(2, global_state.equalizer2);
+				break;
+			case 55:
+				performUpdate("Band 3", global_state.equalizer3, value);
+				eq8_.updateWeight(3, global_state.equalizer3);
+				break;
+			case 56:
+				performUpdate("Band 4", global_state.equalizer4, value);
+				eq8_.updateWeight(4, global_state.equalizer4);
+				break;
+			case 57:
+				performUpdate("Band 5", global_state.equalizer5, value);
+				eq8_.updateWeight(5, global_state.equalizer5);
+				break;
+			case 58:
+				performUpdate("Band 6", global_state.equalizer6, value);
+				eq8_.updateWeight(6, global_state.equalizer6);
+				break;
+			case 59:
+				performUpdate("Band 7", global_state.equalizer7, value);
+				eq8_.updateWeight(7, global_state.equalizer7);
+				break;
+			case 60:
+			case 61:
+			case 62:
+			case 63:
+			case 85:
+			case 86:
+			default:
+				break;
+			}
+			break;
+		case 13:
+			switch (i) {
+			case 52:
+				performUpdate("Band 8", global_state.equalizer8, value);
+				eq8_.updateWeight(8, global_state.equalizer8);
+				break;
+			case 53:
+				performUpdate("Band 9", global_state.equalizer9, value);
+				eq8_.updateWeight(9, global_state.equalizer9);
+				break;
+			case 54:
+				performUpdate("Band 10", global_state.equalizer10, value);
+				eq8_.updateWeight(10, global_state.equalizer10);
+				break;
+			case 55:
+				performUpdate("Band 11", global_state.equalizer11, value);
+				eq8_.updateWeight(11, global_state.equalizer11);
+				break;
+			case 56:
+				performUpdate("Band 12", global_state.equalizer12, value);
+				eq8_.updateWeight(12, global_state.equalizer12);
+				break;
+			case 57:
+				performUpdate("Band 13", global_state.equalizer13, value);
+				eq8_.updateWeight(13, global_state.equalizer13);
+				break;
+			case 58:
+				performUpdate("Band 14", global_state.equalizer14, value);
+				eq8_.updateWeight(14, global_state.equalizer14);
+				break;
+			case 59:
+				performUpdate("Band 15", global_state.equalizer15, value);
+				eq8_.updateWeight(15, global_state.equalizer15);
+				break;
+			case 60:
+			case 61:
+			case 62:
+			case 63:
+			case 85:
+			case 86:
+			default:
+				break;
+			}
+			break;
 		}
 	}
 
@@ -514,6 +632,10 @@ struct Filters {
 			lcd_.print("Bitcrush");
 		} else if (global_state.currentMode_ == 11) {
 			lcd_.print("Chebyshev");
+		} else if (global_state.currentMode_ == 12) {
+			lcd_.print("Equalizer 0-7");
+		} else if (global_state.currentMode_ == 13) {
+			lcd_.print("Equalizer 8-15");
 		}
 	}
 	void decMode() {
@@ -534,7 +656,7 @@ struct Filters {
 	}
 
 	void randomize() {
-		for(size_t i = 5; i < 39; ++i) {
+		for (size_t i = 5; i < 39; ++i) {
 			performUpdate("random", global_state.*all_params_[i], randomWeight());
 		}
 		updateAllFilters();
