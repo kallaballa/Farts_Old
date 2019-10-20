@@ -6,6 +6,10 @@
 #include "LiquidCrystal.h"
 #include <cstddef>
 
+//FIXME stub
+struct State { size_t currentMode_ = 0;};
+State global_state;
+
 class InstrumentStore {
 private:
 	size_t instrumentIdx_ = 0;

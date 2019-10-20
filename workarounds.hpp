@@ -2,7 +2,6 @@
 #define WORKAROUNDS_HPP_
 
 #include <unistd.h>
-
 //workaround for linker error
 unsigned __exidx_start;
 unsigned __exidx_end;
@@ -34,5 +33,28 @@ int _gettimeofday(struct timeval *tv, struct timezone *tz) {
 	return 0;
 }
 }
+
+extern "C" {
+void lua_compat_printf(char *fmt, ...) {
+	Serial.print("SPF:");
+	char buf[1024];
+	va_list args;
+	va_start(args, fmt);
+	vsnprintf(buf, 128, fmt, args);
+	va_end(args);
+	Serial.print(buf);
+}
+
+void lua_compat_print(const char *s) {
+	Serial.print(s);
+}
+}
+#ifdef TEENSYDUINO
+#include <TimeLib.h>
+
+time_t getTeensy3Time() {
+	return Teensy3Clock.get();
+}
+#endif
 
 #endif /* WORKAROUNDS_HPP_ */

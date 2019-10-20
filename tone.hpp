@@ -34,20 +34,16 @@ private:
 	farts::Triangle tr_;
 	farts::Sine sn_;
 	farts::Square sq_;
-	EnvelopeEffect envelope_;
 	size_t localTick_ = 0;
 public:
 	Tone() {
-		envelope_.set(desc_.attack_ * 5, desc_.decay_ * 5, desc_.sustain_, desc_.release_ * 5);
 	}
 
 	Tone(ToneDescriptor& desc) :
 			desc_(desc) {
-		envelope_.set(desc_.attack_ * 5, desc_.decay_ * 5, desc_.sustain_, desc_.release_ * 5);
 	}
 
 	~Tone() {
-		release();
 	}
 
 	Tone& operator=(const Tone& other) {
@@ -57,18 +53,16 @@ public:
 		tr_ = farts::Triangle();
 		sn_ = farts::Sine();
 		sq_ = farts::Square();
-		envelope_ = EnvelopeEffect();
-		envelope_.set(desc_.attack_ * 5, desc_.decay_ * 5, desc_.sustain_, desc_.release_ * 5);
 		return *this;
 	}
 
-	void release() {
-		envelope_.release();
-	}
-
-	bool isDone() {
-		return envelope_.isDone();
-	}
+//	void release() {
+//		envelope_.release();
+//	}
+//
+//	bool isDone() {
+//		return envelope_.isDone();
+//	}
 
 	floating_t next(size_t i) {
 		floating_t sig0 = 0;
@@ -94,7 +88,7 @@ public:
 		if (localTick_ >= (std::numeric_limits<size_t>().max() - 10))
 			localTick_ = 0;
 
-		return envelope_.next(sig5);
+		return sig5;
 	}
 };
 
