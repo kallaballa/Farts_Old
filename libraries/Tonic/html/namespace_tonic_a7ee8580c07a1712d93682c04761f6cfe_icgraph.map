@@ -1,0 +1,5 @@
+<map id="Tonic::DFT" name="Tonic::DFT">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a6146a0599c14b0711e3e4fe0f3af91a4" title="Real Cepstrum. " alt="" coords="143,5,290,32"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#aeefd61eca464110ab70293bc2b60cae0" title="Compute Minimum Phase Reconstruction of singal from its real cepstrum. " alt="" coords="140,56,293,83"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#adaadff205b1d2397cbfc8d0cd6918437" title="Generate MinBLEP And Return It In An Array Of Floating Point Values. " alt="" coords="341,31,512,57"/>
+</map>

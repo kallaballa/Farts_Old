@@ -1,0 +1,12 @@
+<map id="Tonic::SampleTable::channels" name="Tonic::SampleTable::channels">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a0ef8a6780813748147600bf4fea40578" title="Tonic::Tonic_::BufferPlayer\l_::setBuffer" alt="" coords="196,5,379,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a4db199be2640e3178471b7990b248db9" title="Tonic::Tonic_::BufferPlayer\l_::computeSynthesisBlock" alt="" coords="196,71,379,112"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_ring_buffer_reader__.html#a08a4d09427a26d265448fb8329699fdb" title="Tonic::Tonic_::RingBuffer\lReader_::setRingBuffer" alt="" coords="202,136,373,177"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_sample_table.html#ad7b66232c96be3892f7fee9c52e0f8a8" title="Tonic::SampleTable\l::resize" alt="" coords="216,201,359,243"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="427,260,613,301"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_sample_table.html#a273e3c7c36f450b98b1c156427ec17a1" title="Tonic::SampleTable\l::resample" alt="" coords="216,319,359,360"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_buffer_player.html#ab62eeff9d31eadde0dc2422edc7ad72d" title="Tonic::BufferPlayer\l::setBuffer" alt="" coords="452,5,588,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_ring_buffer_reader.html#aafa6c8c7494b6842410a10a3b4a6d0c9" title="Tonic::RingBufferReader\l::bufferName" alt="" coords="436,136,604,177"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="661,238,849,265"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="673,289,838,331"/>
+</map>

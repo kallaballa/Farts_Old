@@ -1,0 +1,10 @@
+<map id="Tonic::StereoDelay::StereoDelay" name="Tonic::StereoDelay::StereoDelay">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_generator.html#a5ac150f63c26911185188ea79ced4971" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::StereoDelay_ \&gt;::gen" alt="" coords="191,28,389,69"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#ae2ce29dceb4713ef4de1190507fbc465" title="Tonic::Tonic_::StereoDelay\l_::initialize" alt="" coords="199,93,381,135"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_delay_line.html#a04d8d64c52e74f02642616e22a9a1833" title="MUST be called prior to usage. " alt="" coords="437,101,612,127"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="660,5,800,47"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="687,71,773,98"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="660,123,800,164"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="663,189,797,215"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="848,130,939,157"/>
+</map>

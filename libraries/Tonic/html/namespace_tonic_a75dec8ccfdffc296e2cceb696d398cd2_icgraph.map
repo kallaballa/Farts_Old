@@ -1,0 +1,5 @@
+<map id="Tonic::cutoffToOnePoleCoef" name="Tonic::cutoffToOnePoleCoef">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_filtered_f_b_comb_filter6__.html#a2c80e1268e507ebc011620a578d4c949" title="Tonic::Tonic_::FilteredFBComb\lFilter6_::computeSynthesisBlock" alt="" coords="252,5,472,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_l_p_f6__.html#a7253262f2cc19bd629f673e97f810321" title="Tonic::Tonic_::LPF6\l_::applyFilter" alt="" coords="293,71,431,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_h_p_f6__.html#a0e19ef8554ca4ed21dd1d9e9166b5b3a" title="Tonic::Tonic_::HPF6\l_::applyFilter" alt="" coords="291,136,433,177"/>
+</map>

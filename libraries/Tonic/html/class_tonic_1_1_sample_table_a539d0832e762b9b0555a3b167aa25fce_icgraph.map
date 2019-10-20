@@ -1,0 +1,7 @@
+<map id="Tonic::SampleTable::size" name="Tonic::SampleTable::size">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a4db199be2640e3178471b7990b248db9" title="Tonic::Tonic_::BufferPlayer\l_::computeSynthesisBlock" alt="" coords="208,5,391,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="206,71,393,112"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#ac8169f2e90618ef4bbc24bcd3ca78612" title="Tonic::Tonic_::TableLookup\lOsc_::computeSynthesisBlock" alt="" coords="196,136,403,177"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="451,49,639,75"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="462,100,627,141"/>
+</map>

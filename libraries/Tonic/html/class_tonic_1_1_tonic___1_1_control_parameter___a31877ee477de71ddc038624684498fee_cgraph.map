@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::ControlParameter_::getNormalizedValue" name="Tonic::Tonic_::ControlParameter_::getNormalizedValue">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a57167286572c8fc0f50b0bda8505129c" title="Tonic::map" alt="" coords="460,56,548,83"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a79cf0606153f9d4897822cd3d53078ba" title="Takes logarithmic value between min&#45;max, maps to linear value 0&#45;1. Useful for making faders..." alt="" coords="268,81,412,108"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="596,56,695,83"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="743,107,829,133"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="745,5,827,32"/>
+</map>

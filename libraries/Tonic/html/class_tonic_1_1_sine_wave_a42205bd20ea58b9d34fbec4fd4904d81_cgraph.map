@@ -1,0 +1,25 @@
+<map id="Tonic::SineWave::SineWave" name="Tonic::SineWave::SineWave">
+<area shape="rect" id="node2" href="$class_tonic_1_1_sample_table.html#a4c4e162fc2a399bc98a4560d91c18d8a" title="Tonic::SampleTable\l::dataPointer" alt="" coords="477,5,620,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_templated_generator.html#a5ac150f63c26911185188ea79ced4971" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::TableLookupOsc\l_ \&gt;::gen" alt="" coords="241,247,429,303"/>
+<area shape="rect" id="node5" href="$namespace_tonic_1_1_tonic__.html#a3b433847d36f1b905482909695c5faed" title="Tonic::Tonic_::s_oscillator\lTables" alt="" coords="247,328,424,369"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="242,181,429,223"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a34d6c302b78fc81592bc553127c96850" title="Tonic::Tonic_::SampleTable\l_::dataPointer" alt="" coords="668,5,856,47"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_sample_table.html#ae1f398693c89630b57fba8791ca4978a" title="Tonic::SampleTable\l::channels" alt="" coords="691,225,833,267"/>
+<area shape="rect" id="node10" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="1165,429,1255,455"/>
+<area shape="rect" id="node11" href="$namespace_tonic.html#acdfcc3617ae46af5403168023eac5d96" title="Tonic::isPowerOf2" alt="" coords="482,71,615,98"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_sample_table.html#a539d0832e762b9b0555a3b167aa25fce" title="Tonic::SampleTable\l::size" alt="" coords="477,123,620,164"/>
+<area shape="rect" id="node15" href="$namespace_tonic.html#a16b8f48e95725ec31bd867d5855ce528" title="Tonic::warning" alt="" coords="495,189,603,215"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_sample_table.html#a273e3c7c36f450b98b1c156427ec17a1" title="Tonic::SampleTable\l::resample" alt="" coords="477,356,620,397"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_sample_table.html#ad7b66232c96be3892f7fee9c52e0f8a8" title="Tonic::SampleTable\l::resize" alt="" coords="477,291,620,332"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a76165f178b7c32b9e81f7e3b43f43690" title="Tonic::Tonic_::SampleTable\l_::channels" alt="" coords="904,225,1092,267"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="1140,225,1280,267"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#ace9f258d003c9f3fe1ad658b7c6d2cd6" title="Tonic::Tonic_::SampleTable\l_::size" alt="" coords="668,123,856,164"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic_frames.html#aecc103405629058daf760aa4ab460901" title="Returns the total number of audio samples represented by the object. " alt="" coords="928,123,1068,164"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_sample_table.html#a5cfae1bbf34f15b6b543db2453f8b203" title="Tonic::SampleTable\l::frames" alt="" coords="691,356,833,397"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a4066cd22b7f2ef343965103d06b156df" title="Tonic::Tonic_::SampleTable\l_::resample" alt="" coords="668,421,856,463"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a36841b1a0dd0e3f9dc6076f5e49103e5" title="Tonic::Tonic_::SampleTable\l_::frames" alt="" coords="904,356,1092,397"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="1140,356,1280,397"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic_frames.html#a176648bb46fde5ac6b12eb9702c6c604" title="Resize and stretch/shrink existing data to fit new size. " alt="" coords="928,421,1068,463"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a294e78d6aa875ddb8766a114ccd95047" title="Tonic::Tonic_::SampleTable\l_::resize" alt="" coords="668,291,856,332"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="928,291,1068,332"/>
+</map>

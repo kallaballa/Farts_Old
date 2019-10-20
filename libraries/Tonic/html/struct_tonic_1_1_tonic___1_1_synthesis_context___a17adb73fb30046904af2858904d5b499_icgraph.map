@@ -1,0 +1,4 @@
+<map id="Tonic::Tonic_::SynthesisContext_::tick" name="Tonic::Tonic_::SynthesisContext_::tick">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#a83d9f46307fe3d38b4832768e9985bcd" title="Process a single synthesis vector, output to frames. " alt="" coords="220,5,393,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#aa606fa4dc80d4c61c3896f5d68b9e8ba" title="Tonic::Tonic_::BufferFiller\l_::fillBufferOfFloats" alt="" coords="441,5,615,47"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="Tonic::Generator::isStereoOutput" name="Tonic::Generator::isStereoOutput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_adder__.html#a3176a50892f8171a283c390cb6da7403" title="Tonic::Tonic_::Adder\l_::input" alt="" coords="252,27,397,69"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_subtractor__.html#aea9e03081609549d6f3f09ea3a232930" title="Tonic::Tonic_::Subtractor\l_::setLeft" alt="" coords="238,93,411,134"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_subtractor__.html#a295c7d62889b6a0e6f91307c13056dd5" title="Tonic::Tonic_::Subtractor\l_::setRight" alt="" coords="238,158,411,199"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_multiplier__.html#a431d3d612d43cc2c00571397a7aad1b5" title="Tonic::Tonic_::Multiplier\l_::input" alt="" coords="243,223,406,265"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_divider__.html#a55ffc9e5afee0d7bdee708f531e9c8e1" title="Tonic::Tonic_::Divider\l_::setLeft" alt="" coords="250,289,399,330"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_divider__.html#abe707493533b285e38003aeed6c02670" title="Tonic::Tonic_::Divider\l_::setRight" alt="" coords="250,354,399,395"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a551ab9d03a78215a21a3df6c03c777f2" title="Tonic::Tonic_::BasicDelay\l_::setInput" alt="" coords="237,419,412,461"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_bit_crusher__.html#a96a49f03c36c405191b3479eb6b70335" title="Tonic::Tonic_::BitCrusher\l_::setInput" alt="" coords="239,485,410,526"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a4b1e48789ea92b69e864d2fbe09fa70b" title="Tonic::Tonic_::Compressor\l_::setAudioInput" alt="" coords="233,550,416,591"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a98b2ad9885fa134a6096dc7c7060ba19" title="Tonic::Tonic_::Compressor\l_::setAmplitudeInput" alt="" coords="233,615,416,657"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_filter__.html#a1816c4dffc74592cc81f896f79ba5350" title="Tonic::Tonic_::Filter\l_::setInput" alt="" coords="255,681,394,722"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_adder.html#a047c2f3e0127b27ded41f25cc0e4ec82" title="Tonic::Adder::input" alt="" coords="488,35,623,61"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#ac0584460e5a02d736e4c1437db613409" title="Tonic::operator+" alt="" coords="706,5,829,32"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_ramped_value.html#a644e9368e54762c8b40135bea37ebb6d" title="Tonic::RampedValue\l::operator+" alt="" coords="695,57,840,98"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_multiplier.html#a396917c35ce59b35220e573481d4f327" title="Tonic::Multiplier::\linput" alt="" coords="494,223,617,265"/>
+<area shape="rect" id="node10" href="$namespace_tonic.html#a6de30d2a22c8f80f94050e378014d620" title="Tonic::operator*" alt="" coords="707,201,827,228"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_ramped_value.html#af0a96fc69012c18eb0bb060574c908f5" title="Tonic::RampedValue\l::operator*" alt="" coords="695,253,840,294"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a9064e43724f7882f3632da504fd3feb1" title="Tonic::Tonic_::Compressor\l_::setInput" alt="" coords="464,550,647,591"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_compressor.html#ab0d012d69f1ffffebc89da1887a85a7e" title="Input for audio to be compressed. " alt="" coords="696,550,839,591"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_compressor.html#afcbf69999dc2605bf96b3efae253edac" title="Input for audio for compression amplitude envelope. " alt="" coords="484,615,627,657"/>
+</map>

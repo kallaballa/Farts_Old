@@ -1,0 +1,5 @@
+<map id="Tonic::t60ToOnePoleCoef" name="Tonic::t60ToOnePoleCoef">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_a_d_s_r__.html#a0d51cd35d62a8c772f1bb41f32f5fe73" title="Tonic::Tonic_::ADSR\l_::switchState" alt="" coords="255,5,397,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ae5c0642e369390ba527aca6e3b214653" title="Tonic::Tonic_::Compressor\l_::computeSynthesisBlock" alt="" coords="235,71,417,112"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_a_d_s_r__.html#ae97646bf5a4ca850e9f2d5517d7c435d" title="Tonic::Tonic_::ADSR\l_::computeSynthesisBlock" alt="" coords="465,5,648,47"/>
+</map>

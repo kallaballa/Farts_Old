@@ -1,0 +1,116 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Tonic::TonicSmartPointer\l\&lt; Tonic_::Generator_ \&gt;" alt="" coords="5,1373,181,1415"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_generator.html" title="Tonic::Generator" alt="" coords="229,1381,352,1407"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; EffectType_ \&gt;" alt="" coords="421,71,609,112"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; FilterType_ \&gt;" alt="" coords="421,137,609,179"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Adder_ \&gt;" alt="" coords="421,207,609,248"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::ADSR_ \&gt;" alt="" coords="421,279,609,320"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::AngularWave_ \&gt;" alt="" coords="421,347,609,388"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::BasicDelay_ \&gt;" alt="" coords="421,423,609,464"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::BitCrusher_ \&gt;" alt="" coords="421,499,609,540"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::BPF12_ \&gt;" alt="" coords="421,585,609,627"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::BPF24_ \&gt;" alt="" coords="421,659,609,700"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::BufferPlayer_ \&gt;" alt="" coords="421,740,609,781"/>
+<area shape="rect" id="node32" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Compressor_ \&gt;" alt="" coords="421,815,609,856"/>
+<area shape="rect" id="node37" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Divider_ \&gt;" alt="" coords="421,880,609,921"/>
+<area shape="rect" id="node39" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::FBCombFilter_ \&gt;" alt="" coords="421,947,609,988"/>
+<area shape="rect" id="node42" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::FFCombFilter_ \&gt;" alt="" coords="421,1013,609,1055"/>
+<area shape="rect" id="node45" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::FilteredFBCombFilter6_ \&gt;" alt="" coords="400,1079,629,1120"/>
+<area shape="rect" id="node48" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::FixedValue_ \&gt;" alt="" coords="421,1144,609,1185"/>
+<area shape="rect" id="node50" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::HPF12_ \&gt;" alt="" coords="421,1209,609,1251"/>
+<area shape="rect" id="node54" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::HPF24_ \&gt;" alt="" coords="421,1275,609,1316"/>
+<area shape="rect" id="node58" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::HPF6_ \&gt;" alt="" coords="421,1340,609,1381"/>
+<area shape="rect" id="node62" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::LFNoise_ \&gt;" alt="" coords="421,1405,609,1447"/>
+<area shape="rect" id="node64" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::LPF12_ \&gt;" alt="" coords="421,1471,609,1512"/>
+<area shape="rect" id="node68" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::LPF24_ \&gt;" alt="" coords="421,1536,609,1577"/>
+<area shape="rect" id="node72" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::LPF6_ \&gt;" alt="" coords="421,1601,609,1643"/>
+<area shape="rect" id="node76" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::MonoToStereoPanner_ \&gt;" alt="" coords="401,1667,629,1708"/>
+<area shape="rect" id="node79" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Multiplier_ \&gt;" alt="" coords="421,1732,609,1773"/>
+<area shape="rect" id="node81" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Noise_ \&gt;" alt="" coords="421,1797,609,1839"/>
+<area shape="rect" id="node83" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::PinkNoise_ \&gt;" alt="" coords="421,1863,609,1904"/>
+<area shape="rect" id="node85" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::RampedValue_ \&gt;" alt="" coords="421,1928,609,1969"/>
+<area shape="rect" id="node87" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::RectWave_ \&gt;" alt="" coords="421,1993,609,2035"/>
+<area shape="rect" id="node90" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::RectWaveBL_ \&gt;" alt="" coords="421,2059,609,2100"/>
+<area shape="rect" id="node93" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Reverb_ \&gt;" alt="" coords="421,2124,609,2165"/>
+<area shape="rect" id="node96" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::RingBufferReader_ \&gt;" alt="" coords="415,2189,615,2231"/>
+<area shape="rect" id="node98" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::SawtoothWaveBL_ \&gt;" alt="" coords="414,2255,615,2296"/>
+<area shape="rect" id="node100" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::StereoDelay_ \&gt;" alt="" coords="421,2320,609,2361"/>
+<area shape="rect" id="node103" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Subtractor_ \&gt;" alt="" coords="421,2385,609,2427"/>
+<area shape="rect" id="node105" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::TableLookupOsc_ \&gt;" alt="" coords="416,2451,613,2492"/>
+<area shape="rect" id="node108" href="$class_tonic_1_1_buffer_filler.html" title="Tonic::BufferFiller" alt="" coords="451,2547,578,2574"/>
+<area shape="rect" id="node114" href="$class_tonic_1_1_templated_generator.html" title="Tonic::TemplatedGenerator\l\&lt; GenType \&gt;" alt="" coords="421,2599,609,2640"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; EffectType, EffectType_ \&gt;" alt="" coords="707,5,897,47"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_templated_wet_dry_effect.html" title="Tonic::TemplatedWetDryEffect\l\&lt; EffectType, EffectType_ \&gt;" alt="" coords="697,71,907,112"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; FilterType, FilterType_ \&gt;" alt="" coords="715,136,889,177"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; FilterType, FilterType_ \&gt;" alt="" coords="986,136,1161,177"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_adder.html" title="Tonic::Adder" alt="" coords="753,202,851,229"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_a_d_s_r.html" title="Tonic::ADSR" alt="" coords="753,253,851,279"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_sawtooth_wave.html" title="Quick&#45;and&#45;dirty sawtooth oscillator. " alt="" coords="725,303,879,330"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_triangle_wave.html" title="Quick&#45;and&#45;dirty triangle wave. " alt="" coords="730,354,874,381"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_templated_wet_dry_effect.html" title="Tonic::TemplatedWetDryEffect\l\&lt; BasicDelay, Tonic_::BasicDelay_ \&gt;" alt="" coords="687,405,917,447"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_basic_delay.html" title="Tonic::BasicDelay" alt="" coords="1009,413,1137,439"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; BitCrusher, Tonic_::\lBitCrusher_ \&gt;" alt="" coords="719,471,885,527"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_bit_crusher.html" title="Tonic::BitCrusher" alt="" coords="1011,486,1135,513"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; BPF12, Tonic_::BPF12_ \&gt;" alt="" coords="712,552,892,593"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; BPF12, Tonic_::BPF12_ \&gt;" alt="" coords="983,552,1163,593"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_b_p_f12.html" title="Tonic::BPF12" alt="" coords="1220,559,1323,586"/>
+<area shape="rect" id="node27" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; BPF24, Tonic_::BPF24_ \&gt;" alt="" coords="712,617,892,659"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; BPF24, Tonic_::BPF24_ \&gt;" alt="" coords="983,617,1163,659"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_b_p_f24.html" title="Tonic::BPF24" alt="" coords="1220,625,1323,651"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_buffer_player.html" title="Tonic::BufferPlayer" alt="" coords="734,683,870,710"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; Compressor, Tonic_::\lCompressor_ \&gt;" alt="" coords="719,734,885,790"/>
+<area shape="rect" id="node35" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; Limiter, Tonic_::Compressor_ \&gt;" alt="" coords="695,815,909,856"/>
+<area shape="rect" id="node34" href="$class_tonic_1_1_compressor.html" title="Tonic::Compressor" alt="" coords="1005,749,1141,775"/>
+<area shape="rect" id="node36" href="$class_tonic_1_1_limiter.html" title="Special case of compressor where ratio is fixed to infinite and attack time is fixed to 0..." alt="" coords="1022,822,1125,849"/>
+<area shape="rect" id="node38" href="$class_tonic_1_1_divider.html" title="Tonic::Divider" alt="" coords="751,881,853,907"/>
+<area shape="rect" id="node40" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; FBCombFilter, Tonic\l_::FBCombFilter_ \&gt;" alt="" coords="719,931,885,987"/>
+<area shape="rect" id="node41" href="$class_tonic_1_1_f_b_comb_filter.html" title="Tonic::FBCombFilter" alt="" coords="1002,946,1145,973"/>
+<area shape="rect" id="node43" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; FFCombFilter, Tonic\l_::FFCombFilter_ \&gt;" alt="" coords="719,1011,885,1067"/>
+<area shape="rect" id="node44" href="$class_tonic_1_1_f_f_comb_filter.html" title="Tonic::FFCombFilter" alt="" coords="1002,1026,1145,1053"/>
+<area shape="rect" id="node46" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; FilteredFBCombFilter6,\l Tonic_::FilteredFBCombFilter6_ \&gt;" alt="" coords="691,1091,913,1147"/>
+<area shape="rect" id="node47" href="$class_tonic_1_1_filtered_f_b_comb_filter6.html" title="Tonic::FilteredFBCombFilter6" alt="" coords="975,1106,1172,1133"/>
+<area shape="rect" id="node49" href="$class_tonic_1_1_fixed_value.html" title="Tonic::FixedValue" alt="" coords="738,1171,866,1198"/>
+<area shape="rect" id="node51" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; HPF12, Tonic_::HPF12_ \&gt;" alt="" coords="711,1223,893,1264"/>
+<area shape="rect" id="node52" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; HPF12, Tonic_::HPF12_ \&gt;" alt="" coords="982,1223,1165,1264"/>
+<area shape="rect" id="node53" href="$class_tonic_1_1_h_p_f12.html" title="Tonic::HPF12" alt="" coords="1220,1230,1323,1257"/>
+<area shape="rect" id="node55" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; HPF24, Tonic_::HPF24_ \&gt;" alt="" coords="711,1288,893,1329"/>
+<area shape="rect" id="node56" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; HPF24, Tonic_::HPF24_ \&gt;" alt="" coords="982,1288,1165,1329"/>
+<area shape="rect" id="node57" href="$class_tonic_1_1_h_p_f24.html" title="Tonic::HPF24" alt="" coords="1220,1295,1323,1322"/>
+<area shape="rect" id="node59" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; HPF6, Tonic_::HPF6_ \&gt;" alt="" coords="719,1353,885,1395"/>
+<area shape="rect" id="node60" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; HPF6, Tonic_::HPF6_ \&gt;" alt="" coords="990,1353,1157,1395"/>
+<area shape="rect" id="node61" href="$class_tonic_1_1_h_p_f6.html" title="Tonic::HPF6" alt="" coords="1224,1361,1319,1387"/>
+<area shape="rect" id="node63" href="$class_tonic_1_1_l_f_noise.html" title="Tonic::LFNoise" alt="" coords="747,1419,857,1446"/>
+<area shape="rect" id="node65" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; LPF12, Tonic_::LPF12_ \&gt;" alt="" coords="713,1471,891,1512"/>
+<area shape="rect" id="node66" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; LPF12, Tonic_::LPF12_ \&gt;" alt="" coords="984,1471,1163,1512"/>
+<area shape="rect" id="node67" href="$class_tonic_1_1_l_p_f12.html" title="Tonic::LPF12" alt="" coords="1221,1478,1322,1505"/>
+<area shape="rect" id="node69" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; LPF24, Tonic_::LPF24_ \&gt;" alt="" coords="713,1536,891,1577"/>
+<area shape="rect" id="node70" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; LPF24, Tonic_::LPF24_ \&gt;" alt="" coords="984,1536,1163,1577"/>
+<area shape="rect" id="node71" href="$class_tonic_1_1_l_p_f24.html" title="Tonic::LPF24" alt="" coords="1221,1543,1322,1570"/>
+<area shape="rect" id="node73" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; LPF6, Tonic_::LPF6_ \&gt;" alt="" coords="719,1601,885,1643"/>
+<area shape="rect" id="node74" href="$class_tonic_1_1_templated_filter.html" title="Tonic::TemplatedFilter\l\&lt; LPF6, Tonic_::LPF6_ \&gt;" alt="" coords="992,1601,1155,1643"/>
+<area shape="rect" id="node75" href="$class_tonic_1_1_l_p_f6.html" title="Tonic::LPF6" alt="" coords="1225,1609,1318,1635"/>
+<area shape="rect" id="node77" href="$class_tonic_1_1_templated_effect.html" title="Tonic::TemplatedEffect\l\&lt; MonoToStereoPanner,\l Tonic_::MonoToStereoPanner_ \&gt;" alt="" coords="691,1667,913,1723"/>
+<area shape="rect" id="node78" href="$class_tonic_1_1_mono_to_stereo_panner.html" title="Tonic::MonoToStereoPanner" alt="" coords="975,1682,1171,1709"/>
+<area shape="rect" id="node80" href="$class_tonic_1_1_multiplier.html" title="Tonic::Multiplier" alt="" coords="743,1747,861,1774"/>
+<area shape="rect" id="node82" href="$class_tonic_1_1_noise.html" title="Tonic::Noise" alt="" coords="753,1798,851,1825"/>
+<area shape="rect" id="node84" href="$class_tonic_1_1_pink_noise.html" title="Tonic::PinkNoise" alt="" coords="741,1849,863,1875"/>
+<area shape="rect" id="node86" href="$class_tonic_1_1_ramped_value.html" title="Tonic::RampedValue" alt="" coords="729,1899,875,1926"/>
+<area shape="rect" id="node88" href="$class_tonic_1_1_rect_wave.html" title="Quick&#45;and&#45;dirty rectangular wave. " alt="" coords="740,1950,864,1977"/>
+<area shape="rect" id="node89" href="$class_tonic_1_1_square_wave.html" title="Quck&#45;and&#45;dirty square wave. " alt="" coords="733,2001,871,2027"/>
+<area shape="rect" id="node91" href="$class_tonic_1_1_rect_wave_b_l.html" title="Bandlimited rectangular wave. " alt="" coords="733,2051,871,2078"/>
+<area shape="rect" id="node92" href="$class_tonic_1_1_square_wave_b_l.html" title="Bandlimited square wave. " alt="" coords="725,2102,879,2129"/>
+<area shape="rect" id="node94" href="$class_tonic_1_1_templated_wet_dry_effect.html" title="Tonic::TemplatedWetDryEffect\l\&lt; Reverb, Tonic_::Reverb_ \&gt;" alt="" coords="697,2153,907,2195"/>
+<area shape="rect" id="node95" href="$class_tonic_1_1_reverb.html" title="Tonic::Reverb" alt="" coords="1021,2161,1125,2187"/>
+<area shape="rect" id="node97" href="$class_tonic_1_1_ring_buffer_reader.html" title="Tonic::RingBufferReader" alt="" coords="718,2219,886,2246"/>
+<area shape="rect" id="node99" href="$class_tonic_1_1_sawtooth_wave_b_l.html" title="Bandlimited sawtooth generator. " alt="" coords="717,2270,887,2297"/>
+<area shape="rect" id="node101" href="$class_tonic_1_1_templated_wet_dry_effect.html" title="Tonic::TemplatedWetDryEffect\l\&lt; StereoDelay, Tonic_::StereoDelay_ \&gt;" alt="" coords="677,2321,927,2363"/>
+<area shape="rect" id="node102" href="$class_tonic_1_1_stereo_delay.html" title="Tonic::StereoDelay" alt="" coords="1005,2329,1142,2355"/>
+<area shape="rect" id="node104" href="$class_tonic_1_1_subtractor.html" title="Tonic::Subtractor" alt="" coords="739,2387,865,2414"/>
+<area shape="rect" id="node106" href="$class_tonic_1_1_sine_wave.html" title="Tonic::SineWave" alt="" coords="741,2438,863,2465"/>
+<area shape="rect" id="node107" href="$class_tonic_1_1_table_lookup_osc.html" title="Tonic::TableLookupOsc" alt="" coords="719,2489,885,2515"/>
+<area shape="rect" id="node109" href="$class_tonic_1_1_templated_buffer_filler.html" title="Tonic::TemplatedBufferFiller\l\&lt; Tonic_::Mixer_ \&gt;" alt="" coords="705,2540,899,2581"/>
+<area shape="rect" id="node111" href="$class_tonic_1_1_templated_buffer_filler.html" title="Tonic::TemplatedBufferFiller\l\&lt; Tonic_::Synth_ \&gt;" alt="" coords="705,2605,899,2647"/>
+<area shape="rect" id="node113" href="$class_tonic_1_1_templated_buffer_filler.html" title="Tonic::TemplatedBufferFiller\l\&lt; GenType \&gt;" alt="" coords="705,2671,899,2712"/>
+<area shape="rect" id="node110" href="$class_tonic_1_1_mixer.html" title="Tonic::Mixer" alt="" coords="1026,2547,1121,2574"/>
+<area shape="rect" id="node112" href="$class_tonic_1_1_synth.html" title="Tonic::Synth" alt="" coords="1025,2613,1121,2639"/>
+</map>

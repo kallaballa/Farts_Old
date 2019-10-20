@@ -1,0 +1,10 @@
+<map id="Tonic::Multiplier::input" name="Tonic::Multiplier::input">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_generator.html#a5ac150f63c26911185188ea79ced4971" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Multiplier_ \&gt;::gen" alt="" coords="176,5,364,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_multiplier__.html#a431d3d612d43cc2c00571397a7aad1b5" title="Tonic::Tonic_::Multiplier\l_::input" alt="" coords="189,71,351,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_generator.html#a8900f469334bdebb1de27cd7b3fb8ea8" title="Tonic::Generator::isStereo\lOutput" alt="" coords="412,12,592,53"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_generator__.html#a6ebd69e64a5c99b123bd6d6f07a908c2" title="Tonic::Tonic_::Generator\l_::isStereoOutput" alt="" coords="640,25,808,67"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_multiplier__.html#a36d512aac688fe6cb1c1f151265d6aa0" title="Tonic::Tonic_::Multiplier\l_::setIsStereoOutput" alt="" coords="421,129,583,171"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="640,116,808,157"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="856,145,996,187"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="1044,153,1135,179"/>
+</map>

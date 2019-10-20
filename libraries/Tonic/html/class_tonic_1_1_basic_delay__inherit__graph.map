@@ -1,0 +1,10 @@
+<map id="Tonic::BasicDelay" name="Tonic::BasicDelay">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_wet_dry_effect.html" title="{Tonic::TemplatedWetDryEffect\l\&lt; BasicDelay, Tonic_::BasicDelay_ \&gt;\n||+ input()\l+ tickThrough()\l+ tickThrough()\l+ setIsStereoInput()\l+ TONIC_MAKE_CTRL_GEN\l_SETTERS()\l+ TONIC_MAKE_GEN_SETTERS()\l+ TONIC_MAKE_GEN_SETTERS()\l}" alt="" coords="37,1275,268,1469"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_templated_generator.html" title="{Tonic::TemplatedGenerator\l\&lt; Tonic_::BasicDelay_ \&gt;\n||+ TemplatedGenerator()\l# gen()\l}" alt="" coords="5,847,193,953"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_generator.html" title="{Tonic::Generator\n||+ Generator()\l+ isStereoOutput()\l+ tick()\l}" alt="" coords="173,521,311,628"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_templated_generator.html" title="{Tonic::TemplatedGenerator\l\&lt; GenType \&gt;\n||+ TemplatedGenerator()\l# gen()\l}" alt="" coords="148,677,336,784"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_templated_generator.html" title="{Tonic::TemplatedGenerator\l\&lt; EffectType_ \&gt;\n||+ TemplatedGenerator()\l# gen()\l}" alt="" coords="217,847,405,953"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_smart_pointer.html" title="{Tonic::TonicSmartPointer\l\&lt; Tonic_::Generator_ \&gt;\n|# obj\l# pcount\l|+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ operator=()\l+ ~TonicSmartPointer()\l+ retain()\l+ release()\l+ operator==()\l}" alt="" coords="154,263,330,472"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Reference counting smart pointer class template. " alt="" coords="139,5,345,200"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_templated_wet_dry_effect.html" title="{Tonic::TemplatedWetDryEffect\l\&lt; EffectType, EffectType_ \&gt;\n||+ input()\l+ tickThrough()\l+ tickThrough()\l+ setIsStereoInput()\l+ TONIC_MAKE_CTRL_GEN\l_SETTERS()\l+ TONIC_MAKE_GEN_SETTERS()\l+ TONIC_MAKE_GEN_SETTERS()\l}" alt="" coords="185,1003,403,1197"/>
+</map>

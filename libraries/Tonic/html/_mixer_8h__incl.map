@@ -1,0 +1,17 @@
+<map id="Mixer.h" name="Mixer.h">
+<area shape="rect" id="node2" href="$_synth_8h.html" title="Synth.h" alt="" coords="357,80,424,107"/>
+<area shape="rect" id="node25" href="$_compressor_limiter_8h.html" title="CompressorLimiter.h" alt="" coords="497,155,644,181"/>
+<area shape="rect" id="node4" href="$_buffer_filler_8h.html" title="BufferFiller.h" alt="" coords="401,229,497,256"/>
+<area shape="rect" id="node24" href="$_control_parameter_8h.html" title="ControlParameter.h" alt="" coords="244,155,383,181"/>
+<area shape="rect" id="node29" href="$_control_change_notifier_8h.html" title="ControlChangeNotifier.h" alt="" coords="97,304,263,331"/>
+<area shape="rect" id="node5" href="$_generator_8h.html" title="Generator.h" alt="" coords="529,304,620,331"/>
+<area shape="rect" id="node6" href="$_tonic_frames_8h.html" title="TonicFrames.h" alt="" coords="699,379,810,405"/>
+<area shape="rect" id="node21" href="$_fixed_value_8h.html" title="FixedValue.h" alt="" coords="525,379,624,405"/>
+<area shape="rect" id="node7" href="$_tonic_core_8h.html" title="TonicCore.h" alt="" coords="493,603,587,629"/>
+<area shape="rect" id="node22" href="$_control_value_8h.html" title="ControlValue.h" alt="" coords="228,453,337,480"/>
+<area shape="rect" id="node23" href="$_control_generator_8h.html" title="ControlGenerator.h" alt="" coords="195,528,330,555"/>
+<area shape="rect" id="node26" href="$_effect_8h.html" title="Effect.h" alt="" coords="535,229,606,256"/>
+<area shape="rect" id="node27" href="$_delay_utils_8h.html" title="DelayUtils.h" alt="" coords="713,304,805,331"/>
+<area shape="rect" id="node28" href="$_filter_utils_8h.html" title="FilterUtils.h" alt="" coords="630,229,719,256"/>
+<area shape="rect" id="node30" href="$_control_conditioner_8h.html" title="ControlConditioner.h" alt="" coords="118,379,263,405"/>
+</map>

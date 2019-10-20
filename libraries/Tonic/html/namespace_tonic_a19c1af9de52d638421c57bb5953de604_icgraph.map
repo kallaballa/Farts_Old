@@ -1,0 +1,6 @@
+<map id="Tonic::mapLinToLog" name="Tonic::mapLinToLog">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#af0de46eae927ff0ccbe430b2e8db13cb" title="Tonic::Tonic_::ControlParameter\l_::setNormalizedValue" alt="" coords="197,5,412,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_parameter.html#a1ce851dd30b695b1c9207e92e365ebc0" title="Tonic::ControlParameter\l::setNormalizedValue" alt="" coords="460,5,629,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_synth__.html#a112cbeb2fdd4d1a6ff421119140ed0a2" title="Tonic::Tonic_::Synth\l_::setParameter" alt="" coords="677,5,820,47"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_synth.html#a74c5d3e417ba4b59c4a190593bdefe28" title="Set the value of a control parameter on this synth. " alt="" coords="868,13,1053,39"/>
+</map>

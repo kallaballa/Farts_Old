@@ -1,0 +1,31 @@
+<map id="Tonic::vcopy" name="Tonic::vcopy">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a5c71f60a3a113a9ba9c63a8af1de4528" title="Copy one channel to another. " alt="" coords="152,107,292,148"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="553,165,693,207"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html#ae65dbebbf929f3f99f200ba2931c61b7" title="Fill all channels with contents of channel 0. " alt="" coords="340,107,480,148"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_ramped_value__.html#ac3fbc5485b9c1b77db46d05cd52bf21d" title="Tonic::Tonic_::RampedValue\l_::computeSynthesisBlock" alt="" coords="528,100,719,141"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a8b5c692fac6941c13e68eba131ec54f7" title="Apply effect directly to passed in frames (output in&#45;place) " alt="" coords="997,31,1180,72"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae36f0fca0d4d61874b32cda225b33421" title="Tonic::Tonic_::Effect\l_::tick" alt="" coords="1265,216,1411,257"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_effect__.html#a106135f7f2e57b90db530b227a0538df" title="Apply effect directly to passed in frames (output in&#45;place) " alt="" coords="785,5,931,47"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#ae678cc7c9f7d143ffb6ebe0ea9562c63" title="Tonic::Tonic_::WetDryEffect\l_::tick" alt="" coords="1243,85,1433,127"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#acee3fe83aa3625d52eb2dac66375b098" title="Apply effect directly to passed in frames (output in&#45;place) " alt="" coords="1243,151,1433,192"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_generator__.html#a2994a18583a9803bc8b5550eb16c2994" title="Tonic::Tonic_::Generator\l_::tick" alt="" coords="774,435,942,476"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="767,500,949,541"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_compressor__.html#aae0292e3a0ce2fbc7336a6ab62632750" title="Tonic::Tonic_::Compressor\l_::tick" alt="" coords="1496,245,1679,287"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#a83d9f46307fe3d38b4832768e9985bcd" title="Process a single synthesis vector, output to frames. " alt="" coords="1002,951,1175,992"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_generator.html#aec0f6d29ff483badf4112ba3da09f71a" title="Tonic::Generator::tick" alt="" coords="1013,602,1164,629"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#aa606fa4dc80d4c61c3896f5d68b9e8ba" title="Tonic::Tonic_::BufferFiller\l_::fillBufferOfFloats" alt="" coords="1251,1248,1425,1289"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_subtractor__.html#a046fa78940775bec36b157618bec55a9" title="Tonic::Tonic_::Subtractor\l_::computeSynthesisBlock" alt="" coords="1247,1117,1429,1159"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_divider__.html#a34c7378505f858b5be581b0d72fd4935" title="Tonic::Tonic_::Divider\l_::computeSynthesisBlock" alt="" coords="1247,1183,1429,1224"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a9a3686c6a86a6eaa0baf187e687fbe4d" title="Tonic::Tonic_::BasicDelay\l_::computeSynthesisBlock" alt="" coords="1247,333,1429,375"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_f_f_comb_filter__.html#a2f588446d56dea0c7594e9b8896f3483" title="Tonic::Tonic_::FFCombFilter\l_::computeSynthesisBlock" alt="" coords="1244,399,1432,440"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_f_b_comb_filter__.html#ac32ca69309851325901adc6748b7012e" title="Tonic::Tonic_::FBCombFilter\l_::computeSynthesisBlock" alt="" coords="1243,464,1433,505"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_filtered_f_b_comb_filter6__.html#a2c80e1268e507ebc011620a578d4c949" title="Tonic::Tonic_::FilteredFBComb\lFilter6_::computeSynthesisBlock" alt="" coords="1228,529,1448,571"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_tonic___1_1_filter__.html#a732a345ac51835876033517851b544bf" title="Tonic::Tonic_::Filter\l_::computeSynthesisBlock" alt="" coords="1247,595,1429,636"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_rect_wave__.html#a2992a99c70b86e71b09829e5b407dad6" title="Tonic::Tonic_::RectWave\l_::computeSynthesisBlock" alt="" coords="1247,660,1429,701"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic___1_1_rect_wave_b_l__.html#a0182a504ca093528f2d6060ae904167b" title="Tonic::Tonic_::RectWaveBL\l_::computeSynthesisBlock" alt="" coords="1245,725,1431,767"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_angular_wave__.html#aa9a008d49523c9936f51fe9ac5d99715" title="Tonic::Tonic_::AngularWave\l_::computeSynthesisBlock" alt="" coords="1245,791,1431,832"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_tonic___1_1_sawtooth_wave_b_l__.html#ab329d343a837d06b557b0a26ebe70993" title="Tonic::Tonic_::SawtoothWave\lBL_::computeSynthesisBlock" alt="" coords="1238,856,1438,897"/>
+<area shape="rect" id="node27" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#a70e00c5830b612a1071e9cfd801d4ff2" title="Tonic::Tonic_::StereoDelay\l_::computeSynthesisBlock" alt="" coords="1247,921,1429,963"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_tonic___1_1_synth__.html#a1c6c36f6d3bef93a89e48c9f8649bd95" title="Tonic::Tonic_::Synth\l_::computeSynthesisBlock" alt="" coords="1247,987,1429,1028"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#ac8169f2e90618ef4bbc24bcd3ca78612" title="Tonic::Tonic_::TableLookup\lOsc_::computeSynthesisBlock" alt="" coords="1235,1052,1441,1093"/>
+</map>

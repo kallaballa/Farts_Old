@@ -1,0 +1,51 @@
+<map id="Tonic::sampleRate" name="Tonic::sampleRate">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_a_d_s_r__.html#a0d51cd35d62a8c772f1bb41f32f5fe73" title="Tonic::Tonic_::ADSR\l_::switchState" alt="" coords="481,10,624,51"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a4db199be2640e3178471b7990b248db9" title="Tonic::Tonic_::BufferPlayer\l_::computeSynthesisBlock" alt="" coords="200,800,383,842"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_delay__.html#a2a0177a1abf5b18451d300bc97808cc6" title="Tonic::Tonic_::ControlDelay\l_::initialize" alt="" coords="199,866,384,907"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_delay__.html#ac1c238a16c862975d3fdce2744c2c066" title="Override this function to implement a new ControlGenerator. " alt="" coords="199,931,384,972"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_delay_line.html#a04d8d64c52e74f02642616e22a9a1833" title="MUST be called prior to usage. " alt="" coords="204,997,379,1024"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_delay_line.html#aafa0e3bd633998b2040ac256abc54553" title="Return one interpolated, delayed sample. Does not advance read/write head. " alt="" coords="206,344,377,370"/>
+<area shape="rect" id="node27" href="$class_tonic_1_1_tonic___1_1_filter__.html#a732a345ac51835876033517851b544bf" title="Tonic::Tonic_::Filter\l_::computeSynthesisBlock" alt="" coords="200,1048,383,1090"/>
+<area shape="rect" id="node28" href="$namespace_tonic.html#a1bbeec877892ac96f89e750b0a5339fd" title="Calculate coefficient for a pole with given time constant to reach &#45;60dB delta in t60s seconds..." alt="" coords="201,82,382,109"/>
+<area shape="rect" id="node29" href="$namespace_tonic.html#a75dec8ccfdffc296e2cceb696d398cd2" title="Calculate coefficient for a pole with a given desired cutoff in hz. " alt="" coords="192,637,391,664"/>
+<area shape="rect" id="node32" href="$namespace_tonic.html#a9493b1f8836a449960fbfd3d8513123c" title="Compute coefficients from analog prototype using bilinear transform. " alt="" coords="237,1114,345,1141"/>
+<area shape="rect" id="node39" href="$class_tonic_1_1_tonic___1_1_l_f_noise__.html#a7ea84a901e326a7d8a592422c94b1642" title="Tonic::Tonic_::LFNoise\l_::computeSynthesisBlock" alt="" coords="200,1166,383,1207"/>
+<area shape="rect" id="node40" href="$class_tonic_1_1_tonic___1_1_ramped_value__.html#ac3fbc5485b9c1b77db46d05cd52bf21d" title="Tonic::Tonic_::RampedValue\l_::computeSynthesisBlock" alt="" coords="196,1231,387,1272"/>
+<area shape="rect" id="node41" href="$class_tonic_1_1_tonic___1_1_rect_wave__.html#a2992a99c70b86e71b09829e5b407dad6" title="Tonic::Tonic_::RectWave\l_::computeSynthesisBlock" alt="" coords="200,1296,383,1338"/>
+<area shape="rect" id="node42" href="$class_tonic_1_1_tonic___1_1_rect_wave_b_l__.html#a0182a504ca093528f2d6060ae904167b" title="Tonic::Tonic_::RectWaveBL\l_::computeSynthesisBlock" alt="" coords="199,1362,384,1403"/>
+<area shape="rect" id="node43" href="$class_tonic_1_1_tonic___1_1_angular_wave__.html#aa9a008d49523c9936f51fe9ac5d99715" title="Tonic::Tonic_::AngularWave\l_::computeSynthesisBlock" alt="" coords="198,1427,385,1468"/>
+<area shape="rect" id="node44" href="$class_tonic_1_1_tonic___1_1_sawtooth_wave_b_l__.html#ab329d343a837d06b557b0a26ebe70993" title="Tonic::Tonic_::SawtoothWave\lBL_::computeSynthesisBlock" alt="" coords="191,1492,391,1534"/>
+<area shape="rect" id="node45" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#ac8169f2e90618ef4bbc24bcd3ca78612" title="Tonic::Tonic_::TableLookup\lOsc_::computeSynthesisBlock" alt="" coords="188,1558,395,1599"/>
+<area shape="rect" id="node46" href="$namespace_tonic.html#ae1f20939b5a81c5b473e047910f340fa" title="Set the operational sample rate. " alt="" coords="213,1624,369,1650"/>
+<area shape="rect" id="node47" href="$struct_tonic_1_1_tonic___1_1_synthesis_context__.html#a17adb73fb30046904af2858904d5b499" title="Tonic::Tonic_::Synthesis\lContext_::tick" alt="" coords="208,1675,375,1716"/>
+<area shape="rect" id="node49" href="$class_tonic_1_1_tonic_frames.html#acc4a09e99308ece8f1a23101c67e596c" title="The default constructor initializes the frame data structure to size zero. " alt="" coords="221,1740,361,1782"/>
+<area shape="rect" id="node50" href="$class_tonic_1_1_tonic_frames.html#a004ea66491ce264d62c8a3caee39eec3" title="Tonic::TonicFrames\l::operator=" alt="" coords="221,1806,361,1847"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_a_d_s_r__.html#ae97646bf5a4ca850e9f2d5517d7c435d" title="Tonic::Tonic_::ADSR\l_::computeSynthesisBlock" alt="" coords="711,10,893,51"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_control_delay.html#a2517e295ff430e1182f69962bc367487" title="Tonic::ControlDelay\l::ControlDelay" alt="" coords="483,728,622,770"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a81e69f96fadd4801776f8d2e3622507a" title="Tonic::Tonic_::BasicDelay\l_::initialize" alt="" coords="465,794,640,835"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_comb_filter__.html#af93bfd3715009b8f73579a3516f96773" title="Tonic::Tonic_::CombFilter\l_::initialize" alt="" coords="465,859,640,900"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_compressor__.html#afab8be6392cc0ebc51ccf6e4e7cd1907" title="Tonic::Tonic_::Compressor\l_::Compressor_" alt="" coords="461,924,644,966"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_impulse_diffuser_allpass.html#a9e0ee9d5898bf46f6d222fefffb70edf" title="Tonic::Tonic_::ImpulseDiffuser\lAllpass::ImpulseDiffuserAllpass" alt="" coords="447,990,658,1031"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4d36626e45245e370420f5e856780853" title="Tonic::Tonic_::Reverb\l_::Reverb_" alt="" coords="477,1055,628,1096"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#ae2ce29dceb4713ef4de1190507fbc465" title="Tonic::Tonic_::StereoDelay\l_::initialize" alt="" coords="461,1120,644,1162"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_basic_delay.html#a1a9a02e7747fc5e57ea66bdde4f9bd92" title="Allocating only with time argument will default max delay time to 1.5 * delayTime. " alt="" coords="735,794,869,835"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_f_f_comb_filter.html#a7544582865e194342ebdd85beb722e9e" title="Tonic::FFCombFilter\l::FFCombFilter" alt="" coords="731,859,873,900"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_f_b_comb_filter.html#aa526334e7079c1aeadd88ac9e11a107f" title="Tonic::FBCombFilter\l::FBCombFilter" alt="" coords="731,924,873,966"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a9a3686c6a86a6eaa0baf187e687fbe4d" title="Tonic::Tonic_::BasicDelay\l_::computeSynthesisBlock" alt="" coords="461,140,644,182"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_f_f_comb_filter__.html#a2f588446d56dea0c7594e9b8896f3483" title="Tonic::Tonic_::FFCombFilter\l_::computeSynthesisBlock" alt="" coords="459,206,647,247"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_f_b_comb_filter__.html#ac32ca69309851325901adc6748b7012e" title="Tonic::Tonic_::FBCombFilter\l_::computeSynthesisBlock" alt="" coords="458,271,647,312"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_tonic___1_1_filtered_f_b_comb_filter6__.html#a2c80e1268e507ebc011620a578d4c949" title="Tonic::Tonic_::FilteredFBComb\lFilter6_::computeSynthesisBlock" alt="" coords="443,532,663,574"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ae5c0642e369390ba527aca6e3b214653" title="Tonic::Tonic_::Compressor\l_::computeSynthesisBlock" alt="" coords="461,75,644,116"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic___1_1_impulse_diffuser_allpass.html#aaadeeb815b50db0ff37f2d6ef0af545d" title="Tonic::Tonic_::ImpulseDiffuser\lAllpass::tickThrough" alt="" coords="451,336,654,378"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="461,402,644,443"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#a70e00c5830b612a1071e9cfd801d4ff2" title="Tonic::Tonic_::StereoDelay\l_::computeSynthesisBlock" alt="" coords="461,467,644,508"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_tonic___1_1_l_p_f6__.html#a7253262f2cc19bd629f673e97f810321" title="Tonic::Tonic_::LPF6\l_::applyFilter" alt="" coords="483,598,622,639"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_tonic___1_1_h_p_f6__.html#a0e19ef8554ca4ed21dd1d9e9166b5b3a" title="Tonic::Tonic_::HPF6\l_::applyFilter" alt="" coords="482,663,623,704"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html#a0397df26f22fccba7a786fa3ee973a93" title="Tonic::Tonic_::LPF12\l_::applyFilter" alt="" coords="479,1186,626,1227"/>
+<area shape="rect" id="node34" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html#ae1fe367dcd77528753b56daf39e84ae7" title="Tonic::Tonic_::LPF24\l_::applyFilter" alt="" coords="479,1251,626,1292"/>
+<area shape="rect" id="node35" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html#a071a722320b94fbbe47c2176164ef392" title="Tonic::Tonic_::HPF12\l_::applyFilter" alt="" coords="478,1316,627,1358"/>
+<area shape="rect" id="node36" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html#a3d4fc01138f0aebb39a45e6572b28d3e" title="Tonic::Tonic_::HPF24\l_::applyFilter" alt="" coords="478,1382,627,1423"/>
+<area shape="rect" id="node37" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html#a6cfc81f2fbecb3679d1526b6956f2920" title="Tonic::Tonic_::BPF12\l_::applyFilter" alt="" coords="479,1447,627,1488"/>
+<area shape="rect" id="node38" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html#a447a12864c1d72c1a61baac21034aa9a" title="Tonic::Tonic_::BPF24\l_::applyFilter" alt="" coords="479,1512,627,1554"/>
+<area shape="rect" id="node48" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#a83d9f46307fe3d38b4832768e9985bcd" title="Process a single synthesis vector, output to frames. " alt="" coords="466,1675,639,1716"/>
+</map>

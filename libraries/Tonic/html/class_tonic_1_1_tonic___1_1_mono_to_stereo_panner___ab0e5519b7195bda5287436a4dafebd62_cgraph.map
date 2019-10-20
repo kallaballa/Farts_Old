@@ -1,0 +1,8 @@
+<map id="Tonic::Tonic_::MonoToStereoPanner_::computeSynthesisBlock" name="Tonic::Tonic_::MonoToStereoPanner_::computeSynthesisBlock">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="317,5,404,32"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="319,56,402,83"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="277,107,444,149"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="492,107,704,149"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="752,78,964,119"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="813,144,903,171"/>
+</map>

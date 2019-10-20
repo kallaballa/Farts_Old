@@ -1,0 +1,10 @@
+<map id="Tonic::Limiter::Limiter" name="Tonic::Limiter::Limiter">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a0940cf00f71b0aeaed1f780025eb4daf" title="Tonic::dBToLin" alt="" coords="247,5,358,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_templated_generator.html#a5ac150f63c26911185188ea79ced4971" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Compressor_ \&gt;::gen" alt="" coords="204,57,401,98"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a3551fccdc5a4b03d916002e39d6ff21d" title="Tonic::Tonic_::Compressor\l_::setAttack" alt="" coords="211,122,394,163"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a3618befb8853535cbf5392dfcdf17601" title="Set whether is a limiter &#45; limiters will hard clip to threshold in worst case. " alt="" coords="211,187,394,229"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a0d675a6d9ca1be289df7aab123483275" title="Tonic::Tonic_::Compressor\l_::setLookahead" alt="" coords="211,253,394,294"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ae74f3c5eb09d233befe7d385a21bbce0" title="Tonic::Tonic_::Compressor\l_::setRatio" alt="" coords="211,318,394,359"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a18fa15ec00c54c4b2049a6abd1d541a3" title="Tonic::Tonic_::Compressor\l_::setRelease" alt="" coords="211,383,394,425"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ac0b294cdd4038ca4caaa9d55f270901a" title="Tonic::Tonic_::Compressor\l_::setThreshold" alt="" coords="211,449,394,490"/>
+</map>

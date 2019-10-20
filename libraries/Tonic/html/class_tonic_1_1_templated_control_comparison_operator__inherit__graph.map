@@ -1,0 +1,19 @@
+<map id="Tonic::TemplatedControlComparisonOperator&lt; OperatorType &gt;" name="Tonic::TemplatedControlComparisonOperator&lt; OperatorType &gt;">
+<area shape="rect" id="node7" href="$class_tonic_1_1_templated_control_comparison_operator.html" title="{Tonic::TemplatedControlComparison\lOperator\&lt; Tonic_::ControlGreaterOrEqual_ \&gt;\n||+ setLeft()\l+ setRight()\l}" alt="" coords="5,1304,287,1411"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_templated_control_comparison_operator.html" title="{Tonic::TemplatedControlComparison\lOperator\&lt; Tonic_::ControlNotEquals_ \&gt;\n||+ setLeft()\l+ setRight()\l}" alt="" coords="311,1304,563,1411"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_templated_control_comparison_operator.html" title="{Tonic::TemplatedControlComparison\lOperator\&lt; Tonic_::ControlGreaterThan_ \&gt;\n||+ setLeft()\l+ setRight()\l}" alt="" coords="587,1304,854,1411"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_templated_control_comparison_operator.html" title="{Tonic::TemplatedControlComparison\lOperator\&lt; Tonic_::ControlLessThan_ \&gt;\n||+ setLeft()\l+ setRight()\l}" alt="" coords="878,1304,1129,1411"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_templated_control_comparison_operator.html" title="{Tonic::TemplatedControlComparison\lOperator\&lt; Tonic_::ControlLessOrEqual_ \&gt;\n||+ setLeft()\l+ setRight()\l}" alt="" coords="1153,1304,1419,1411"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_templated_control_comparison_operator.html" title="{Tonic::TemplatedControlComparison\lOperator\&lt; Tonic_::ControlEquals_ \&gt;\n||+ setLeft()\l+ setRight()\l}" alt="" coords="1443,1304,1687,1411"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_control_generator.html" title="{Tonic::TemplatedControlGenerator\l\&lt; OperatorType \&gt;\n||+ TemplatedControlGenerator()\l# gen()\l}" alt="" coords="745,964,977,1071"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_generator.html" title="{Tonic::ControlGenerator\n||+ ControlGenerator()\l+ tick()\l+ smoothed()\l+ operator+()\l+ operator+()\l+ operator&#45;()\l+ operator&#45;()\l+ operator*()\l+ operator*()\l+ operator/()\l+ operator/()\l}" alt="" coords="772,521,939,745"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_templated_control_generator.html" title="{Tonic::TemplatedControlGenerator\l\&lt; GenType \&gt;\n||+ TemplatedControlGenerator()\l# gen()\l}" alt="" coords="877,795,1109,901"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_smart_pointer.html" title="{Tonic::TonicSmartPointer\l\&lt; Tonic_::ControlGenerator_ \&gt;\n|# obj\l# pcount\l|+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ operator=()\l+ ~TonicSmartPointer()\l+ retain()\l+ release()\l+ operator==()\l}" alt="" coords="756,263,955,472"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Reference counting smart pointer class template. " alt="" coords="753,5,958,200"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_control_greater_or_equal.html" title="{Tonic::ControlGreaterOrEqual\n||}" alt="" coords="48,1460,244,1537"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_control_not_equals.html" title="{Tonic::ControlNotEquals\n||}" alt="" coords="353,1460,520,1537"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_control_greater_than.html" title="{Tonic::ControlGreaterThan\n||}" alt="" coords="630,1460,811,1537"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_control_less_than.html" title="{Tonic::ControlLessThan\n||}" alt="" coords="921,1460,1086,1537"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_control_less_or_equal.html" title="{Tonic::ControlLessOrEqual\n||}" alt="" coords="1196,1460,1376,1537"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_control_equals.html" title="{Tonic::ControlEquals\n||}" alt="" coords="1492,1460,1637,1537"/>
+</map>

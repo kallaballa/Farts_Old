@@ -1,0 +1,4 @@
+<map id="Tonic::Tonic_::ImpulseDiffuserAllpass" name="Tonic::Tonic_::ImpulseDiffuserAllpass">
+<area shape="rect" id="node2" href="$class_tonic_1_1_delay_line.html" title="Tonicframes subclass with ability to tick in and out. Allows random&#45;access/multi&#45;tap/etc. " alt="" coords="38,352,175,576"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html" title="{Tonic::TonicFrames\n|# data_\l# dataRate_\l# nFrames_\l# nChannels_\l# size_\l# bufferSize_\l|+ TonicFrames()\l+ TonicFrames()\l+ ~TonicFrames()\l+ TonicFrames()\l+ operator=()\l+ operator[]()\l+ operator[]()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\land 17 more...\l}" alt="" coords="37,5,177,303"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Tonic::Tonic_::LPF6_::applyFilter" name="Tonic::Tonic_::LPF6_::applyFilter">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="221,5,361,47"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a75dec8ccfdffc296e2cceb696d398cd2" title="Calculate coefficient for a pole with a given desired cutoff in hz. " alt="" coords="192,71,391,98"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="457,46,555,73"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="439,97,573,123"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="621,21,708,47"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="623,71,706,98"/>
+</map>

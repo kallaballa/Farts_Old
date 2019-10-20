@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::ControlMidiToFreq_::computeOutput" name="Tonic::Tonic_::ControlMidiToFreq_::computeOutput">
+<area shape="rect" id="node2" href="$namespace_tonic.html#aafef5187aab5e881df3d9b506f6f83c1" title="Midi note number to frequency in Hz. " alt="" coords="269,5,359,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="231,57,397,98"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="445,57,657,98"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="705,27,917,69"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="766,93,857,120"/>
+</map>

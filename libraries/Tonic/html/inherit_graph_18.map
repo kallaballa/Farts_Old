@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Tonic::TonicSmartPointer\l\&lt; Tonic_::SampleTable_ \&gt;" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_sample_table.html" title="Access to a persistent TonicFrames instance, so the same audio data can be read from multiple places..." alt="" coords="229,13,372,39"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_ring_buffer.html" title="Like a SampleTable_, but with counters for over/underrun detection and easy synchronous read/write..." alt="" coords="420,13,545,39"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="SampleTable.h" name="SampleTable.h">
+<area shape="rect" id="node2" href="$_audio_file_utils_8h.html" title="AudioFileUtils.h" alt="" coords="74,80,189,107"/>
+<area shape="rect" id="node4" href="$_tonic_8h.html" title="Tonic.h" alt="" coords="342,229,409,256"/>
+<area shape="rect" id="node5" href="$_buffer_player_8h.html" title="BufferPlayer.h" alt="" coords="276,80,381,107"/>
+<area shape="rect" id="node7" href="$_ring_buffer_8h.html" title="RingBuffer.h" alt="" coords="405,80,500,107"/>
+<area shape="rect" id="node9" href="$_sample_table_8cpp.html" title="SampleTable.cpp" alt="" coords="524,80,653,107"/>
+<area shape="rect" id="node10" href="$_table_lookup_osc_8h.html" title="TableLookupOsc.h" alt="" coords="677,80,812,107"/>
+<area shape="rect" id="node3" href="$_audio_file_utils_8cpp.html" title="AudioFileUtils.cpp" alt="" coords="5,155,137,181"/>
+<area shape="rect" id="node6" href="$_buffer_player_8cpp.html" title="BufferPlayer.cpp" alt="" coords="314,155,437,181"/>
+<area shape="rect" id="node8" href="$_ring_buffer_8cpp.html" title="RingBuffer.cpp" alt="" coords="512,155,623,181"/>
+<area shape="rect" id="node11" href="$_sine_wave_8h.html" title="SineWave.h" alt="" coords="699,155,791,181"/>
+<area shape="rect" id="node13" href="$_table_lookup_osc_8cpp.html" title="TableLookupOsc.cpp" alt="" coords="815,155,967,181"/>
+<area shape="rect" id="node12" href="$_sine_wave_8cpp.html" title="SineWave.cpp" alt="" coords="690,229,799,256"/>
+</map>

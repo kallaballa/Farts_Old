@@ -1,0 +1,8 @@
+<map id="Tonic::Limiter::setIsStereo" name="Tonic::Limiter::setIsStereo">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_generator.html#a5ac150f63c26911185188ea79ced4971" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Compressor_ \&gt;::gen" alt="" coords="235,5,432,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a2b90ba6553985059345a6fe1b7f3d5f5" title="Externally set whether operates on one or two channels. " alt="" coords="242,71,425,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae66d3fcbaf075b28d5c9b350612a3084" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="491,12,637,53"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="696,71,836,112"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="480,129,648,171"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="884,78,975,105"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Tonic::Tonic_::FBCombFilter_" name="Tonic::Tonic_::FBCombFilter_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_comb_filter__.html" title="Absrtract comb&#45;filter gen_ base class. " alt="" coords="13,491,193,656"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_effect__.html" title="{Tonic::Tonic_::Effect_\n|# input_\l# dryFrames_\l# bypassGen_\l# isStereoInput_\l|+ Effect_()\l+ setBypassCtrlGen()\l+ setInput()\l+ setIsStereoInput()\l+ isStereoInput()\l+ tick()\l+ tickThrough()\l}" alt="" coords="27,233,179,443"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# outputFrames_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="7,5,198,185"/>
+</map>

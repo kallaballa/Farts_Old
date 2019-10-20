@@ -1,0 +1,10 @@
+<map id="Tonic::GenerateMinBLEP" name="Tonic::GenerateMinBLEP">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a1b277265102603e42312dcb4a110edd2" title="Blackman Window generation. " alt="" coords="224,5,448,32"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#aeefd61eca464110ab70293bc2b60cae0" title="Compute Minimum Phase Reconstruction of singal from its real cepstrum. " alt="" coords="259,107,413,133"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#a6146a0599c14b0711e3e4fe0f3af91a4" title="Real Cepstrum. " alt="" coords="263,56,409,83"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#a0af1471c93194ff82b5ae6c62f9c683d" title="Tonic::sinc" alt="" coords="293,157,379,184"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a7ee8580c07a1712d93682c04761f6cfe" title="Discrete Fourier Transform. " alt="" coords="518,56,605,83"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#a3ad1a9148e95d57873774a08e71680a9" title="Complex Exponential. " alt="" coords="515,157,608,184"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a408dde5e83d849f7fd25579cff2931ce" title="Inverse Discrete Fourier Transform. " alt="" coords="496,107,627,133"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#a1bd26de1b2fd174beb8e3817261cdf82" title="Complex Absolute Value. " alt="" coords="515,5,607,32"/>
+</map>

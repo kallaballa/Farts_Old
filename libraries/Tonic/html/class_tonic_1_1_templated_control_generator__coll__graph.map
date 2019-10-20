@@ -1,0 +1,7 @@
+<map id="Tonic::TemplatedControlGenerator&lt; GenType &gt;" name="Tonic::TemplatedControlGenerator&lt; GenType &gt;">
+<area shape="rect" id="node2" href="$class_tonic_1_1_control_generator.html" title="{Tonic::ControlGenerator\n||+ ControlGenerator()\l+ tick()\l+ smoothed()\l+ operator+()\l+ operator+()\l+ operator&#45;()\l+ operator&#45;()\l+ operator*()\l+ operator*()\l+ operator/()\l+ operator/()\l}" alt="" coords="149,647,315,871"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_smart_pointer.html" title="{Tonic::TonicSmartPointer\l\&lt; Tonic_::ControlGenerator_ \&gt;\n|# pcount\l|+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ operator=()\l+ ~TonicSmartPointer()\l+ retain()\l+ release()\l+ operator==()\l}" alt="" coords="133,403,331,597"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_generator__.html" title="{Tonic::Tonic_::ControlGenerator_\n|# lastFrameIndex_\l|+ ControlGenerator_()\l+ ~ControlGenerator_()\l+ lockMutex()\l+ unlockMutex()\l+ tick()\l+ initialOutput()\l# computeOutput()\l}" alt="" coords="5,167,224,333"/>
+<area shape="rect" id="node5" href="$struct_tonic_1_1_control_generator_output.html" title="{Tonic::ControlGeneratorOutput\n|+ value\l+ triggered\l|+ ControlGeneratorOutput()\l}" alt="" coords="11,5,218,97"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Reference counting smart pointer class template. " alt="" coords="248,160,453,340"/>
+</map>

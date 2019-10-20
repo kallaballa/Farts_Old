@@ -1,0 +1,8 @@
+<map id="Tonic::Biquad::setCoefficients" name="Tonic::Biquad::setCoefficients">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html#a0397df26f22fccba7a786fa3ee973a93" title="Tonic::Tonic_::LPF12\l_::applyFilter" alt="" coords="259,5,405,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html#ae1fe367dcd77528753b56daf39e84ae7" title="Tonic::Tonic_::LPF24\l_::applyFilter" alt="" coords="259,71,405,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html#a071a722320b94fbbe47c2176164ef392" title="Tonic::Tonic_::HPF12\l_::applyFilter" alt="" coords="257,136,407,177"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html#a3d4fc01138f0aebb39a45e6572b28d3e" title="Tonic::Tonic_::HPF24\l_::applyFilter" alt="" coords="257,201,407,243"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html#a6cfc81f2fbecb3679d1526b6956f2920" title="Tonic::Tonic_::BPF12\l_::applyFilter" alt="" coords="258,267,406,308"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html#a447a12864c1d72c1a61baac21034aa9a" title="Tonic::Tonic_::BPF24\l_::applyFilter" alt="" coords="258,332,406,373"/>
+</map>

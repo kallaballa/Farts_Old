@@ -1,0 +1,5 @@
+<map id="Tonic::Tonic_::Compressor_::setIsStereo" name="Tonic::Tonic_::Compressor_::setIsStereo">
+<area shape="rect" id="node2" href="$class_tonic_1_1_compressor.html#a8688ae03a8f42a43225161dca3cb33cc" title="Tonic::Compressor::\lsetIsStereo" alt="" coords="255,5,398,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_limiter.html#abf5bbb78a333266f5cee89007c3b6995" title="Tonic::Limiter::setIsStereo" alt="" coords="236,71,417,98"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_synth__.html#a0fa81ace732a149680ee1daf023882ef" title="Tonic::Tonic_::Synth\l_::Synth_" alt="" coords="465,64,608,105"/>
+</map>

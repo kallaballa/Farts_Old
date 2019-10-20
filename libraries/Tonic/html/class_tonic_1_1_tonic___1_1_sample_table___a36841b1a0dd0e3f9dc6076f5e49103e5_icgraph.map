@@ -1,0 +1,13 @@
+<map id="Tonic::Tonic_::SampleTable_::frames" name="Tonic::Tonic_::SampleTable_::frames">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#ab859332a07201130fa76436a3002f8cf" title="Tonic::Tonic_::RingBuffer\l_::write" alt="" coords="250,5,421,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#af6e6509b1f70642a5c8c9ee0793d7e93" title="Tonic::Tonic_::RingBuffer\l_::read" alt="" coords="250,71,421,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a65518f75bcda76848a01369557dfe267" title="Tonic::Tonic_::SampleTable\l_::SampleTable_" alt="" coords="241,136,429,177"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a294e78d6aa875ddb8766a114ccd95047" title="Tonic::Tonic_::SampleTable\l_::resize" alt="" coords="241,201,429,243"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a4066cd22b7f2ef343965103d06b156df" title="Tonic::Tonic_::SampleTable\l_::resample" alt="" coords="241,332,429,373"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_sample_table.html#a5cfae1bbf34f15b6b543db2453f8b203" title="Tonic::SampleTable\l::frames" alt="" coords="264,267,407,308"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_sample_table.html#ad7b66232c96be3892f7fee9c52e0f8a8" title="Tonic::SampleTable\l::resize" alt="" coords="477,235,620,276"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="668,268,855,309"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="903,246,1091,273"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="914,297,1079,339"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_sample_table.html#a273e3c7c36f450b98b1c156427ec17a1" title="Tonic::SampleTable\l::resample" alt="" coords="477,300,620,341"/>
+</map>

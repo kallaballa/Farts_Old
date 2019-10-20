@@ -1,0 +1,8 @@
+<map id="Tonic::Tonic_::RingBufferReader_::setRingBuffer" name="Tonic::Tonic_::RingBufferReader_::setRingBuffer">
+<area shape="rect" id="node2" href="$class_tonic_1_1_sample_table.html#ae1f398693c89630b57fba8791ca4978a" title="Tonic::SampleTable\l::channels" alt="" coords="237,5,379,47"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="224,71,392,112"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a76165f178b7c32b9e81f7e3b43f43690" title="Tonic::Tonic_::SampleTable\l_::channels" alt="" coords="440,5,628,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="676,5,816,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="464,71,604,112"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="701,78,791,105"/>
+</map>

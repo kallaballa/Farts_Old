@@ -1,0 +1,10 @@
+<map id="Tonic::Tonic_::BitCrusher_::computeSynthesisBlock" name="Tonic::Tonic_::BitCrusher_::computeSynthesisBlock">
+<area shape="rect" id="node2" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="270,31,369,57"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#aecc103405629058daf760aa4ab460901" title="Returns the total number of audio samples represented by the object. " alt="" coords="249,82,389,123"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="236,147,403,189"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="513,5,600,32"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="515,56,598,83"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="451,147,663,189"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="711,118,923,159"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="771,184,862,211"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Tonic::Tonic_::Divider_::setRight" name="Tonic::Tonic_::Divider_::setRight">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_generator__.html#a6ebd69e64a5c99b123bd6d6f07a908c2" title="Tonic::Tonic_::Generator\l_::isStereoOutput" alt="" coords="431,5,599,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_generator.html#a8900f469334bdebb1de27cd7b3fb8ea8" title="Tonic::Generator::isStereo\lOutput" alt="" coords="203,48,383,89"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_divider__.html#ae56d2f04440f1c4482103b42c7d84869" title="Tonic::Tonic_::Divider\l_::setIsStereoOutput" alt="" coords="218,113,367,155"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="647,109,787,151"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="431,139,599,180"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="835,117,925,143"/>
+</map>

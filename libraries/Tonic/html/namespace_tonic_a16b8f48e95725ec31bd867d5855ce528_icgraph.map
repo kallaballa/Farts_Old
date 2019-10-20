@@ -1,0 +1,9 @@
+<map id="Tonic::warning" name="Tonic::warning">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_ring_buffer_writer__.html#a31984b104fd3adb149e047ea4418f19c" title="Tonic::Tonic_::RingBuffer\lWriter_::initRingBuffer" alt="" coords="169,5,340,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#ab859332a07201130fa76436a3002f8cf" title="Tonic::Tonic_::RingBuffer\l_::write" alt="" coords="169,71,340,112"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#af6e6509b1f70642a5c8c9ee0793d7e93" title="Tonic::Tonic_::RingBuffer\l_::read" alt="" coords="169,136,340,177"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="161,201,348,243"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_ring_buffer_writer.html#a09f0488fa0a4573e00b993e84aafdbc3" title="Tonic::RingBufferWriter\l::RingBufferWriter" alt="" coords="409,5,571,47"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="396,179,584,206"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="407,231,573,272"/>
+</map>

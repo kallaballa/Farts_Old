@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::ControlParameter_::setName" name="Tonic::Tonic_::ControlParameter_::setName">
+<area shape="rect" id="node2" href="$class_tonic_1_1_control_parameter.html#adb8158ef8ea912bf80142990ebd89503" title="Tonic::ControlParameter\l::name" alt="" coords="268,35,437,76"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_synth__.html#ad8210e756e34da456fb24e8f0d0359bb" title="Tonic::Tonic_::Synth\l_::addParameter" alt="" coords="485,35,628,76"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_synth__.html#ad3cbe4e000254f6ad7135ee788df7099" title="Tonic::Tonic_::Synth\l_::addParametersFromSynth" alt="" coords="676,5,867,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_synth.html#a676b7312be699537396b61760ed44a92" title="Add a ControlParameter with name &quot;name&quot;. " alt="" coords="677,71,865,98"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_synth.html#a990575ebb23ffea2696be55b9d5e3de2" title="Add all the parameters from another synth. " alt="" coords="915,5,1109,47"/>
+</map>

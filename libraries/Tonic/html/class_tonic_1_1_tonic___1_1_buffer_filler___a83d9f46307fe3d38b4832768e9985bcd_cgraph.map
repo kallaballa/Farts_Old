@@ -1,0 +1,13 @@
+<map id="Tonic::Tonic_::BufferFiller_::tick" name="Tonic::Tonic_::BufferFiller_::tick">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_generator__.html#a2994a18583a9803bc8b5550eb16c2994" title="Tonic::Tonic_::Generator\l_::tick" alt="" coords="227,119,395,160"/>
+<area shape="rect" id="node11" href="$struct_tonic_1_1_tonic___1_1_synthesis_context__.html#a17adb73fb30046904af2858904d5b499" title="Tonic::Tonic_::Synthesis\lContext_::tick" alt="" coords="227,184,394,225"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_generator__.html#a98a15aa7367a43b00d61ee8916504598" title="Tonic::Tonic_::Generator\l_::computeSynthesisBlock" alt="" coords="443,57,625,99"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="464,123,604,164"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="673,5,813,47"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="698,71,789,98"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic_frames.html#ae65dbebbf929f3f99f200ba2931c61b7" title="Fill all channels with contents of channel 0. " alt="" coords="673,123,813,164"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#ae447eccc48ac3e9591ebd182644d9e16" title="Tonic::vcopy" alt="" coords="1049,159,1148,186"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="673,240,813,281"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic_frames.html#a5c71f60a3a113a9ba9c63a8af1de4528" title="Copy one channel to another. " alt="" coords="861,123,1001,164"/>
+<area shape="rect" id="node12" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="467,191,601,218"/>
+</map>

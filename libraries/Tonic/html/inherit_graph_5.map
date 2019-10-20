@@ -1,0 +1,35 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_tonic_1_1_tonic___1_1_control_generator__.html" title="Tonic::Tonic_::ControlGenerator_" alt="" coords="5,844,224,871"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_adder__.html" title="Tonic::Tonic_::ControlAdder_" alt="" coords="289,169,483,196"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_control_comparison_operator__.html" title="Tonic::Tonic_::ControlComparison\lOperator_" alt="" coords="274,221,498,262"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_control_conditioner__.html" title="Tonic::Tonic_::ControlConditioner_" alt="" coords="272,565,500,592"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_control_counter__.html" title="Tonic::Tonic_::ControlCounter_" alt="" coords="283,616,489,643"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_control_divider__.html" title="Tonic::Tonic_::ControlDivider_" alt="" coords="287,667,485,693"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_tonic___1_1_control_metro__.html" title="Tonic::Tonic_::ControlMetro_" alt="" coords="289,717,483,744"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_control_multiplier__.html" title="Tonic::Tonic_::ControlMultiplier_" alt="" coords="279,768,493,795"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic___1_1_control_pulse__.html" title="Tonic::Tonic_::ControlPulse_" alt="" coords="290,819,482,845"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_control_random__.html" title="Tonic::Tonic_::ControlRandom_" alt="" coords="283,869,489,896"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_tonic___1_1_control_stepper__.html" title="Tonic::Tonic_::ControlStepper_" alt="" coords="282,920,490,947"/>
+<area shape="rect" id="node27" href="$class_tonic_1_1_tonic___1_1_control_subtractor__.html" title="Tonic::Tonic_::ControlSubtractor_" alt="" coords="275,971,497,997"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_tonic___1_1_control_switcher__.html" title="Tonic::Tonic_::ControlSwitcher_" alt="" coords="280,1021,492,1048"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_tonic___1_1_control_trigger__.html" title="Tonic::Tonic_::ControlTrigger_" alt="" coords="285,1072,487,1099"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_tonic___1_1_control_trigger_filter__.html" title="Tonic::Tonic_::ControlTrigger\lFilter_" alt="" coords="288,1123,484,1165"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_tonic___1_1_control_value__.html" title="Tonic::Tonic_::ControlValue_" alt="" coords="291,1189,481,1216"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_tonic___1_1_control_x_y_speed__.html" title="Tonic::Tonic_::ControlXYSpeed_" alt="" coords="279,1240,493,1267"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_equals__.html" title="Tonic::Tonic_::ControlEquals_" alt="" coords="560,5,757,32"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_greater_or_equal__.html" title="Tonic::Tonic_::ControlGreater\lOrEqual_" alt="" coords="560,57,757,98"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_greater_than__.html" title="Tonic::Tonic_::ControlGreater\lThan_" alt="" coords="560,122,757,163"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_less_or_equal__.html" title="Tonic::Tonic_::ControlLess\lOrEqual_" alt="" coords="568,187,749,229"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_less_than__.html" title="Tonic::Tonic_::ControlLess\lThan_" alt="" coords="568,253,749,294"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_control_not_equals__.html" title="Tonic::Tonic_::ControlNot\lEquals_" alt="" coords="571,318,746,359"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_control_change_notifier__.html" title="Tonic::Tonic_::ControlChange\lNotifier_" alt="" coords="559,383,758,425"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_control_db_to_linear__.html" title="Tonic::Tonic_::ControlDb\lToLinear_" alt="" coords="574,449,743,490"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_control_delay__.html" title="Tonic::Tonic_::ControlDelay_" alt="" coords="563,515,754,541"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_control_floor__.html" title="Tonic::Tonic_::ControlFloor_" alt="" coords="565,565,753,592"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_control_metro_divider__.html" title="Tonic::Tonic_::ControlMetro\lDivider_" alt="" coords="565,617,753,658"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_control_midi_to_freq__.html" title="Tonic::Tonic_::ControlMidi\lToFreq_" alt="" coords="570,682,747,723"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_control_printer__.html" title="Tonic::Tonic_::ControlPrinter_" alt="" coords="559,748,758,775"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_tonic___1_1_control_recorder__.html" title="Tonic::Tonic_::ControlRecorder_" alt="" coords="551,799,766,825"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_control_snap_to_scale__.html" title="Tonic::Tonic_::ControlSnap\lToScale_" alt="" coords="567,850,750,891"/>
+<area shape="rect" id="node32" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html" title="Parameter for controlling a Synth instance. " alt="" coords="548,1189,769,1216"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Tonic::Tonic_::BasicDelay_::setInput" name="Tonic::Tonic_::BasicDelay_::setInput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="248,5,388,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_generator.html#a8900f469334bdebb1de27cd7b3fb8ea8" title="Tonic::Generator::isStereo\lOutput" alt="" coords="228,71,408,112"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="470,253,610,295"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_effect__.html#a393df7e6085dabc20b3e38cbe711d9b7" title="Tonic::Tonic_::Effect\l_::setInput" alt="" coords="245,188,391,229"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae66d3fcbaf075b28d5c9b350612a3084" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="245,253,391,295"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="234,319,402,360"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_generator__.html#a6ebd69e64a5c99b123bd6d6f07a908c2" title="Tonic::Tonic_::Generator\l_::isStereoOutput" alt="" coords="456,71,624,112"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="672,261,763,287"/>
+</map>

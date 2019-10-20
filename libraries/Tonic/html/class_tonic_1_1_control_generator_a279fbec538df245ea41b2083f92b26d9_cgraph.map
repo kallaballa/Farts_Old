@@ -1,0 +1,6 @@
+<map id="Tonic::ControlGenerator::smoothed" name="Tonic::ControlGenerator::smoothed">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#adbec00428dbbd703b0d1b32a6c48ba7a" title="Tonic::Tonic_::ControlGenerator\l_::initialOutput" alt="" coords="220,35,432,76"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="480,35,692,76"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="740,5,952,47"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="801,71,891,98"/>
+</map>

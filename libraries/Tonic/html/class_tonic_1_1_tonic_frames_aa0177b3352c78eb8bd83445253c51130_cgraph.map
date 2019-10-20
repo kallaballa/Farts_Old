@@ -1,0 +1,5 @@
+<map id="Tonic::TonicFrames::operator/=" name="Tonic::TonicFrames::operator/=">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="193,5,333,47"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="218,71,309,98"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="193,123,333,164"/>
+</map>

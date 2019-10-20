@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::Effect_::isStereoInput" name="Tonic::Tonic_::Effect_::isStereoInput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a9a3686c6a86a6eaa0baf187e687fbe4d" title="Tonic::Tonic_::BasicDelay\l_::computeSynthesisBlock" alt="" coords="200,5,383,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html#ab7f37025078475bcfefb2c8d2859fd83" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="218,71,365,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html#a96e078751826993973de8bf8ec08e67e" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="218,136,365,177"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html#ab1b21c876e18d3310e788eaa7d82145b" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="217,201,366,243"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html#a21827a0758d2bd77a7ac2c2c36ece32c" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="217,267,366,308"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html#ace4cf900865a33870a2f12559df22cb4" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="217,332,365,373"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html#a11991adf741a8eeea2387399388995b1" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="217,397,365,439"/>
+</map>

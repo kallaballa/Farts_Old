@@ -1,0 +1,8 @@
+<map id="Tonic::Synth::publishChanges" name="Tonic::Synth::publishChanges">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_buffer_filler.html#a522e11869aef4d295d97e0f6aa31d22f" title="Tonic::TemplatedBufferFiller\l\&lt; Tonic_::Synth_ \&gt;::gen" alt="" coords="252,5,445,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_synth__.html#a5ab466d42e902586ba455a8cb350d2d4" title="Tonic::Tonic_::Synth\l_::publishChanges" alt="" coords="277,71,420,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_control_change_notifier.html#a76bd653856e42343909e4c146fa9959f" title="Tonic::ControlChangeNotifier\l::setName" alt="" coords="516,5,713,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_templated_control_conditioner.html#a7933810049e4897d67b487456a879c08" title="Tonic::TemplatedControlConditioner\l::input" alt="" coords="493,71,736,112"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_synth__.html#a16e678a2a6e85f10e405a45445773705" title="Tonic::Tonic_::Synth\l_::addAuxControlGenerator" alt="" coords="523,136,707,177"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_templated_control_generator.html#a04f52d5f619ba8519fa808ad92cb8c7a" title="Tonic::TemplatedControlGenerator\l\&lt; Tonic_::ControlChangeNotifier_ \&gt;::gen" alt="" coords="784,5,1043,47"/>
+</map>

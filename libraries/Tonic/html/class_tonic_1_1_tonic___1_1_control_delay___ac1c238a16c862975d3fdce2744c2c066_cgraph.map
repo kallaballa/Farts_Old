@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::ControlDelay_::computeOutput" name="Tonic::Tonic_::ControlDelay_::computeOutput">
+<area shape="rect" id="node2" href="$namespace_tonic.html#ab53e3f08268df7dcc02e026aa3a701b2" title="Tonic::debug" alt="" coords="271,5,373,32"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="279,56,365,83"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="255,107,389,133"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="239,158,405,199"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="453,158,665,199"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="713,129,925,170"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="774,195,865,221"/>
+</map>

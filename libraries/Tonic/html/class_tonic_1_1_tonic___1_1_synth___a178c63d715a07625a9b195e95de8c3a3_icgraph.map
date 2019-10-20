@@ -1,0 +1,3 @@
+<map id="Tonic::Tonic_::Synth_::setLimitOutput" name="Tonic::Tonic_::Synth_::setLimitOutput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_synth.html#a656b32ae33a0430804e33c319350a1a1" title="Set whether synth uses dynamic limiter to prevent clipping/wrapping. Defaults to true. " alt="" coords="196,13,388,39"/>
+</map>

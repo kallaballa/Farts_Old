@@ -1,0 +1,10 @@
+<map id="Tonic::Tonic_::Generator_::tick" name="Tonic::Tonic_::Generator_::tick">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_generator__.html#a98a15aa7367a43b00d61ee8916504598" title="Tonic::Tonic_::Generator\l_::computeSynthesisBlock" alt="" coords="221,57,404,99"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="243,123,383,164"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="452,5,592,47"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="477,71,567,98"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_frames.html#ae65dbebbf929f3f99f200ba2931c61b7" title="Fill all channels with contents of channel 0. " alt="" coords="452,123,592,164"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#ae447eccc48ac3e9591ebd182644d9e16" title="Tonic::vcopy" alt="" coords="828,159,927,186"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="452,240,592,281"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic_frames.html#a5c71f60a3a113a9ba9c63a8af1de4528" title="Copy one channel to another. " alt="" coords="640,123,780,164"/>
+</map>

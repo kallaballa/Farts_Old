@@ -1,0 +1,16 @@
+<map id="Tonic::Tonic_::Reverb_::Reverb_" name="Tonic::Tonic_::Reverb_::Reverb_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_delay_line.html#a04d8d64c52e74f02642616e22a9a1833" title="MUST be called prior to usage. " alt="" coords="213,97,388,123"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="445,173,585,215"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a62327cd59cc33e249cd17b2e0b38ea0f" title="Tonic::Tonic_::Reverb\l_::setDecayHPFCtrlGen" alt="" coords="219,199,382,240"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a31f8572c0b05dbb7b3308f512357ff59" title="Tonic::Tonic_::Reverb\l_::setDecayLPFCtrlGen" alt="" coords="221,264,381,305"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#a3f6d4f0b880e7ab4438d89e569cc9d9e" title="Tonic::Tonic_::WetDryEffect\l_::setDryLevelGen" alt="" coords="205,329,396,371"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4fb14ee338c3792d2c8de9985a363017" title="Tonic::Tonic_::Reverb\l_::setInputHPFCutoffCtrlGen" alt="" coords="204,395,397,436"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a0057ac14866067f557a05d63195ab67e" title="Tonic::Tonic_::Reverb\l_::setInputLPFCutoffCtrlGen" alt="" coords="205,460,396,501"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_templated_effect.html#a989174831cf1611c99f19aa2af81bfeb" title="Tonic::TemplatedEffect\l::setIsStereoInput" alt="" coords="217,525,384,567"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="217,591,385,632"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#ab10b74eefb7a1ccf1020e521f3834241" title="Tonic::Tonic_::WetDryEffect\l_::setWetLevelGen" alt="" coords="205,656,396,697"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="445,5,585,47"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="472,71,559,98"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="448,122,583,149"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="633,181,724,207"/>
+</map>

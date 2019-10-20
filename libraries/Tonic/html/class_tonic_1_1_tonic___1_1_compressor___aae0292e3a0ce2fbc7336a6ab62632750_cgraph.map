@@ -1,0 +1,16 @@
+<map id="Tonic::Tonic_::Compressor_::tick" name="Tonic::Tonic_::Compressor_::tick">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae36f0fca0d4d61874b32cda225b33421" title="Tonic::Tonic_::Effect\l_::tick" alt="" coords="236,213,383,255"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_generator.html#aec0f6d29ff483badf4112ba3da09f71a" title="Tonic::Generator::tick" alt="" coords="439,141,589,167"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_generator__.html#a98a15aa7367a43b00d61ee8916504598" title="Tonic::Tonic_::Generator\l_::computeSynthesisBlock" alt="" coords="920,191,1103,232"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="941,125,1081,167"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="1190,257,1281,283"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="431,293,597,335"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_generator__.html#a2994a18583a9803bc8b5550eb16c2994" title="Tonic::Tonic_::Generator\l_::tick" alt="" coords="667,125,835,167"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="1165,71,1305,112"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic_frames.html#ae65dbebbf929f3f99f200ba2931c61b7" title="Fill all channels with contents of channel 0. " alt="" coords="1165,188,1305,229"/>
+<area shape="rect" id="node11" href="$namespace_tonic.html#ae447eccc48ac3e9591ebd182644d9e16" title="Tonic::vcopy" alt="" coords="1541,166,1640,193"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="1165,5,1305,47"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic_frames.html#a5c71f60a3a113a9ba9c63a8af1de4528" title="Copy one channel to another. " alt="" coords="1353,188,1493,229"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="645,293,857,335"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="905,308,1117,349"/>
+</map>

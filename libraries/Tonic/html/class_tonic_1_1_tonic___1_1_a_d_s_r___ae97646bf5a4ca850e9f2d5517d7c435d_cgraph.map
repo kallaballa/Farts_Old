@@ -1,0 +1,10 @@
+<map id="Tonic::Tonic_::ADSR_::computeSynthesisBlock" name="Tonic::Tonic_::ADSR_::computeSynthesisBlock">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a8ce3b1053b93b91f849feae1ef7d264d" title="Tick one sample through one&#45;pole lowpass filter. " alt="" coords="238,5,401,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_a_d_s_r__.html#a0d51cd35d62a8c772f1bb41f32f5fe73" title="Tonic::Tonic_::ADSR\l_::switchState" alt="" coords="248,57,391,98"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="236,122,403,163"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="749,31,884,57"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#a1bbeec877892ac96f89e750b0a5339fd" title="Calculate coefficient for a pole with given time constant to reach &#45;60dB delta in t60s seconds..." alt="" coords="466,68,647,95"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="451,122,663,163"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="711,109,923,150"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="771,175,862,201"/>
+</map>

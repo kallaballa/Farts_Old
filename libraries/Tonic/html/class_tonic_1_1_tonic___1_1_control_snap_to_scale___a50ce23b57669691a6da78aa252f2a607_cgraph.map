@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::ControlSnapToScale_::computeOutput" name="Tonic::Tonic_::ControlSnapToScale_::computeOutput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_snap_to_scale__.html#a8b6168100b23381607bfc476c7bf5c46" title="Tonic::Tonic_::ControlSnap\lToScale_::snap" alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="244,71,411,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="467,71,679,112"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="727,41,939,83"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="787,107,878,134"/>
+</map>

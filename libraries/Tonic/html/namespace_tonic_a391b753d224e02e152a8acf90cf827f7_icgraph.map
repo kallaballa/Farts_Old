@@ -1,0 +1,51 @@
+<map id="Tonic::max" name="Tonic::max">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ae5c0642e369390ba527aca6e3b214653" title="Tonic::Tonic_::Compressor\l_::computeSynthesisBlock" alt="" coords="689,5,872,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_control_delay__.html#a2a0177a1abf5b18451d300bc97808cc6" title="Tonic::Tonic_::ControlDelay\l_::initialize" alt="" coords="159,913,345,955"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_delay__.html#ac1c238a16c862975d3fdce2744c2c066" title="Override this function to implement a new ControlGenerator. " alt="" coords="159,979,345,1020"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_metro__.html#acbf4ab0607cc3a4626734c79663c64f2" title="Override this function to implement a new ControlGenerator. " alt="" coords="158,1044,346,1085"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_metro_divider__.html#a2cdd816de6e8a6d2fa026433fe7cbdd0" title="Override this function to implement a new ControlGenerator. " alt="" coords="158,1109,346,1151"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#ac4624470696506b51b66d5cbadd374a3" title="Tonic::Tonic_::ControlParameter\l_::setMax" alt="" coords="145,1175,359,1216"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_control_pulse__.html#a33f8440647e13942731c68116a2bc5ca" title="Override this function to implement a new ControlGenerator. " alt="" coords="159,1240,345,1281"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_delay_line.html#a04d8d64c52e74f02642616e22a9a1833" title="MUST be called prior to usage. " alt="" coords="165,1306,339,1333"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_filter__.html#a732a345ac51835876033517851b544bf" title="Tonic::Tonic_::Filter\l_::computeSynthesisBlock" alt="" coords="426,77,609,119"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic___1_1_mono_to_stereo_panner__.html#ab0e5519b7195bda5287436a4dafebd62" title="Tonic::Tonic_::MonoToStereo\lPanner_::computeSynthesisBlock" alt="" coords="140,1357,364,1399"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4eda09bf2da1309c3c88aa8546e17870" title="Tonic::Tonic_::Reverb\l_::updateDelayTimes" alt="" coords="705,697,856,739"/>
+<area shape="rect" id="node27" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="203,391,301,418"/>
+<area shape="rect" id="node41" href="$namespace_tonic.html#a57167286572c8fc0f50b0bda8505129c" title="Tonic::map" alt="" coords="473,761,561,787"/>
+<area shape="rect" id="node48" href="$namespace_tonic.html#a19c1af9de52d638421c57bb5953de604" title="Takes linear value 0&#45;1, maps to logarithmic value (base logBase) scaled to min&#45;max. Useful for making faders. " alt="" coords="709,915,853,942"/>
+<area shape="rect" id="node49" href="$namespace_tonic.html#a79cf0606153f9d4897822cd3d53078ba" title="Takes logarithmic value between min&#45;max, maps to linear value 0&#45;1. Useful for making faders..." alt="" coords="709,865,853,891"/>
+<area shape="rect" id="node50" href="$namespace_tonic.html#a4ead6ee35065a2a9d2b1d4ef861d07df" title="Tonic::linTodB" alt="" coords="199,1423,305,1450"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_control_delay.html#a2517e295ff430e1182f69962bc367487" title="Tonic::ControlDelay\l::ControlDelay" alt="" coords="448,913,587,955"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_control_parameter.html#a95ab702d15b4bbd2254d6f11ee7e4797" title="Tonic::ControlParameter::max" alt="" coords="417,1117,617,1143"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a81e69f96fadd4801776f8d2e3622507a" title="Tonic::Tonic_::BasicDelay\l_::initialize" alt="" coords="430,1168,605,1209"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_comb_filter__.html#af93bfd3715009b8f73579a3516f96773" title="Tonic::Tonic_::CombFilter\l_::initialize" alt="" coords="430,1233,605,1275"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_tonic___1_1_compressor__.html#afab8be6392cc0ebc51ccf6e4e7cd1907" title="Tonic::Tonic_::Compressor\l_::Compressor_" alt="" coords="426,1299,609,1340"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_impulse_diffuser_allpass.html#a9e0ee9d5898bf46f6d222fefffb70edf" title="Tonic::Tonic_::ImpulseDiffuser\lAllpass::ImpulseDiffuserAllpass" alt="" coords="412,1364,623,1405"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4d36626e45245e370420f5e856780853" title="Tonic::Tonic_::Reverb\l_::Reverb_" alt="" coords="442,1429,593,1471"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#ae2ce29dceb4713ef4de1190507fbc465" title="Tonic::Tonic_::StereoDelay\l_::initialize" alt="" coords="426,1495,609,1536"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_basic_delay.html#a1a9a02e7747fc5e57ea66bdde4f9bd92" title="Allocating only with time argument will default max delay time to 1.5 * delayTime. " alt="" coords="713,1136,848,1177"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_f_f_comb_filter.html#a7544582865e194342ebdd85beb722e9e" title="Tonic::FFCombFilter\l::FFCombFilter" alt="" coords="709,1332,852,1373"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_f_b_comb_filter.html#aa526334e7079c1aeadd88ac9e11a107f" title="Tonic::FBCombFilter\l::FBCombFilter" alt="" coords="709,1201,852,1243"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_filtered_f_b_comb_filter6.html#a25ba41a85c58d743646fd91b98420070" title="Tonic::FilteredFBCombFilter6\l::FilteredFBCombFilter6" alt="" coords="682,1267,879,1308"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_stereo_delay.html#a899b77fd4978bd00b20a2ce282ac54e7" title="Tonic::StereoDelay\l::StereoDelay" alt="" coords="712,1495,849,1536"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="955,443,1137,484"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_tonic___1_1_bit_crusher__.html#a9730600303eb72a592ad5f57f65e0d6b" title="Tonic::Tonic_::BitCrusher\l_::computeSynthesisBlock" alt="" coords="426,143,609,184"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_tonic___1_1_control_switcher__.html#a07f621f0624f00f74a56d0f6836400d9" title="Override this function to implement a new ControlGenerator. " alt="" coords="414,208,621,249"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_delay_line.html#aafa0e3bd633998b2040ac256abc54553" title="Return one interpolated, delayed sample. Does not advance read/write head. " alt="" coords="432,391,603,418"/>
+<area shape="rect" id="node37" href="$namespace_tonic.html#a75dec8ccfdffc296e2cceb696d398cd2" title="Calculate coefficient for a pole with a given desired cutoff in hz. " alt="" coords="418,533,617,559"/>
+<area shape="rect" id="node40" href="$class_tonic_1_1_tonic___1_1_angular_wave__.html#aa9a008d49523c9936f51fe9ac5d99715" title="Tonic::Tonic_::AngularWave\l_::computeSynthesisBlock" alt="" coords="424,325,611,367"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a9a3686c6a86a6eaa0baf187e687fbe4d" title="Tonic::Tonic_::BasicDelay\l_::computeSynthesisBlock" alt="" coords="689,253,872,295"/>
+<area shape="rect" id="node32" href="$class_tonic_1_1_tonic___1_1_f_f_comb_filter__.html#a2f588446d56dea0c7594e9b8896f3483" title="Tonic::Tonic_::FFCombFilter\l_::computeSynthesisBlock" alt="" coords="687,319,875,360"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_tonic___1_1_f_b_comb_filter__.html#ac32ca69309851325901adc6748b7012e" title="Tonic::Tonic_::FBCombFilter\l_::computeSynthesisBlock" alt="" coords="686,384,875,425"/>
+<area shape="rect" id="node34" href="$class_tonic_1_1_tonic___1_1_filtered_f_b_comb_filter6__.html#a2c80e1268e507ebc011620a578d4c949" title="Tonic::Tonic_::FilteredFBComb\lFilter6_::computeSynthesisBlock" alt="" coords="671,501,891,543"/>
+<area shape="rect" id="node35" href="$class_tonic_1_1_tonic___1_1_impulse_diffuser_allpass.html#aaadeeb815b50db0ff37f2d6ef0af545d" title="Tonic::Tonic_::ImpulseDiffuser\lAllpass::tickThrough" alt="" coords="679,71,882,112"/>
+<area shape="rect" id="node36" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#a70e00c5830b612a1071e9cfd801d4ff2" title="Tonic::Tonic_::StereoDelay\l_::computeSynthesisBlock" alt="" coords="689,136,872,177"/>
+<area shape="rect" id="node38" href="$class_tonic_1_1_tonic___1_1_l_p_f6__.html#a7253262f2cc19bd629f673e97f810321" title="Tonic::Tonic_::LPF6\l_::applyFilter" alt="" coords="711,632,850,673"/>
+<area shape="rect" id="node39" href="$class_tonic_1_1_tonic___1_1_h_p_f6__.html#a0e19ef8554ca4ed21dd1d9e9166b5b3a" title="Tonic::Tonic_::HPF6\l_::applyFilter" alt="" coords="710,567,851,608"/>
+<area shape="rect" id="node42" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#af0de46eae927ff0ccbe430b2e8db13cb" title="Tonic::Tonic_::ControlParameter\l_::setNormalizedValue" alt="" coords="939,885,1153,927"/>
+<area shape="rect" id="node46" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#a31877ee477de71ddc038624684498fee" title="Tonic::Tonic_::ControlParameter\l_::getNormalizedValue" alt="" coords="939,777,1153,819"/>
+<area shape="rect" id="node43" href="$class_tonic_1_1_control_parameter.html#a1ce851dd30b695b1c9207e92e365ebc0" title="Tonic::ControlParameter\l::setNormalizedValue" alt="" coords="1201,885,1371,927"/>
+<area shape="rect" id="node44" href="$class_tonic_1_1_tonic___1_1_synth__.html#a112cbeb2fdd4d1a6ff421119140ed0a2" title="Tonic::Tonic_::Synth\l_::setParameter" alt="" coords="1419,885,1561,927"/>
+<area shape="rect" id="node45" href="$class_tonic_1_1_synth.html#a74c5d3e417ba4b59c4a190593bdefe28" title="Set the value of a control parameter on this synth. " alt="" coords="1609,893,1795,919"/>
+<area shape="rect" id="node47" href="$class_tonic_1_1_control_parameter.html#a9daf5ec269c7e00e4e9652256b650042" title="Tonic::ControlParameter\l::getNormalizedValue" alt="" coords="1201,777,1371,819"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::LPF24_::applyFilter" name="Tonic::Tonic_::LPF24_::applyFilter">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a9493b1f8836a449960fbfd3d8513123c" title="Compute coefficients from analog prototype using bilinear transform. " alt="" coords="248,23,356,49"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_biquad.html#af8cf40e98a4a50ea26ed549dd958cda7" title="Tonic::Biquad::filter" alt="" coords="233,107,371,133"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_biquad.html#a875fb2bb413d31e64531c67fdf4b9b37" title="Set the coefficients for the filtering operation. " alt="" coords="200,157,404,184"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="455,5,589,32"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="452,57,592,98"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="477,123,567,149"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic_frames.html#aecc103405629058daf760aa4ab460901" title="Returns the total number of audio samples represented by the object. " alt="" coords="452,174,592,215"/>
+</map>

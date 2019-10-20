@@ -1,0 +1,6 @@
+<map id="Tonic::dBToLin" name="Tonic::dBToLin">
+<area shape="rect" id="node2" href="$class_tonic_1_1_limiter.html#a614e063e2e82a8080e3a97205f74fffb" title="Tonic::Limiter::Limiter" alt="" coords="180,5,331,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_control_db_to_linear__.html#aaf00ca9df39998d436aee20dc122f3fc" title="Override this function to implement a new ControlGenerator. " alt="" coords="164,57,347,98"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4eda09bf2da1309c3c88aa8546e17870" title="Tonic::Tonic_::Reverb\l_::updateDelayTimes" alt="" coords="180,122,331,163"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="395,122,577,163"/>
+</map>

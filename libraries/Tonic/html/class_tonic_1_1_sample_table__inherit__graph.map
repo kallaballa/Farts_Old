@@ -1,0 +1,5 @@
+<map id="Tonic::SampleTable" name="Tonic::SampleTable">
+<area shape="rect" id="node4" href="$class_tonic_1_1_ring_buffer.html" title="Like a SampleTable_, but with counters for over/underrun detection and easy synchronous read/write..." alt="" coords="45,736,171,857"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_smart_pointer.html" title="{Tonic::TonicSmartPointer\l\&lt; Tonic_::SampleTable_ \&gt;\n|# obj\l# pcount\l|+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ operator=()\l+ ~TonicSmartPointer()\l+ retain()\l+ release()\l+ operator==()\l}" alt="" coords="20,263,196,472"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Reference counting smart pointer class template. " alt="" coords="5,5,211,200"/>
+</map>

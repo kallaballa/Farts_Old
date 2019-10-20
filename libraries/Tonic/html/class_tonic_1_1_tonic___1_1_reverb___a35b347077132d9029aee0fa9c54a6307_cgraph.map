@@ -1,0 +1,25 @@
+<map id="Tonic::Tonic_::Reverb_::computeSynthesisBlock" name="Tonic::Tonic_::Reverb_::computeSynthesisBlock">
+<area shape="rect" id="node2" href="$class_tonic_1_1_delay_line.html#aea6a2cd54161c0cce6471a3bdc524631" title="Advance read/write heads. " alt="" coords="236,143,413,170"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="733,573,831,599"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_frames.html#af081b95bfe3520d69a5410f5687ec432" title="clear the frames data " alt="" coords="255,321,395,363"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="255,195,395,236"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="461,304,628,345"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_delay_line.html#a8d248a5c01886cddfb7281d5aed6255c" title="Tick one sample in (write at write head). Does not advance read/write head. " alt="" coords="245,505,404,531"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_delay_line.html#aafa0e3bd633998b2040ac256abc54553" title="Return one interpolated, delayed sample. Does not advance read/write head. " alt="" coords="239,737,410,763"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_templated_effect.html#aa233bf7cbfb0ff2c90c9435da269ce48" title="Tonic::TemplatedEffect\l::tickThrough" alt="" coords="241,671,408,712"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4eda09bf2da1309c3c88aa8546e17870" title="Tonic::Tonic_::Reverb\l_::updateDelayTimes" alt="" coords="249,439,400,480"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="999,471,1085,498"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="1001,547,1083,574"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="475,136,615,177"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="997,253,1087,279"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic_frames.html#ae65dbebbf929f3f99f200ba2931c61b7" title="Fill all channels with contents of channel 0. " alt="" coords="475,5,615,47"/>
+<area shape="rect" id="node12" href="$namespace_tonic.html#ae447eccc48ac3e9591ebd182644d9e16" title="Tonic::vcopy" alt="" coords="993,173,1091,199"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="475,71,615,112"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic_frames.html#a5c71f60a3a113a9ba9c63a8af1de4528" title="Copy one channel to another. " alt="" coords="712,71,852,112"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="676,304,888,345"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="936,304,1148,345"/>
+<area shape="rect" id="node19" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="477,737,612,763"/>
+<area shape="rect" id="node22" href="$namespace_tonic.html#a57167286572c8fc0f50b0bda8505129c" title="Tonic::map" alt="" coords="501,522,589,549"/>
+<area shape="rect" id="node23" href="$namespace_tonic.html#ad1acdb16d662fd6389586e5e1721c510" title="Tonic::randomFloat" alt="" coords="476,421,613,447"/>
+<area shape="rect" id="node24" href="$namespace_tonic.html#a0940cf00f71b0aeaed1f780025eb4daf" title="Tonic::dBToLin" alt="" coords="489,471,600,498"/>
+</map>

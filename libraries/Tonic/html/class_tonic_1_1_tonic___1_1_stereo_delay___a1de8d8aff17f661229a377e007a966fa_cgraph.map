@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::StereoDelay_::StereoDelay_" name="Tonic::Tonic_::StereoDelay_::StereoDelay_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="475,175,615,217"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#a3f6d4f0b880e7ab4438d89e569cc9d9e" title="Tonic::Tonic_::WetDryEffect\l_::setDryLevelGen" alt="" coords="236,45,427,86"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#a2401a35bc0dff52751cd9436562b3eae" title="Tonic::Tonic_::StereoDelay\l_::setFeedback" alt="" coords="240,110,423,151"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae66d3fcbaf075b28d5c9b350612a3084" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="258,175,405,217"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="247,241,415,282"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#ab10b74eefb7a1ccf1020e521f3834241" title="Tonic::Tonic_::WetDryEffect\l_::setWetLevelGen" alt="" coords="236,306,427,347"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="663,183,753,209"/>
+</map>

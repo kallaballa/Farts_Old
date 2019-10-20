@@ -1,0 +1,4 @@
+<map id="Tonic::Tonic_::RectWaveBL_" name="Tonic::Tonic_::RectWaveBL_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_b_l_e_p_oscillator__.html" title="{Tonic::Tonic_::BLEPOscillator_\n|# freqGen_\l# freqFrames_\l# phase_\l# ringBuf_\l# accum_\l# lBuffer_\l# iBuffer_\l# nInit_\l# minBLEP_\l# minBLEPlength_\l# minBLEPOversampling_\l|+ BLEPOscillator_()\l+ ~BLEPOscillator_()\l+ setFreqGen()\l# addBLEP()\l}" alt="" coords="5,233,208,501"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# outputFrames_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="11,5,202,185"/>
+</map>

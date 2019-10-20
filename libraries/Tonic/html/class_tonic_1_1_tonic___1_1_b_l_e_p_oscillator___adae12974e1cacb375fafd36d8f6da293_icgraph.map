@@ -1,0 +1,4 @@
+<map id="Tonic::Tonic_::BLEPOscillator_::addBLEP" name="Tonic::Tonic_::BLEPOscillator_::addBLEP">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_rect_wave_b_l__.html#a0182a504ca093528f2d6060ae904167b" title="Tonic::Tonic_::RectWaveBL\l_::computeSynthesisBlock" alt="" coords="257,5,442,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_sawtooth_wave_b_l__.html#ab329d343a837d06b557b0a26ebe70993" title="Tonic::Tonic_::SawtoothWave\lBL_::computeSynthesisBlock" alt="" coords="249,71,449,112"/>
+</map>

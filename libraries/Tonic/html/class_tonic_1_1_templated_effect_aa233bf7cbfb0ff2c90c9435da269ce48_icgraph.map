@@ -1,0 +1,4 @@
+<map id="Tonic::TemplatedEffect::tickThrough" name="Tonic::TemplatedEffect::tickThrough">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="220,5,403,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_synth__.html#a1c6c36f6d3bef93a89e48c9f8649bd95" title="Tonic::Tonic_::Synth\l_::computeSynthesisBlock" alt="" coords="220,71,403,112"/>
+</map>

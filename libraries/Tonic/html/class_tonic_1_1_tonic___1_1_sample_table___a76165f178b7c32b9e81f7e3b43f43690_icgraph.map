@@ -1,0 +1,18 @@
+<map id="Tonic::Tonic_::SampleTable_::channels" name="Tonic::Tonic_::SampleTable_::channels">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#ab859332a07201130fa76436a3002f8cf" title="Tonic::Tonic_::RingBuffer\l_::write" alt="" coords="250,5,421,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#af6e6509b1f70642a5c8c9ee0793d7e93" title="Tonic::Tonic_::RingBuffer\l_::read" alt="" coords="250,71,421,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a65518f75bcda76848a01369557dfe267" title="Tonic::Tonic_::SampleTable\l_::SampleTable_" alt="" coords="241,136,429,177"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a294e78d6aa875ddb8766a114ccd95047" title="Tonic::Tonic_::SampleTable\l_::resize" alt="" coords="241,201,429,243"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a4066cd22b7f2ef343965103d06b156df" title="Tonic::Tonic_::SampleTable\l_::resample" alt="" coords="241,267,429,308"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_sample_table.html#ae1f398693c89630b57fba8791ca4978a" title="Tonic::SampleTable\l::channels" alt="" coords="264,332,407,373"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_sample_table.html#ad7b66232c96be3892f7fee9c52e0f8a8" title="Tonic::SampleTable\l::resize" alt="" coords="497,201,640,243"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="708,267,895,308"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="943,245,1131,271"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="954,296,1119,337"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_sample_table.html#a273e3c7c36f450b98b1c156427ec17a1" title="Tonic::SampleTable\l::resample" alt="" coords="497,267,640,308"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a0ef8a6780813748147600bf4fea40578" title="Tonic::Tonic_::BufferPlayer\l_::setBuffer" alt="" coords="477,449,660,491"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a4db199be2640e3178471b7990b248db9" title="Tonic::Tonic_::BufferPlayer\l_::computeSynthesisBlock" alt="" coords="477,332,660,373"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_ring_buffer_reader__.html#a08a4d09427a26d265448fb8329699fdb" title="Tonic::Tonic_::RingBuffer\lReader_::setRingBuffer" alt="" coords="483,515,654,556"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_buffer_player.html#ab62eeff9d31eadde0dc2422edc7ad72d" title="Tonic::BufferPlayer\l::setBuffer" alt="" coords="733,449,869,491"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_ring_buffer_reader.html#aafa6c8c7494b6842410a10a3b4a6d0c9" title="Tonic::RingBufferReader\l::bufferName" alt="" coords="717,515,885,556"/>
+</map>

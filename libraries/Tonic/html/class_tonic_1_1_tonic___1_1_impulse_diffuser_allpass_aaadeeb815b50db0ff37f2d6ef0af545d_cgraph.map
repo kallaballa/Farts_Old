@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::ImpulseDiffuserAllpass::tickThrough" name="Tonic::Tonic_::ImpulseDiffuserAllpass::tickThrough">
+<area shape="rect" id="node2" href="$class_tonic_1_1_delay_line.html#aea6a2cd54161c0cce6471a3bdc524631" title="Advance read/write heads. " alt="" coords="256,5,433,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_delay_line.html#a8d248a5c01886cddfb7281d5aed6255c" title="Tick one sample in (write at write head). Does not advance read/write head. " alt="" coords="265,56,424,83"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_delay_line.html#aafa0e3bd633998b2040ac256abc54553" title="Return one interpolated, delayed sample. Does not advance read/write head. " alt="" coords="259,107,430,133"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="499,81,598,108"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="481,132,616,159"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="664,56,751,83"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="666,107,749,133"/>
+</map>

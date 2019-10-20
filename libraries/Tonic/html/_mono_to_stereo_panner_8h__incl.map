@@ -1,0 +1,9 @@
+<map id="MonoToStereoPanner.h" name="MonoToStereoPanner.h">
+<area shape="rect" id="node3" href="$_effect_8h.html" title="Effect.h" alt="" coords="542,80,613,107"/>
+<area shape="rect" id="node22" href="$_control_generator_8h.html" title="ControlGenerator.h" alt="" coords="738,379,873,405"/>
+<area shape="rect" id="node4" href="$_generator_8h.html" title="Generator.h" alt="" coords="699,155,789,181"/>
+<area shape="rect" id="node5" href="$_tonic_frames_8h.html" title="TonicFrames.h" alt="" coords="625,229,735,256"/>
+<area shape="rect" id="node20" href="$_fixed_value_8h.html" title="FixedValue.h" alt="" coords="760,229,859,256"/>
+<area shape="rect" id="node6" href="$_tonic_core_8h.html" title="TonicCore.h" alt="" coords="563,453,658,480"/>
+<area shape="rect" id="node21" href="$_control_value_8h.html" title="ControlValue.h" alt="" coords="751,304,860,331"/>
+</map>

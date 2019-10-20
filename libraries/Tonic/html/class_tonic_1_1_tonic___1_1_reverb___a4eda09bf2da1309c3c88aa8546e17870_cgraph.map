@@ -1,0 +1,12 @@
+<map id="Tonic::Tonic_::Reverb_::updateDelayTimes" name="Tonic::Tonic_::Reverb_::updateDelayTimes">
+<area shape="rect" id="node2" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="475,119,574,146"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="741,18,828,44"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#a0940cf00f71b0aeaed1f780025eb4daf" title="Tonic::dBToLin" alt="" coords="232,170,343,196"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a57167286572c8fc0f50b0bda8505129c" title="Tonic::map" alt="" coords="243,68,331,95"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#ad1acdb16d662fd6389586e5e1721c510" title="Tonic::randomFloat" alt="" coords="219,220,356,247"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="204,272,371,313"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="743,94,826,120"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="419,272,631,313"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="679,242,891,284"/>
+<area shape="rect" id="node11" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="739,308,830,335"/>
+</map>

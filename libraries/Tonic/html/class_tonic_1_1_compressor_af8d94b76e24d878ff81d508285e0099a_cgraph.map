@@ -1,0 +1,9 @@
+<map id="Tonic::Compressor::Compressor" name="Tonic::Compressor::Compressor">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_generator.html#a5ac150f63c26911185188ea79ced4971" title="Tonic::TemplatedGenerator\l\&lt; Tonic_::Compressor_ \&gt;::gen" alt="" coords="196,5,393,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_smart_pointer.html#af1901b09406c01e1cac0104095e03d28" title="Tonic::TonicSmartPointer\l\&lt; Tonic_::Generator_ \&gt;\l::release" alt="" coords="207,71,383,127"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a3551fccdc5a4b03d916002e39d6ff21d" title="Tonic::Tonic_::Compressor\l_::setAttack" alt="" coords="203,152,386,193"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a0d675a6d9ca1be289df7aab123483275" title="Tonic::Tonic_::Compressor\l_::setLookahead" alt="" coords="203,217,386,259"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ae74f3c5eb09d233befe7d385a21bbce0" title="Tonic::Tonic_::Compressor\l_::setRatio" alt="" coords="203,283,386,324"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a18fa15ec00c54c4b2049a6abd1d541a3" title="Tonic::Tonic_::Compressor\l_::setRelease" alt="" coords="203,348,386,389"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ac0b294cdd4038ca4caaa9d55f270901a" title="Tonic::Tonic_::Compressor\l_::setThreshold" alt="" coords="203,413,386,455"/>
+</map>

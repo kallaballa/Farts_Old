@@ -1,0 +1,7 @@
+<map id="Tonic::TonicFrames::resample" name="Tonic::TonicFrames::resample">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a4066cd22b7f2ef343965103d06b156df" title="Tonic::Tonic_::SampleTable\l_::resample" alt="" coords="193,27,381,69"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_sample_table.html#a273e3c7c36f450b98b1c156427ec17a1" title="Tonic::SampleTable\l::resample" alt="" coords="429,27,572,69"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="620,27,807,69"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="855,5,1043,32"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="866,57,1031,98"/>
+</map>

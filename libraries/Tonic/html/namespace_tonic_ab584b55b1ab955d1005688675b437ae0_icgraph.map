@@ -1,0 +1,51 @@
+<map id="Tonic::error" name="Tonic::error">
+<area shape="rect" id="node2" href="$namespace_tonic.html#ab3c2616051ae53a9af5f3accf97eb15c" title="Tonic::loadAudioFile" alt="" coords="179,5,323,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#aa606fa4dc80d4c61c3896f5d68b9e8ba" title="Tonic::Tonic_::BufferFiller\l_::fillBufferOfFloats" alt="" coords="164,57,337,98"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_divider__.html#a8bb7fe7a45d4a0bee37f2d99069faf2b" title="Override this function to implement a new ControlGenerator. " alt="" coords="665,290,859,331"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="145,421,357,462"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae36f0fca0d4d61874b32cda225b33421" title="Tonic::Tonic_::Effect\l_::tick" alt="" coords="689,225,835,266"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#ae678cc7c9f7d143ffb6ebe0ea9562c63" title="Tonic::Tonic_::WetDryEffect\l_::tick" alt="" coords="667,355,857,397"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_ramped_value__.html#ac3fbc5485b9c1b77db46d05cd52bf21d" title="Tonic::Tonic_::RampedValue\l_::computeSynthesisBlock" alt="" coords="667,595,857,637"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_biquad.html#af8cf40e98a4a50ea26ed549dd958cda7" title="Tonic::Biquad::filter" alt="" coords="182,905,319,932"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_ramped_value__.html#aab6a190b6cbb629526e053ba8ec027f7" title="Tonic::Tonic_::RampedValue\l_::updateTarget" alt="" coords="155,603,346,645"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_ring_buffer_reader.html#aafa6c8c7494b6842410a10a3b4a6d0c9" title="Tonic::RingBufferReader\l::bufferName" alt="" coords="167,957,335,998"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_synth__.html#a112cbeb2fdd4d1a6ff421119140ed0a2" title="Tonic::Tonic_::Synth\l_::setParameter" alt="" coords="179,1022,322,1063"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_synth__.html#ae87df192b3618414d518350f2085d876" title="Tonic::Tonic_::Synth\l_::addControlChangeSubscriber" alt="" coords="144,1087,357,1129"/>
+<area shape="rect" id="node27" href="$struct_tonic_1_1_synth_factory.html#a736a6f0047ecc3e45ae9570a206fd693" title="Tonic::SynthFactory\l::createInstance" alt="" coords="180,1153,321,1194"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html#a56ef60261e74a44eccaf268e61ca4d5b" title="set sample table for lookup. MUST BE POWER OF 2 IN LENGTH " alt="" coords="157,1218,344,1259"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_tonic_frames.html#acc4a09e99308ece8f1a23101c67e596c" title="The default constructor initializes the frame data structure to size zero. " alt="" coords="181,1283,321,1325"/>
+<area shape="rect" id="node32" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="181,1349,321,1390"/>
+<area shape="rect" id="node42" href="$class_tonic_1_1_tonic_frames.html#a176648bb46fde5ac6b12eb9702c6c604" title="Resize and stretch/shrink existing data to fit new size. " alt="" coords="181,1414,321,1455"/>
+<area shape="rect" id="node43" href="$class_tonic_1_1_tonic_frames.html#a1a03ba3ac057b62cc82db4ec3c062038" title="Return an interpolated value at the fractional frame index and channel. " alt="" coords="181,1479,321,1521"/>
+<area shape="rect" id="node44" href="$class_tonic_1_1_tonic_frames.html#a34b7dd7fecab9253e2c7b7e0dbd99ec8" title="Subscript operator that returns a reference to element n of self. " alt="" coords="181,1545,321,1586"/>
+<area shape="rect" id="node45" href="$class_tonic_1_1_tonic_frames.html#af5e371b63bee217c45644426af947c71" title="Channel / frame subscript operator that returns a reference. " alt="" coords="181,1610,321,1651"/>
+<area shape="rect" id="node46" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="441,225,581,266"/>
+<area shape="rect" id="node47" href="$class_tonic_1_1_tonic_frames.html#a1c756148b96869c56800c76f66426315" title="Assignment by sum operator into self. " alt="" coords="181,1675,321,1717"/>
+<area shape="rect" id="node48" href="$class_tonic_1_1_tonic_frames.html#a11f6f02c0ac8d05cb8b2e6316b8fdf79" title="Tonic::TonicFrames\l::operator&#45;=" alt="" coords="181,1741,321,1782"/>
+<area shape="rect" id="node49" href="$class_tonic_1_1_tonic_frames.html#a8b93c2307647e29bbb2d017dc2f0a330" title="Assignment by product operator into self. " alt="" coords="181,1806,321,1847"/>
+<area shape="rect" id="node50" href="$class_tonic_1_1_tonic_frames.html#aa0177b3352c78eb8bd83445253c51130" title="Tonic::TonicFrames\l::operator/=" alt="" coords="181,1871,321,1913"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_adder__.html#afc6fb9473526f9e7480688bb8deb1c58" title="Override this function to implement a new ControlGenerator. " alt="" coords="417,486,606,527"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_multiplier__.html#ad95605ed8f619fbc24327f2f940a0ff4" title="Override this function to implement a new ControlGenerator. " alt="" coords="408,290,615,331"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#adbec00428dbbd703b0d1b32a6c48ba7a" title="Tonic::Tonic_::ControlGenerator\l_::initialOutput" alt="" coords="405,421,617,462"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="428,355,595,397"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_compressor__.html#aae0292e3a0ce2fbc7336a6ab62632750" title="Tonic::Tonic_::Compressor\l_::tick" alt="" coords="907,225,1089,266"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html#a0397df26f22fccba7a786fa3ee973a93" title="Tonic::Tonic_::LPF12\l_::applyFilter" alt="" coords="438,901,585,942"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html#ae1fe367dcd77528753b56daf39e84ae7" title="Tonic::Tonic_::LPF24\l_::applyFilter" alt="" coords="438,966,585,1007"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html#a071a722320b94fbbe47c2176164ef392" title="Tonic::Tonic_::HPF12\l_::applyFilter" alt="" coords="437,1031,586,1073"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html#a3d4fc01138f0aebb39a45e6572b28d3e" title="Tonic::Tonic_::HPF24\l_::applyFilter" alt="" coords="437,705,586,746"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html#a6cfc81f2fbecb3679d1526b6956f2920" title="Tonic::Tonic_::BPF12\l_::applyFilter" alt="" coords="437,770,585,811"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html#a447a12864c1d72c1a61baac21034aa9a" title="Tonic::Tonic_::BPF24\l_::applyFilter" alt="" coords="437,835,585,877"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_synth.html#a74c5d3e417ba4b59c4a190593bdefe28" title="Set the value of a control parameter on this synth. " alt="" coords="419,1097,604,1124"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_synth.html#ad2cfe4a1d0f8c255c7f8a09aabacc5e1" title="Add an object which will be notified when a particular ControlChangeNotifier changes value or is trig..." alt="" coords="427,1149,596,1190"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_sine_wave.html#a42205bd20ea58b9d34fbec4fd4904d81" title="Tonic::SineWave::SineWave" alt="" coords="417,1280,605,1307"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_table_lookup_osc.html#a85079a5cd85725cec397b49968fcf70e" title="Tonic::TableLookupOsc\l::setLookupTable" alt="" coords="429,1214,594,1255"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_tonic___1_1_adder__.html#acb0b3e298e2b5c4389935d234199ab62" title="Tonic::Tonic_::Adder\l_::Adder_" alt="" coords="439,1723,584,1765"/>
+<area shape="rect" id="node34" href="$class_tonic_1_1_tonic___1_1_adder__.html#afe4be4d7665f281181922c6f89e3c45b" title="Tonic::Tonic_::Adder\l_::setIsStereoOutput" alt="" coords="438,1789,585,1830"/>
+<area shape="rect" id="node35" href="$class_tonic_1_1_tonic___1_1_subtractor__.html#ae834f6e534234d063a1d63e2bf8c4686" title="Tonic::Tonic_::Subtractor\l_::Subtractor_" alt="" coords="425,1854,598,1895"/>
+<area shape="rect" id="node36" href="$class_tonic_1_1_tonic___1_1_subtractor__.html#a85b3388a22204fb80c9172af700b977d" title="Tonic::Tonic_::Subtractor\l_::setIsStereoOutput" alt="" coords="425,1331,598,1373"/>
+<area shape="rect" id="node37" href="$class_tonic_1_1_tonic___1_1_multiplier__.html#a067b014b0bd3079ed220d35fb5f982ca" title="Tonic::Tonic_::Multiplier\l_::Multiplier_" alt="" coords="430,1397,593,1438"/>
+<area shape="rect" id="node38" href="$class_tonic_1_1_tonic___1_1_multiplier__.html#a36d512aac688fe6cb1c1f151265d6aa0" title="Tonic::Tonic_::Multiplier\l_::setIsStereoOutput" alt="" coords="430,1462,593,1503"/>
+<area shape="rect" id="node39" href="$class_tonic_1_1_tonic___1_1_divider__.html#aac9ba33cde7c69922ef92259bfb249be" title="Tonic::Tonic_::Divider\l_::Divider_" alt="" coords="437,1527,586,1569"/>
+<area shape="rect" id="node40" href="$class_tonic_1_1_tonic___1_1_divider__.html#ae56d2f04440f1c4482103b42c7d84869" title="Tonic::Tonic_::Divider\l_::setIsStereoOutput" alt="" coords="437,1593,586,1634"/>
+<area shape="rect" id="node41" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#aa2bcf7ba1139c80fbf339765bccb837b" title="Tonic::Tonic_::BasicDelay\l_::BasicDelay_" alt="" coords="424,1658,599,1699"/>
+</map>

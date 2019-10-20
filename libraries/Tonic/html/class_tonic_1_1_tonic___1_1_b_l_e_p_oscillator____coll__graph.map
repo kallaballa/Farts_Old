@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::BLEPOscillator_" name="Tonic::Tonic_::BLEPOscillator_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="235,373,426,538"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_smart_pointer.html" title="{Tonic::TonicSmartPointer\l\&lt; Tonic_::Generator_ \&gt;\n|# pcount\l|+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ TonicSmartPointer()\l+ operator=()\l+ ~TonicSmartPointer()\l+ retain()\l+ release()\l+ operator==()\l}" alt="" coords="143,608,319,803"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html" title="{Tonic::TonicFrames\n|# data_\l# dataRate_\l# nFrames_\l# nChannels_\l# size_\l# bufferSize_\l|+ TonicFrames()\l+ TonicFrames()\l+ ~TonicFrames()\l+ TonicFrames()\l+ operator=()\l+ operator[]()\l+ operator[]()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\land 17 more...\l}" alt="" coords="333,5,473,303"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_generator.html" title="{Tonic::Generator\n||+ Generator()\l+ isStereoOutput()\l+ tick()\l}" alt="" coords="177,852,314,959"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_smart_pointer.html" title="Reference counting smart pointer class template. " alt="" coords="5,365,211,545"/>
+</map>

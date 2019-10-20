@@ -1,0 +1,12 @@
+<map id="Tonic::Tonic_::Filter_" name="Tonic::Tonic_::Filter_">
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html" title="Butterworth 2&#45;pole BPF, constant 0dB peak. " alt="" coords="5,777,160,869"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html" title="Butterworth 4&#45;pole BPF. " alt="" coords="184,777,339,869"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html" title="Butterworth 2&#45;pole HPF. " alt="" coords="363,777,517,869"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html" title="Butterworth 4&#45;pole HPF. " alt="" coords="541,777,696,869"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_h_p_f6__.html" title="One&#45;pole highpass filter. Q is undefined for this filter. " alt="" coords="720,777,867,869"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html" title="Butterworth 2&#45;pole LPF. " alt="" coords="891,777,1045,869"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html" title="Butterworth 4&#45;pole LPF. " alt="" coords="1069,777,1222,869"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_l_p_f6__.html" title="One&#45;pole lowpass filter. Q is undefined for this filter. " alt="" coords="1246,777,1391,869"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_effect__.html" title="{Tonic::Tonic_::Effect_\n|# input_\l# dryFrames_\l# bypassGen_\l# isStereoInput_\l|+ Effect_()\l+ setBypassCtrlGen()\l+ setInput()\l+ setIsStereoInput()\l+ isStereoInput()\l+ tick()\l+ tickThrough()\l}" alt="" coords="629,233,781,443"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# outputFrames_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="610,5,801,185"/>
+</map>

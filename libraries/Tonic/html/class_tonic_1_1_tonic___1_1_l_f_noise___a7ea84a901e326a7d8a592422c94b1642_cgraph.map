@@ -1,0 +1,10 @@
+<map id="Tonic::Tonic_::LFNoise_::computeSynthesisBlock" name="Tonic::Tonic_::LFNoise_::computeSynthesisBlock">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="249,5,389,47"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="278,71,361,98"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#ad1acdb16d662fd6389586e5e1721c510" title="Tonic::randomFloat" alt="" coords="251,122,388,149"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="252,173,387,199"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_control_generator.html#ad90e75b6a75d2980035f67a805636b40" title="Tonic::ControlGenerator\l::tick" alt="" coords="236,224,403,265"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab9a696586315f3e4e61a437b125a39d2" title="Tonic::Tonic_::ControlGenerator\l_::tick" alt="" coords="451,224,663,265"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_generator__.html#ab2858fca4097a19cc38a89fd41f209bf" title="Override this function to implement a new ControlGenerator. " alt="" coords="711,195,923,236"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="771,261,862,287"/>
+</map>

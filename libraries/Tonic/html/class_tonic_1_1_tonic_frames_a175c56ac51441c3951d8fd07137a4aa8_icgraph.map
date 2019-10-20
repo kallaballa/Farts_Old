@@ -1,0 +1,51 @@
+<map id="Tonic::TonicFrames::channels" name="Tonic::TonicFrames::channels">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html#aa606fa4dc80d4c61c3896f5d68b9e8ba" title="Tonic::Tonic_::BufferFiller\l_::fillBufferOfFloats" alt="" coords="202,143,375,184"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_compressor__.html#ae5c0642e369390ba527aca6e3b214653" title="Tonic::Tonic_::Compressor\l_::computeSynthesisBlock" alt="" coords="197,208,380,249"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_delay_line.html#a04d8d64c52e74f02642616e22a9a1833" title="MUST be called prior to usage. " alt="" coords="201,274,376,301"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_l_p_f6__.html#a7253262f2cc19bd629f673e97f810321" title="Tonic::Tonic_::LPF6\l_::applyFilter" alt="" coords="219,535,358,576"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_h_p_f6__.html#a0e19ef8554ca4ed21dd1d9e9166b5b3a" title="Tonic::Tonic_::HPF6\l_::applyFilter" alt="" coords="218,600,359,641"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_biquad.html#af8cf40e98a4a50ea26ed549dd958cda7" title="Tonic::Biquad::filter" alt="" coords="220,666,357,693"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_ramped_value__.html#ac3fbc5485b9c1b77db46d05cd52bf21d" title="Tonic::Tonic_::RampedValue\l_::computeSynthesisBlock" alt="" coords="193,771,384,812"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#af6e6509b1f70642a5c8c9ee0793d7e93" title="Tonic::Tonic_::RingBuffer\l_::read" alt="" coords="452,789,623,831"/>
+<area shape="rect" id="node27" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a76165f178b7c32b9e81f7e3b43f43690" title="Tonic::Tonic_::SampleTable\l_::channels" alt="" coords="195,888,383,929"/>
+<area shape="rect" id="node37" href="$class_tonic_1_1_tonic_frames.html#aee57d3cfa510601e55bf9224a2cb598c" title="Tonic::TonicFrames\l::TonicFrames" alt="" coords="219,953,359,995"/>
+<area shape="rect" id="node38" href="$class_tonic_1_1_tonic_frames.html#a004ea66491ce264d62c8a3caee39eec3" title="Tonic::TonicFrames\l::operator=" alt="" coords="219,1019,359,1060"/>
+<area shape="rect" id="node39" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="219,1213,359,1255"/>
+<area shape="rect" id="node47" href="$class_tonic_1_1_tonic_frames.html#a1c756148b96869c56800c76f66426315" title="Assignment by sum operator into self. " alt="" coords="219,1279,359,1320"/>
+<area shape="rect" id="node48" href="$class_tonic_1_1_tonic_frames.html#a11f6f02c0ac8d05cb8b2e6316b8fdf79" title="Tonic::TonicFrames\l::operator&#45;=" alt="" coords="219,1344,359,1385"/>
+<area shape="rect" id="node49" href="$class_tonic_1_1_tonic_frames.html#a8b93c2307647e29bbb2d017dc2f0a330" title="Assignment by product operator into self. " alt="" coords="219,1409,359,1451"/>
+<area shape="rect" id="node50" href="$class_tonic_1_1_tonic_frames.html#aa0177b3352c78eb8bd83445253c51130" title="Tonic::TonicFrames\l::operator/=" alt="" coords="219,1475,359,1516"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html#a81e69f96fadd4801776f8d2e3622507a" title="Tonic::Tonic_::BasicDelay\l_::initialize" alt="" coords="450,201,625,243"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_comb_filter__.html#af93bfd3715009b8f73579a3516f96773" title="Tonic::Tonic_::CombFilter\l_::initialize" alt="" coords="450,267,625,308"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_compressor__.html#afab8be6392cc0ebc51ccf6e4e7cd1907" title="Tonic::Tonic_::Compressor\l_::Compressor_" alt="" coords="446,332,629,373"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_impulse_diffuser_allpass.html#a9e0ee9d5898bf46f6d222fefffb70edf" title="Tonic::Tonic_::ImpulseDiffuser\lAllpass::ImpulseDiffuserAllpass" alt="" coords="432,5,643,47"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4d36626e45245e370420f5e856780853" title="Tonic::Tonic_::Reverb\l_::Reverb_" alt="" coords="462,71,613,112"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html#ae2ce29dceb4713ef4de1190507fbc465" title="Tonic::Tonic_::StereoDelay\l_::initialize" alt="" coords="446,136,629,177"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_basic_delay.html#a1a9a02e7747fc5e57ea66bdde4f9bd92" title="Allocating only with time argument will default max delay time to 1.5 * delayTime. " alt="" coords="722,201,857,243"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_f_f_comb_filter.html#a7544582865e194342ebdd85beb722e9e" title="Tonic::FFCombFilter\l::FFCombFilter" alt="" coords="718,397,861,439"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_f_b_comb_filter.html#aa526334e7079c1aeadd88ac9e11a107f" title="Tonic::FBCombFilter\l::FBCombFilter" alt="" coords="718,267,861,308"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_filtered_f_b_comb_filter6.html#a25ba41a85c58d743646fd91b98420070" title="Tonic::FilteredFBCombFilter6\l::FilteredFBCombFilter6" alt="" coords="691,332,888,373"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_stereo_delay.html#a899b77fd4978bd00b20a2ce282ac54e7" title="Tonic::StereoDelay\l::StereoDelay" alt="" coords="721,136,858,177"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html#a0397df26f22fccba7a786fa3ee973a93" title="Tonic::Tonic_::LPF12\l_::applyFilter" alt="" coords="464,593,611,635"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html#ae1fe367dcd77528753b56daf39e84ae7" title="Tonic::Tonic_::LPF24\l_::applyFilter" alt="" coords="464,659,611,700"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html#a071a722320b94fbbe47c2176164ef392" title="Tonic::Tonic_::HPF12\l_::applyFilter" alt="" coords="463,724,612,765"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html#a3d4fc01138f0aebb39a45e6572b28d3e" title="Tonic::Tonic_::HPF24\l_::applyFilter" alt="" coords="463,397,612,439"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html#a6cfc81f2fbecb3679d1526b6956f2920" title="Tonic::Tonic_::BPF12\l_::applyFilter" alt="" coords="463,463,611,504"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html#a447a12864c1d72c1a61baac21034aa9a" title="Tonic::Tonic_::BPF24\l_::applyFilter" alt="" coords="463,528,611,569"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_tonic___1_1_ring_buffer__.html#ab859332a07201130fa76436a3002f8cf" title="Tonic::Tonic_::RingBuffer\l_::write" alt="" coords="452,855,623,896"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a65518f75bcda76848a01369557dfe267" title="Tonic::Tonic_::SampleTable\l_::SampleTable_" alt="" coords="443,920,631,961"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a294e78d6aa875ddb8766a114ccd95047" title="Tonic::Tonic_::SampleTable\l_::resize" alt="" coords="443,985,631,1027"/>
+<area shape="rect" id="node32" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a4066cd22b7f2ef343965103d06b156df" title="Tonic::Tonic_::SampleTable\l_::resample" alt="" coords="443,1051,631,1092"/>
+<area shape="rect" id="node34" href="$class_tonic_1_1_sample_table.html#ae1f398693c89630b57fba8791ca4978a" title="Tonic::SampleTable\l::channels" alt="" coords="466,1116,609,1157"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_sample_table.html#ad7b66232c96be3892f7fee9c52e0f8a8" title="Tonic::SampleTable\l::resize" alt="" coords="718,985,861,1027"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_sample_table.html#a273e3c7c36f450b98b1c156427ec17a1" title="Tonic::SampleTable\l::resample" alt="" coords="718,1051,861,1092"/>
+<area shape="rect" id="node35" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a0ef8a6780813748147600bf4fea40578" title="Tonic::Tonic_::BufferPlayer\l_::setBuffer" alt="" coords="698,1116,881,1157"/>
+<area shape="rect" id="node36" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a4db199be2640e3178471b7990b248db9" title="Tonic::Tonic_::BufferPlayer\l_::computeSynthesisBlock" alt="" coords="698,1181,881,1223"/>
+<area shape="rect" id="node40" href="$class_tonic_1_1_tonic___1_1_compressor__.html#a8b5c692fac6941c13e68eba131ec54f7" title="Apply effect directly to passed in frames (output in&#45;place) " alt="" coords="698,1537,881,1579"/>
+<area shape="rect" id="node41" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae36f0fca0d4d61874b32cda225b33421" title="Tonic::Tonic_::Effect\l_::tick" alt="" coords="464,1181,611,1223"/>
+<area shape="rect" id="node42" href="$class_tonic_1_1_tonic___1_1_effect__.html#a106135f7f2e57b90db530b227a0538df" title="Apply effect directly to passed in frames (output in&#45;place) " alt="" coords="464,1508,611,1549"/>
+<area shape="rect" id="node43" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#ae678cc7c9f7d143ffb6ebe0ea9562c63" title="Tonic::Tonic_::WetDryEffect\l_::tick" alt="" coords="442,1247,633,1288"/>
+<area shape="rect" id="node44" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html#acee3fe83aa3625d52eb2dac66375b098" title="Apply effect directly to passed in frames (output in&#45;place) " alt="" coords="442,1312,633,1353"/>
+<area shape="rect" id="node45" href="$class_tonic_1_1_tonic___1_1_generator__.html#a2994a18583a9803bc8b5550eb16c2994" title="Tonic::Tonic_::Generator\l_::tick" alt="" coords="453,1377,621,1419"/>
+<area shape="rect" id="node46" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="446,1443,629,1484"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::BitCrusher_::setInput" name="Tonic::Tonic_::BitCrusher_::setInput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_generator.html#a8900f469334bdebb1de27cd7b3fb8ea8" title="Tonic::Generator::isStereo\lOutput" alt="" coords="224,5,404,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_bit_crusher__.html#a1379c921de9f4c5da040ea6e90d353e0" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="229,71,399,112"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_generator__.html#a6ebd69e64a5c99b123bd6d6f07a908c2" title="Tonic::Tonic_::Generator\l_::isStereoOutput" alt="" coords="452,5,620,47"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="466,71,606,112"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="668,78,759,105"/>
+</map>

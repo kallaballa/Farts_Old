@@ -1,0 +1,15 @@
+<map id="Tonic::Synth::setParameter" name="Tonic::Synth::setParameter">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_buffer_filler.html#a522e11869aef4d295d97e0f6aa31d22f" title="Tonic::TemplatedBufferFiller\l\&lt; Tonic_::Synth_ \&gt;::gen" alt="" coords="239,28,432,69"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_synth__.html#a112cbeb2fdd4d1a6ff421119140ed0a2" title="Tonic::Tonic_::Synth\l_::setParameter" alt="" coords="264,93,407,135"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_control_parameter.html#a1ce851dd30b695b1c9207e92e365ebc0" title="Tonic::ControlParameter\l::setNormalizedValue" alt="" coords="480,35,649,76"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_control_parameter.html#a967bf677f53db0739f92f1bea67715bd" title="Tonic::ControlParameter\l::value" alt="" coords="720,64,889,105"/>
+<area shape="rect" id="node14" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="519,151,610,178"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_templated_control_generator.html#a04f52d5f619ba8519fa808ad92cb8c7a" title="Tonic::TemplatedControlGenerator\l\&lt; Tonic_::ControlParameter_ \&gt;::gen" alt="" coords="960,5,1192,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#af0de46eae927ff0ccbe430b2e8db13cb" title="Tonic::Tonic_::ControlParameter\l_::setNormalizedValue" alt="" coords="697,129,912,171"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_value__.html#a2c5b77e13905801f93fea6558f3bc149" title="Tonic::Tonic_::ControlValue\l_::setValue" alt="" coords="983,71,1169,112"/>
+<area shape="rect" id="node8" href="$namespace_tonic.html#a19c1af9de52d638421c57bb5953de604" title="Takes linear value 0&#45;1, maps to logarithmic value (base logBase) scaled to min&#45;max. Useful for making faders. " alt="" coords="1004,187,1148,214"/>
+<area shape="rect" id="node9" href="$namespace_tonic.html#a57167286572c8fc0f50b0bda8505129c" title="Tonic::map" alt="" coords="1240,162,1328,189"/>
+<area shape="rect" id="node11" href="$namespace_tonic.html#a391b753d224e02e152a8acf90cf827f7" title="Tonic::max" alt="" coords="1523,213,1609,239"/>
+<area shape="rect" id="node12" href="$namespace_tonic.html#a188c94373db9e6814d585fa4857020b7" title="Tonic::min" alt="" coords="1525,111,1607,138"/>
+<area shape="rect" id="node10" href="$namespace_tonic.html#ab020c3a856ee92464aeb149f8f80e5fd" title="Tonic::clamp" alt="" coords="1376,162,1475,189"/>
+</map>

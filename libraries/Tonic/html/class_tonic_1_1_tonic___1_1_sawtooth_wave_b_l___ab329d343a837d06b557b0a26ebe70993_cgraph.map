@@ -1,0 +1,15 @@
+<map id="Tonic::Tonic_::SawtoothWaveBL_::computeSynthesisBlock" name="Tonic::Tonic_::SawtoothWaveBL_::computeSynthesisBlock">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_b_l_e_p_oscillator__.html#adae12974e1cacb375fafd36d8f6da293" title="Tonic::Tonic_::BLEPOscillator\l_::addBLEP" alt="" coords="253,5,449,47"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="284,71,419,98"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_generator.html#aec0f6d29ff483badf4112ba3da09f71a" title="Tonic::Generator::tick" alt="" coords="276,122,427,149"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#a2d331ce046f335b0dd23399ef66942c8" title="Tonic::lerp" alt="" coords="539,13,624,39"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_generator__.html#a2994a18583a9803bc8b5550eb16c2994" title="Tonic::Tonic_::Generator\l_::tick" alt="" coords="497,115,665,156"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_generator__.html#a98a15aa7367a43b00d61ee8916504598" title="Tonic::Tonic_::Generator\l_::computeSynthesisBlock" alt="" coords="713,81,896,123"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic_frames.html#a9a7bd7ff26a987dfc042fa814657bab7" title="Fill frames from other source. " alt="" coords="735,147,875,188"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="944,29,1084,71"/>
+<area shape="rect" id="node10" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="969,95,1059,122"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic_frames.html#ae65dbebbf929f3f99f200ba2931c61b7" title="Fill all channels with contents of channel 0. " alt="" coords="944,147,1084,188"/>
+<area shape="rect" id="node13" href="$namespace_tonic.html#ae447eccc48ac3e9591ebd182644d9e16" title="Tonic::vcopy" alt="" coords="1320,183,1419,210"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="944,264,1084,305"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic_frames.html#a5c71f60a3a113a9ba9c63a8af1de4528" title="Copy one channel to another. " alt="" coords="1132,147,1272,188"/>
+</map>

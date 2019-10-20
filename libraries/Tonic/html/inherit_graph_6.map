@@ -1,0 +1,45 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="Tonic::Tonic_::Generator_" alt="" coords="5,436,180,463"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_adder__.html" title="Tonic::Tonic_::Adder_" alt="" coords="261,5,412,32"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_a_d_s_r__.html" title="Tonic::Tonic_::ADSR_" alt="" coords="262,56,411,83"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_angular_wave__.html" title="Tonic::Tonic_::AngularWave_" alt="" coords="241,107,433,133"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_b_l_e_p_oscillator__.html" title="Tonic::Tonic_::BLEPOscillator_" alt="" coords="235,157,438,184"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_buffer_filler__.html" title="Base class for any generator expected to produce output for a buffer fill. " alt="" coords="247,208,426,235"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html" title="Tonic::Tonic_::BufferPlayer_" alt="" coords="243,259,431,285"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_divider__.html" title="Tonic::Tonic_::Divider_" alt="" coords="259,309,414,336"/>
+<area shape="rect" id="node13" href="$class_tonic_1_1_tonic___1_1_effect__.html" title="Tonic::Tonic_::Effect_" alt="" coords="261,360,413,387"/>
+<area shape="rect" id="node34" href="$class_tonic_1_1_tonic___1_1_fixed_value__.html" title="Tonic::Tonic_::FixedValue_" alt="" coords="247,411,427,437"/>
+<area shape="rect" id="node35" href="$class_tonic_1_1_tonic___1_1_l_f_noise__.html" title="Tonic::Tonic_::LFNoise_" alt="" coords="255,461,418,488"/>
+<area shape="rect" id="node36" href="$class_tonic_1_1_tonic___1_1_multiplier__.html" title="Tonic::Tonic_::Multiplier_" alt="" coords="252,512,421,539"/>
+<area shape="rect" id="node37" href="$class_tonic_1_1_tonic___1_1_noise__.html" title="Tonic::Tonic_::Noise_" alt="" coords="262,563,411,589"/>
+<area shape="rect" id="node38" href="$class_tonic_1_1_tonic___1_1_pink_noise__.html" title="Tonic::Tonic_::PinkNoise_" alt="" coords="249,613,424,640"/>
+<area shape="rect" id="node39" href="$class_tonic_1_1_tonic___1_1_ramped_value__.html" title="Tonic::Tonic_::RampedValue_" alt="" coords="238,664,435,691"/>
+<area shape="rect" id="node40" href="$class_tonic_1_1_tonic___1_1_rect_wave__.html" title="Quick&#45;and&#45;dirty non&#45;bandlimited rect wave. " alt="" coords="249,715,425,741"/>
+<area shape="rect" id="node41" href="$class_tonic_1_1_tonic___1_1_ring_buffer_reader__.html" title="Tonic::Tonic_::RingBuffer\lReader_" alt="" coords="251,766,422,807"/>
+<area shape="rect" id="node42" href="$class_tonic_1_1_tonic___1_1_subtractor__.html" title="Tonic::Tonic_::Subtractor_" alt="" coords="247,832,426,859"/>
+<area shape="rect" id="node43" href="$class_tonic_1_1_tonic___1_1_table_lookup_osc__.html" title="Tonic::Tonic_::TableLookupOsc_" alt="" coords="228,883,445,909"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_rect_wave_b_l__.html" title="Bandlimited Rect Wave. " alt="" coords="509,81,699,108"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_sawtooth_wave_b_l__.html" title="Anti&#45;aliased BLEP sawtooth. " alt="" coords="493,132,715,159"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_mixer__.html" title="Tonic::Tonic_::Mixer_" alt="" coords="531,183,677,209"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_tonic___1_1_synth__.html" title="Tonic::Tonic_::Synth_" alt="" coords="530,233,678,260"/>
+<area shape="rect" id="node14" href="$class_tonic_1_1_tonic___1_1_bit_crusher__.html" title="Tonic::Tonic_::BitCrusher_" alt="" coords="516,284,692,311"/>
+<area shape="rect" id="node15" href="$class_tonic_1_1_tonic___1_1_comb_filter__.html" title="Absrtract comb&#45;filter gen_ base class. " alt="" coords="514,335,694,361"/>
+<area shape="rect" id="node19" href="$class_tonic_1_1_tonic___1_1_compressor__.html" title="Tonic::Tonic_::Compressor_" alt="" coords="510,385,698,412"/>
+<area shape="rect" id="node20" href="$class_tonic_1_1_tonic___1_1_filter__.html" title="Basic filter Effect_ subclass with inputs for cutoff and Q. " alt="" coords="532,491,676,517"/>
+<area shape="rect" id="node29" href="$class_tonic_1_1_tonic___1_1_mono_to_stereo_panner__.html" title="Tonic::Tonic_::MonoToStereo\lPanner_" alt="" coords="504,542,704,583"/>
+<area shape="rect" id="node30" href="$class_tonic_1_1_tonic___1_1_wet_dry_effect__.html" title="Tonic::Tonic_::WetDryEffect_" alt="" coords="506,795,702,821"/>
+<area shape="rect" id="node16" href="$class_tonic_1_1_tonic___1_1_f_b_comb_filter__.html" title="Basic mono feedback comb filter with hook for aditional processing pre&#45;feedback. " alt="" coords="768,196,963,223"/>
+<area shape="rect" id="node17" href="$class_tonic_1_1_tonic___1_1_f_f_comb_filter__.html" title="Basic mono feed&#45;forward comb filter. " alt="" coords="768,247,963,273"/>
+<area shape="rect" id="node18" href="$class_tonic_1_1_tonic___1_1_filtered_f_b_comb_filter6__.html" title="Feedback comb filter with 6dB/oct (one&#45;pole) lpf and hpf, optimized for reverb. " alt="" coords="763,298,968,339"/>
+<area shape="rect" id="node21" href="$class_tonic_1_1_tonic___1_1_b_p_f12__.html" title="Butterworth 2&#45;pole BPF, constant 0dB peak. " alt="" coords="788,364,943,391"/>
+<area shape="rect" id="node22" href="$class_tonic_1_1_tonic___1_1_b_p_f24__.html" title="Butterworth 4&#45;pole BPF. " alt="" coords="788,415,943,441"/>
+<area shape="rect" id="node23" href="$class_tonic_1_1_tonic___1_1_h_p_f12__.html" title="Butterworth 2&#45;pole HPF. " alt="" coords="788,465,943,492"/>
+<area shape="rect" id="node24" href="$class_tonic_1_1_tonic___1_1_h_p_f24__.html" title="Butterworth 4&#45;pole HPF. " alt="" coords="788,516,943,543"/>
+<area shape="rect" id="node25" href="$class_tonic_1_1_tonic___1_1_h_p_f6__.html" title="One&#45;pole highpass filter. Q is undefined for this filter. " alt="" coords="792,567,939,593"/>
+<area shape="rect" id="node26" href="$class_tonic_1_1_tonic___1_1_l_p_f12__.html" title="Butterworth 2&#45;pole LPF. " alt="" coords="789,617,942,644"/>
+<area shape="rect" id="node27" href="$class_tonic_1_1_tonic___1_1_l_p_f24__.html" title="Butterworth 4&#45;pole LPF. " alt="" coords="789,668,942,695"/>
+<area shape="rect" id="node28" href="$class_tonic_1_1_tonic___1_1_l_p_f6__.html" title="One&#45;pole lowpass filter. Q is undefined for this filter. " alt="" coords="793,719,938,745"/>
+<area shape="rect" id="node31" href="$class_tonic_1_1_tonic___1_1_basic_delay__.html" title="Tonic::Tonic_::BasicDelay_" alt="" coords="775,769,955,796"/>
+<area shape="rect" id="node32" href="$class_tonic_1_1_tonic___1_1_reverb__.html" title="Moorer&#45;Schroeder style Artificial Reverb effect. " alt="" coords="787,820,943,847"/>
+<area shape="rect" id="node33" href="$class_tonic_1_1_tonic___1_1_stereo_delay__.html" title="Tonic::Tonic_::StereoDelay_" alt="" coords="771,871,960,897"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Tonic::Tonic_::ControlValue_::setValue" name="Tonic::Tonic_::ControlValue_::setValue">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#af0de46eae927ff0ccbe430b2e8db13cb" title="Tonic::Tonic_::ControlParameter\l_::setNormalizedValue" alt="" coords="239,5,453,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_control_parameter.html#a967bf677f53db0739f92f1bea67715bd" title="Tonic::ControlParameter\l::value" alt="" coords="261,71,431,112"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_control_value.html#ad797c77214da483363754ac8d01417e2" title="Tonic::ControlValue\l::ControlValue" alt="" coords="517,188,655,229"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_control_value.html#a66d6c79223b8df2fb4c1e18f51ae9a2a" title="Tonic::ControlValue\l::value" alt="" coords="277,188,415,229"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_parameter.html#a1ce851dd30b695b1c9207e92e365ebc0" title="Tonic::ControlParameter\l::setNormalizedValue" alt="" coords="501,5,671,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_synth__.html#a112cbeb2fdd4d1a6ff421119140ed0a2" title="Tonic::Tonic_::Synth\l_::setParameter" alt="" coords="743,19,885,60"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_synth.html#a74c5d3e417ba4b59c4a190593bdefe28" title="Set the value of a control parameter on this synth. " alt="" coords="962,26,1147,53"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_synth__.html#ad8210e756e34da456fb24e8f0d0359bb" title="Tonic::Tonic_::Synth\l_::addParameter" alt="" coords="515,123,657,164"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_synth__.html#ad3cbe4e000254f6ad7135ee788df7099" title="Tonic::Tonic_::Synth\l_::addParametersFromSynth" alt="" coords="719,109,909,151"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_synth.html#a676b7312be699537396b61760ed44a92" title="Add a ControlParameter with name &quot;name&quot;. " alt="" coords="720,175,908,202"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_synth.html#a990575ebb23ffea2696be55b9d5e3de2" title="Add all the parameters from another synth. " alt="" coords="957,109,1152,151"/>
+</map>

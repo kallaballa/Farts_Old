@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::RingBuffer_::read" name="Tonic::Tonic_::RingBuffer_::read">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a76165f178b7c32b9e81f7e3b43f43690" title="Tonic::Tonic_::SampleTable\l_::channels" alt="" coords="224,5,412,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="460,48,600,89"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_sample_table__.html#a36841b1a0dd0e3f9dc6076f5e49103e5" title="Tonic::Tonic_::SampleTable\l_::frames" alt="" coords="224,123,412,164"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="460,139,600,180"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#a16b8f48e95725ec31bd867d5855ce528" title="Tonic::warning" alt="" coords="264,239,372,266"/>
+</map>

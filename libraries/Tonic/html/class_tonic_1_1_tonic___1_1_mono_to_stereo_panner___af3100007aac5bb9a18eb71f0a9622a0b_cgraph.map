@@ -1,0 +1,6 @@
+<map id="Tonic::Tonic_::MonoToStereoPanner_::MonoToStereoPanner_" name="Tonic::Tonic_::MonoToStereoPanner_::MonoToStereoPanner_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="517,5,657,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="285,35,453,76"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_mono_to_stereo_panner__.html#aea7fba53d98616639890b745a77159be" title="Tonic::Tonic_::MonoToStereo\lPanner_::setPan" alt="" coords="269,100,469,141"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="705,13,796,39"/>
+</map>

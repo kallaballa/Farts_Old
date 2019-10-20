@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::BPF24_::setIsStereoInput" name="Tonic::Tonic_::BPF24_::setIsStereoInput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_effect__.html#abe0471bad0d7f6b808dd165fc9bf76d5" title="Tonic::Tonic_::Effect\l_::isStereoInput" alt="" coords="219,5,365,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_biquad.html#ad8223c8769ce42357f98f9eb05694237" title="Tonic::Biquad::setIsStereo" alt="" coords="201,71,383,98"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae66d3fcbaf075b28d5c9b350612a3084" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="219,123,365,164"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="431,93,571,135"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="619,101,709,127"/>
+</map>

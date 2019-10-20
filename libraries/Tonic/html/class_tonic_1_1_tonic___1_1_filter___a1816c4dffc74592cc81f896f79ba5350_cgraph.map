@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::Filter_::setInput" name="Tonic::Tonic_::Filter_::setInput">
+<area shape="rect" id="node2" href="$class_tonic_1_1_generator.html#a8900f469334bdebb1de27cd7b3fb8ea8" title="Tonic::Generator::isStereo\lOutput" alt="" coords="192,5,372,47"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_effect__.html#a393df7e6085dabc20b3e38cbe711d9b7" title="Tonic::Tonic_::Effect\l_::setInput" alt="" coords="209,71,355,112"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae66d3fcbaf075b28d5c9b350612a3084" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="209,136,355,177"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="198,201,366,243"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_generator__.html#a6ebd69e64a5c99b123bd6d6f07a908c2" title="Tonic::Tonic_::Generator\l_::isStereoOutput" alt="" coords="420,5,588,47"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="434,168,574,209"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="636,175,727,202"/>
+</map>

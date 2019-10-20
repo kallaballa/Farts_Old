@@ -1,0 +1,5 @@
+<map id="Tonic::TonicFrames::clear" name="Tonic::TonicFrames::clear">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_buffer_player__.html#a4db199be2640e3178471b7990b248db9" title="Tonic::Tonic_::BufferPlayer\l_::computeSynthesisBlock" alt="" coords="193,5,376,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_mixer__.html#a5043a5f43ce35c940ed9ff78763f3c0b" title="Tonic::Tonic_::Mixer\l_::computeSynthesisBlock" alt="" coords="193,71,376,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="193,136,376,177"/>
+</map>

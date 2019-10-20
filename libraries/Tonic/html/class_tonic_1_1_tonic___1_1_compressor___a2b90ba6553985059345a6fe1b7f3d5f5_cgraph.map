@@ -1,0 +1,6 @@
+<map id="Tonic::Tonic_::Compressor_::setIsStereo" name="Tonic::Tonic_::Compressor_::setIsStereo">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="452,25,592,67"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_effect__.html#ae66d3fcbaf075b28d5c9b350612a3084" title="set stereo/mono &#45; changes number of channels in dryFrames_ " alt="" coords="247,25,393,67"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_generator__.html#aa4e015ec871bade95b2ea9c3406f673b" title="Tonic::Tonic_::Generator\l_::setIsStereoOutput" alt="" coords="236,91,404,132"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="640,33,731,59"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Tonic::Tonic_::BLEPOscillator_" name="Tonic::Tonic_::BLEPOscillator_">
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_rect_wave_b_l__.html" title="Bandlimited Rect Wave. " alt="" coords="5,549,196,671"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_sawtooth_wave_b_l__.html" title="Anti&#45;aliased BLEP sawtooth. " alt="" coords="221,571,442,649"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# outputFrames_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="120,5,311,185"/>
+</map>

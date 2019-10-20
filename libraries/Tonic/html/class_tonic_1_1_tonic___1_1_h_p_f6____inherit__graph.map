@@ -1,0 +1,5 @@
+<map id="Tonic::Tonic_::HPF6_" name="Tonic::Tonic_::HPF6_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_filter__.html" title="Basic filter Effect_ subclass with inputs for cutoff and Q. " alt="" coords="5,491,196,729"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_effect__.html" title="{Tonic::Tonic_::Effect_\n|# input_\l# dryFrames_\l# bypassGen_\l# isStereoInput_\l|+ Effect_()\l+ setBypassCtrlGen()\l+ setInput()\l+ setIsStereoInput()\l+ isStereoInput()\l+ tick()\l+ tickThrough()\l}" alt="" coords="25,233,177,443"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# outputFrames_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="5,5,196,185"/>
+</map>

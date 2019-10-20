@@ -1,0 +1,7 @@
+<map id="Tonic::TonicFrames::operator=" name="Tonic::TonicFrames::operator=">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic_frames.html#a175c56ac51441c3951d8fd07137a4aa8" title="Return the number of channels represented by the data. " alt="" coords="193,5,333,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html#ad296deb083975e60df76d52066b74b92" title="Return the number of sample frames represented by the data. " alt="" coords="193,71,333,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic_frames.html#a4aebf6d68d0c2fd5576edf4c795b63de" title="Resize self to represent the specified number of channels and frames. " alt="" coords="193,136,333,177"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#adefb88d8ed4a26349405a5583bbe6ae7" title="Return sample rate. " alt="" coords="196,202,331,229"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#ab584b55b1ab955d1005688675b437ae0" title="Tonic::error" alt="" coords="381,143,472,170"/>
+</map>

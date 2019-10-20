@@ -1,0 +1,9 @@
+<map id="Tonic::Tonic_::Synth_::addParameter" name="Tonic::Tonic_::Synth_::addParameter">
+<area shape="rect" id="node2" href="$class_tonic_1_1_control_parameter.html#a7c14b4b452f949da80818b1fa43de4bd" title="Tonic::ControlParameter\l::displayName" alt="" coords="196,104,365,145"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_control_parameter.html#adb8158ef8ea912bf80142990ebd89503" title="Tonic::ControlParameter\l::name" alt="" coords="196,39,365,80"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_control_parameter.html#a967bf677f53db0739f92f1bea67715bd" title="Tonic::ControlParameter\l::value" alt="" coords="196,169,365,211"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_templated_control_generator.html#a04f52d5f619ba8519fa808ad92cb8c7a" title="Tonic::TemplatedControlGenerator\l\&lt; Tonic_::ControlParameter_ \&gt;::gen" alt="" coords="413,71,645,112"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#ae3196288dfa1de7a2b985aba538f0e0e" title="Tonic::Tonic_::ControlParameter\l_::setDisplayName" alt="" coords="422,136,637,177"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#ac4a82658428918e5713d4331e9686d90" title="Tonic::Tonic_::ControlParameter\l_::setName" alt="" coords="422,5,637,47"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_control_value__.html#a2c5b77e13905801f93fea6558f3bc149" title="Tonic::Tonic_::ControlValue\l_::setValue" alt="" coords="437,201,622,243"/>
+</map>

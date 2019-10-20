@@ -1,0 +1,12 @@
+<map id="Tonic::map" name="Tonic::map">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#af0de46eae927ff0ccbe430b2e8db13cb" title="Tonic::Tonic_::ControlParameter\l_::setNormalizedValue" alt="" coords="340,14,555,55"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#a31877ee477de71ddc038624684498fee" title="Tonic::Tonic_::ControlParameter\l_::getNormalizedValue" alt="" coords="340,94,555,135"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a4eda09bf2da1309c3c88aa8546e17870" title="Tonic::Tonic_::Reverb\l_::updateDelayTimes" alt="" coords="141,188,292,230"/>
+<area shape="rect" id="node10" href="$namespace_tonic.html#a19c1af9de52d638421c57bb5953de604" title="Takes linear value 0&#45;1, maps to logarithmic value (base logBase) scaled to min&#45;max. Useful for making faders. " alt="" coords="145,36,289,62"/>
+<area shape="rect" id="node11" href="$namespace_tonic.html#a79cf0606153f9d4897822cd3d53078ba" title="Takes logarithmic value between min&#45;max, maps to linear value 0&#45;1. Useful for making faders..." alt="" coords="145,137,289,164"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_parameter.html#a1ce851dd30b695b1c9207e92e365ebc0" title="Tonic::ControlParameter\l::setNormalizedValue" alt="" coords="603,14,772,55"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_synth__.html#a112cbeb2fdd4d1a6ff421119140ed0a2" title="Tonic::Tonic_::Synth\l_::setParameter" alt="" coords="820,14,963,55"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_synth.html#a74c5d3e417ba4b59c4a190593bdefe28" title="Set the value of a control parameter on this synth. " alt="" coords="1011,21,1196,48"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_control_parameter.html#a9daf5ec269c7e00e4e9652256b650042" title="Tonic::ControlParameter\l::getNormalizedValue" alt="" coords="603,94,772,135"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_reverb__.html#a35b347077132d9029aee0fa9c54a6307" title="Tonic::Tonic_::Reverb\l_::computeSynthesisBlock" alt="" coords="356,188,539,230"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Tonic::Synth::setOutputGen" name="Tonic::Synth::setOutputGen">
+<area shape="rect" id="node2" href="$class_tonic_1_1_templated_buffer_filler.html#a522e11869aef4d295d97e0f6aa31d22f" title="Tonic::TemplatedBufferFiller\l\&lt; Tonic_::Synth_ \&gt;::gen" alt="" coords="240,5,433,47"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_synth__.html#ac3fcf704fa47152839b80684eb1dc193" title="Set the output gen that produces audio for the Synth. " alt="" coords="265,71,408,112"/>
+</map>

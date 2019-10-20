@@ -1,0 +1,4 @@
+<map id="Tonic::Tonic_::RingBuffer_" name="Tonic::Tonic_::RingBuffer_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_sample_table__.html" title="{Tonic::Tonic_::SampleTable_\n||+ SampleTable_()\l+ channels()\l+ frames()\l+ size()\l+ dataPointer()\l+ resize()\l+ resample()\l}" alt="" coords="5,365,200,531"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic_frames.html" title="{Tonic::TonicFrames\n|# data_\l# dataRate_\l# nFrames_\l# nChannels_\l# size_\l# bufferSize_\l|+ TonicFrames()\l+ TonicFrames()\l+ ~TonicFrames()\l+ TonicFrames()\l+ operator=()\l+ operator[]()\l+ operator[]()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\land 17 more...\l}" alt="" coords="33,5,173,303"/>
+</map>

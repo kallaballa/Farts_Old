@@ -1,0 +1,8 @@
+<map id="Tonic::TemplatedControlComparisonOperator::setRight" name="Tonic::TemplatedControlComparisonOperator::setRight">
+<area shape="rect" id="node2" href="$namespace_tonic.html#a46127c1ce0b794404285a083a6faa1b7" title="Tonic::operator==" alt="" coords="297,5,425,32"/>
+<area shape="rect" id="node3" href="$namespace_tonic.html#ab7f2cae1fa54b00c43bae441454965f2" title="Tonic::operator!=" alt="" coords="299,56,423,83"/>
+<area shape="rect" id="node4" href="$namespace_tonic.html#a1fac9b5c536d1f0010fe6300230bac4d" title="Tonic::operator\&gt;" alt="" coords="301,107,422,133"/>
+<area shape="rect" id="node5" href="$namespace_tonic.html#adb64a5000d0e5dfc34388dc21fb89e5e" title="Tonic::operator\&gt;=" alt="" coords="297,157,425,184"/>
+<area shape="rect" id="node6" href="$namespace_tonic.html#ac2c4ef314c760b1e4065dc9468cc32d8" title="Tonic::operator\&lt;" alt="" coords="301,208,422,235"/>
+<area shape="rect" id="node7" href="$namespace_tonic.html#a127a5dd4b6ef83a9ec73d9bf2b4879df" title="Tonic::operator\&lt;=" alt="" coords="297,259,425,285"/>
+</map>

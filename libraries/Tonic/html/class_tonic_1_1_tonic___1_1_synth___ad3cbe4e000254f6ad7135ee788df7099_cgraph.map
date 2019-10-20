@@ -1,0 +1,13 @@
+<map id="Tonic::Tonic_::Synth_::addParametersFromSynth" name="Tonic::Tonic_::Synth_::addParametersFromSynth">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_synth__.html#ad8210e756e34da456fb24e8f0d0359bb" title="Tonic::Tonic_::Synth\l_::addParameter" alt="" coords="269,136,412,177"/>
+<area shape="rect" id="node10" href="$class_tonic_1_1_synth.html#a92229340dcf556e8557821ffcbf0815a" title="Get all of the control parameters registered for this synth. " alt="" coords="244,241,437,267"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_control_parameter.html#a7c14b4b452f949da80818b1fa43de4bd" title="Tonic::ControlParameter\l::displayName" alt="" coords="497,103,667,144"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_control_parameter.html#adb8158ef8ea912bf80142990ebd89503" title="Tonic::ControlParameter\l::name" alt="" coords="497,37,667,79"/>
+<area shape="rect" id="node8" href="$class_tonic_1_1_control_parameter.html#a967bf677f53db0739f92f1bea67715bd" title="Tonic::ControlParameter\l::value" alt="" coords="497,168,667,209"/>
+<area shape="rect" id="node4" href="$class_tonic_1_1_templated_control_generator.html#a04f52d5f619ba8519fa808ad92cb8c7a" title="Tonic::TemplatedControlGenerator\l\&lt; Tonic_::ControlParameter_ \&gt;::gen" alt="" coords="727,136,959,177"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#ae3196288dfa1de7a2b985aba538f0e0e" title="Tonic::Tonic_::ControlParameter\l_::setDisplayName" alt="" coords="735,71,950,112"/>
+<area shape="rect" id="node7" href="$class_tonic_1_1_tonic___1_1_control_parameter__.html#ac4a82658428918e5713d4331e9686d90" title="Tonic::Tonic_::ControlParameter\l_::setName" alt="" coords="735,5,950,47"/>
+<area shape="rect" id="node9" href="$class_tonic_1_1_tonic___1_1_control_value__.html#a2c5b77e13905801f93fea6558f3bc149" title="Tonic::Tonic_::ControlValue\l_::setValue" alt="" coords="750,201,935,243"/>
+<area shape="rect" id="node11" href="$class_tonic_1_1_templated_buffer_filler.html#a522e11869aef4d295d97e0f6aa31d22f" title="Tonic::TemplatedBufferFiller\l\&lt; Tonic_::Synth_ \&gt;::gen" alt="" coords="485,299,679,340"/>
+<area shape="rect" id="node12" href="$class_tonic_1_1_tonic___1_1_synth__.html#ae4241ad9237f2dc37cff6d679640812d" title="Tonic::Tonic_::Synth\l_::getParameters" alt="" coords="511,233,653,275"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Tonic::Tonic_::CombFilter_" name="Tonic::Tonic_::CombFilter_">
+<area shape="rect" id="node4" href="$class_tonic_1_1_tonic___1_1_f_b_comb_filter__.html" title="Basic mono feedback comb filter with hook for aditional processing pre&#45;feedback. " alt="" coords="5,763,200,840"/>
+<area shape="rect" id="node5" href="$class_tonic_1_1_tonic___1_1_f_f_comb_filter__.html" title="Basic mono feed&#45;forward comb filter. " alt="" coords="224,763,419,840"/>
+<area shape="rect" id="node6" href="$class_tonic_1_1_tonic___1_1_filtered_f_b_comb_filter6__.html" title="Feedback comb filter with 6dB/oct (one&#45;pole) lpf and hpf, optimized for reverb. " alt="" coords="443,704,648,899"/>
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_effect__.html" title="{Tonic::Tonic_::Effect_\n|# input_\l# dryFrames_\l# bypassGen_\l# isStereoInput_\l|+ Effect_()\l+ setBypassCtrlGen()\l+ setInput()\l+ setIsStereoInput()\l+ isStereoInput()\l+ tick()\l+ tickThrough()\l}" alt="" coords="245,233,397,443"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_generator__.html" title="{Tonic::Tonic_::Generator_\n|# isStereoOutput_\l# outputFrames_\l# lastFrameIndex_\l|+ Generator_()\l+ ~Generator_()\l+ tick()\l+ isStereoOutput()\l+ setIsStereoOutput()\l# computeSynthesisBlock()\l}" alt="" coords="226,5,417,185"/>
+</map>

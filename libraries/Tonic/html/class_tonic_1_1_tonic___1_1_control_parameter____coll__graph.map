@@ -1,0 +1,5 @@
+<map id="Tonic::Tonic_::ControlParameter_" name="Tonic::Tonic_::ControlParameter_">
+<area shape="rect" id="node2" href="$class_tonic_1_1_tonic___1_1_control_value__.html" title="{Tonic::Tonic_::ControlValue_\n|# value_\l# changed_\l|+ ControlValue_()\l+ setValue()\l+ getValue()\l# computeOutput()\l}" alt="" coords="21,375,211,511"/>
+<area shape="rect" id="node3" href="$class_tonic_1_1_tonic___1_1_control_generator__.html" title="{Tonic::Tonic_::ControlGenerator_\n|# lastFrameIndex_\l|+ ControlGenerator_()\l+ ~ControlGenerator_()\l+ lockMutex()\l+ unlockMutex()\l+ tick()\l+ initialOutput()\l# computeOutput()\l}" alt="" coords="7,160,225,325"/>
+<area shape="rect" id="node4" href="$struct_tonic_1_1_control_generator_output.html" title="{Tonic::ControlGeneratorOutput\n|+ value\l+ triggered\l|+ ControlGeneratorOutput()\l}" alt="" coords="13,5,219,97"/>
+</map>
