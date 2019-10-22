@@ -1,11 +1,11 @@
-#include <map>
-#include <vector>
-#include <limits>
+void __attribute__ ((constructor)) premain()
+{
+//	pinMode(13, OUTPUT);
+//	digitalWrite(13, HIGH);
+}
 
 #include "MIDI.h"
 #include "LiquidCrystal.h"
-#include "CircularBuffer.h"
-#include "Bounce.h"
 #include "USBHost_t36.h"
 #include "Tonic.h"
 #include "tonic_lua.hpp"
@@ -13,14 +13,80 @@
 #include "defines.hpp"
 #include "workarounds.hpp"
 #include "dac.hpp"
-#include "signal.hpp"
-#include "tone.hpp"
 #include "instrumentstore.hpp"
-#include "luawrapper.hpp"
 #include "script.hpp"
+#include "luawrapper.hpp"
+//
+//struct DMAMEMAllocator {
+//	static DMAMEM char * heap[102400];
+//	size_t last_ = 0;
+//  typedef void *pointer;
+//   std::map<uint32_t,size_t> pointerSizes_;
+//
+//  typedef size_t size_type;
+//  pointer allocate(size_type n) {
+//
+//  	if(last_ + n> 102400) {
+//  		Serial.println("alloc OOB");
+//  		Serial.flush();
+//  	}
+//  	pointer p = heap+last_;
+//  	pointerSizes_[(uint32_t)p] = n;
+//  	if(pointerSizes_.find((uint32_t)p) == pointerSizes_.end()) {
+//  		Serial.println("___ALLOCERROR___");
+//  		Serial.flush();
+//  	}
+//
+//  	last_ += n;
+//  	return p;
+//  }
+//
+//  pointer reallocate(pointer p, size_type n) {
+//  	if(!p)
+//  		return allocate(n);
+//
+//
+//		if (pointerSizes_.find((uint32_t) p) == pointerSizes_.end()) {
+//			Serial.print("----- NOT FOUND -----");
+//		 	Serial.flush();
+//	  	return 0;
+//		} else {
+//	  	if(last_ + n > 102400) {
+//	  		Serial.println("realloc OOB");
+//	  		Serial.flush();
+//	  	}
+//	  	size_t oldsize;
+//			pointer p1 = heap+last_;
+//			oldsize = pointerSizes_[(uint32_t)p];
+//			size_t cpysize;
+//
+//			if(n < oldsize)
+//				cpysize = n;
+//			else
+//				cpysize = oldsize;
+//
+//			size_t newsize = n;
+//
+//			last_ += newsize;
+//
+//			memcpy(p1,p, cpysize);
+//			pointerSizes_[(uint32_t)p1] = newsize;
+//	  	return p1;
+//		}
+//  	return 0;
+//  }
+//
+//  void deallocate(pointer p, size_type n) {
+////  	Serial.println("free");
+//
+////    KAGUYA_UNUSED(n);
+////    std::free(p);
+//  }
+//};
+//
+//DMAMEM char * DMAMEMAllocator::heap[102400];
 
 
-lua_State* LuaWrapper::L_global_ = nullptr;
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
 
 USBHost myusb;
@@ -29,26 +95,14 @@ USBHub hub2(myusb);
 MIDIDevice usbMidi(myusb);
 
 size_t global_tick = 0;
-std::map<floating_t, Tone> tones_map;
-CircularBuffer<sample_t, RING_BUFFER_SIZE> audio_buffer;
-
-Bounce prev_button = Bounce(11, 10);
-Bounce next_button = Bounce(12, 10);
 
 LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
 InstrumentStore store(lcd);
 DAC dac(29, 25);
-LuaWrapper* lua;
 static Synth synth;
 
 void handleNoteOn(byte inChannel, byte inNumber, byte inVelocity) {
 	digitalWrite(13, HIGH);
-	floating_t f = pow(2.0, (inNumber - 69.0) / 12.0) * 440.0;
-
-	ToneDescriptor desc;
-
-
-	tones_map[f] = Tone(desc);
 }
 
 byte lastCC = 0;
@@ -64,7 +118,6 @@ void handleControlChange(byte inChannel, byte inNumber, byte inValue) {
 //		global_state = State();
 		return;
 	} else if (inNumber == 23) {
-		tones_map.clear();
 		return;
 	} else if (inNumber == 24) {
 //		global_state = history.back();
@@ -111,12 +164,17 @@ void handleProgramChange(byte inChannel, byte inNumber) {
 }
 
 void handleNoteOff(byte inChannel, byte inNumber, byte inVelocity) {
-	floating_t f = pow(2.0, (inNumber - 69.0) / 12.0) * 440.0;
-	if (tones_map.find(f) != tones_map.end())
-		tones_map.erase(f);
 	digitalWrite(13, LOW);
 }
+
 void setup() {
+	pinMode(13, OUTPUT);
+	digitalWrite(13, HIGH);
+
+	Serial.begin(115200);
+	while(!Serial) {};
+	Serial.print("START");
+
   Tonic::setSampleRate(CLOCK_FREQ);
 
 	if (!store.checkMagic())
@@ -125,11 +183,9 @@ void setup() {
 	lcd.begin(16, 2);
 
 	analogWriteFrequency(1, 750000);
-	pinMode(13, OUTPUT);
 	pinMode(11, INPUT_PULLUP);
 	pinMode(12, INPUT_PULLUP);
 
-	digitalWrite(13, HIGH);
 	usbMidi.setHandleControlChange(handleControlChange);
 	usbMidi.setHandleNoteOff(handleNoteOff);
 	usbMidi.setHandleNoteOn(handleNoteOn);
@@ -142,25 +198,27 @@ void setup() {
 	MIDI.setHandleProgramChange(handleProgramChange);
 
 	MIDI.begin(MIDI_CHANNEL_OMNI);
-	for(size_t i = 0; i < RING_BUFFER_SIZE; ++i) {
-		audio_buffer.push(0);
-	}
-//	while(!Serial) {};
-	Serial.println("begin");
-	Serial.flush();
-	lua = new LuaWrapper();
-//	lua->runString("print(\"ok\")");
-	Serial.println("s1");
-	Serial.flush();
 
-	bind(LuaWrapper::getState());
-	kaguya::State state(LuaWrapper::getState());
-	state["synth"] = &synth;
-	state.dostring(SCRIPT);
-	Serial.flush();
+
 }
 
 void loop() {
+//	std::shared_ptr<DMAMEMAllocator> ptr(new DMAMEMAllocator());
+	kaguya::State state;
+	state.openlibs();
+
+	bind(state);
+	Serial.println("s2");
+	Serial.flush();
+
+	Serial.println("s3");
+	Serial.flush();
+
+	state["synth"] = &synth;
+	runString(state.state_, COMPR_DUCK_TEST);
+	Serial.flush();
+	return;
+
   unsigned long start = micros();
 	myusb.Task();
 	usbMidi.read();

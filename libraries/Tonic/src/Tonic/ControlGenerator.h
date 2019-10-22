@@ -93,7 +93,7 @@ namespace Tonic {
     
     // shortcut for creating ramped value
     RampedValue smoothed(float length = 0.05);
-    
+
     ControlAdder operator+(ControlGenerator b);
     ControlAdder operator+(float b);
     ControlSubtractor operator-(ControlGenerator b);

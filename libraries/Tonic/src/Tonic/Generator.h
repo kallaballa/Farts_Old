@@ -102,7 +102,6 @@ namespace Tonic {
       return static_cast<GenType*>(obj);
     }
   public:
-    typedef GenType gen_t;
     TemplatedGenerator() : Generator(new GenType) {}
   };
   

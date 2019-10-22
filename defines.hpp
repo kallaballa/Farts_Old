@@ -1,6 +1,8 @@
 #ifndef DEFINES_HPP_
 #define DEFINES_HPP_
 
+#include <limits>
+
 typedef uint64_t sample_t;
 typedef double floating_t;
 

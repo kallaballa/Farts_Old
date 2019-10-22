@@ -23,51 +23,33 @@ template<> inline Print& operator <<(Print &obj, float arg) {
 #include "lua.h"
 #include "lualib.h"
 
+char output[1024];
 
-
-class LuaWrapper {
-	char output[1024];
-	static lua_State *L_global_;
-public:
-
-	LuaWrapper() {
-//#ifdef TEENSYDUINO
-//		setSyncProvider(getTeensy3Time);
-//#endif
-		L_global_ = luaL_newstate(); /* opens Lua */
-		// Serial.println("luaL_openlibs()");
-		luaL_openlibs(L_global_); /* opens the standard libraries */
-	}
-
-	static lua_State* getState() {
-		return L_global_;
-	}
-	void runString(const char lbuff[]) {
-		int error = 0;
-
-		// Serial.println("luaL_loadstring()");
-		error = luaL_loadstring(L_global_, lbuff);
-		// Serial.println(error);
+void runString(lua_State* L, const char lbuff[]) {
+	int error = 0;
+	// Serial.println("luaL_loadstring()");
+	error = luaL_loadstring(L, lbuff);
+	// Serial.println(error);
+	if (error) {
+		Serial << "Error Loading string: " << lbuff << "\n";
+		sprintf(output, "%s", lua_tostring(L, -1));
+		Serial.println(output);
+		// Serial.println("lua_pop()");
+		lua_pop(L, 1); /* pop error message from the stack */
+	} else {
+		// Serial.println("lua_pcall()");
+		error = lua_pcall(L, 0, 0, 0);
 		if (error) {
-			Serial << "Error Loading string: " << lbuff << "\n";
-			sprintf(output, "%s", lua_tostring(L_global_, -1));
+			Serial << "Error running:\n";
+			sprintf(output, "%s", lua_tostring(L, -1));
 			Serial.println(output);
 			// Serial.println("lua_pop()");
-			lua_pop(L_global_, 1); /* pop error message from the stack */
-		} else {
-			// Serial.println("lua_pcall()");
-			error = lua_pcall(L_global_, 0, 0, 0);
-			if (error) {
-				Serial << "Error running:\n";
-				sprintf(output, "%s", lua_tostring(L_global_, -1));
-				Serial.println(output);
-				// Serial.println("lua_pop()");
-				lua_pop(L_global_, 1); /* pop error message from the stack */
-			}
+			lua_pop(L, 1); /* pop error message from the stack */
 		}
 	}
+}
 
-	void runReplLoop() {
+	void runReplLoop(lua_State* L) {
 		char repl_buffer[1024];
 		char new_char;
 		uint16_t buff_position = 0;
@@ -122,7 +104,7 @@ public:
 				// Serial << "\nGot: '" << repl_buffer << "'";
 				Serial << '\n';
 
-				runString(repl_buffer);
+				runString(L, repl_buffer);
 
 				// reset buffer index
 				buff_position = 0;
@@ -135,6 +117,6 @@ public:
 		// Serial.println("lua_close()");
 		// lua_close(L);
 	}
-};
+
 
 #endif /* LUAWRAPPER_HPP_ */

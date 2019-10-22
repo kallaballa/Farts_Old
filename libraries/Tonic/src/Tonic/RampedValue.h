@@ -252,14 +252,6 @@ namespace Tonic {
     */
     TONIC_MAKE_CTRL_GEN_SETTERS(RampedValue, value, setValueGen);
 
-	Adder operator+(Generator b);
-	Adder operator+(float b);
-	Subtractor operator-(Generator b);
-	Subtractor operator-(float b);
-	Multiplier operator*(Generator b);
-	Multiplier operator*(float b);
-	Divider operator/(Generator b);
-	Divider operator/(float b);
 	bool isFinished();
 
   };
